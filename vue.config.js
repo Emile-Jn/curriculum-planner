@@ -1,3 +1,5 @@
-export default {
-    publicPath: '/curriculum-planner-test/',
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/curriculum-planner-test/'
+    : '/'
 }
