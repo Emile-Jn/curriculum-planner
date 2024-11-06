@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/cli-service": "^5.0.8",
     "@vue/compiler-sfc": "^3.2.45",
     "vite": "^5.4.10"
   }
