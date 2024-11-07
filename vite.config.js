@@ -9,6 +9,9 @@ export default defineConfig({
     vue(),
   ],
   base: '/curriculum-planner/',
+  build: {
+    outDir: 'dist', // Ensure build output is directed to 'dist'
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
