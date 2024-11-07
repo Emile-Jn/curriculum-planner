@@ -1,6 +1,7 @@
 <script>
 import Semester from './Semester.vue';
 import SearchBar from './SearchBar.vue';
+import SemesterButtons from './SemesterButtons.vue';
 import Papa from 'papaparse';
 import _, {max, min} from 'lodash';
 
@@ -8,14 +9,13 @@ export default {
   components: {
     Semester,
     SearchBar,
+    SemesterButtons,
   },
   data() {
     return {
       tables: [],
       seasons: [], // Season (winter of summer) of each semester
       courses: [],
-      availableCourses: [],
-      chosenCourses: [],
       activeTableIndex: null,
       activeSeason: null, // winter of summer, which is relevant for searching courses
       showSearch: false, // Whether the search bar on the left of the screen is visible
@@ -105,9 +105,9 @@ export default {
     }
   },
   methods: {
-    addSemester(season) {
-      this.tables.push({ rows: [] });
-      this.seasons.push(season);
+    addSemester(index, season) {
+      this.tables.splice(index, 0, { rows: [] });
+      this.seasons.splice(index, 0, season);
       localStorage.setItem('seasons', JSON.stringify(this.seasons)); // Save semester seasons to local storage
     },
     removeSemester(tableIndex) {
@@ -143,6 +143,7 @@ export default {
       this.updateRequirements(course.module);
     },
     updateRequirements(courseModule) {
+      console.log('Updating requirements for module:', courseModule);
       if (courseModule === 'Foundations') {
         this.updateFoundations();
       } else if (courseModule === 'DSA') {
@@ -172,30 +173,14 @@ export default {
       }
     },
     coreCompletion(coreName) {
-      // Previous implementation
-      /* let wholeCore = this.courses.filter(course => course.module.includes(coreName)); // all courses in the core
-      let wholeCoreCodes = [...new Set(wholeCore.map(course => course.code))]; // all course codes in the core
-      let completed = this.chosenCourses.filter(course => course.module.includes(coreName)); // completed courses in the core
-      let credits = completed.reduce((acc, course) => acc + course.credits, 0); // completed credits of the core */
-      // New implementation
       let availableCores = this.courses.filter(course => course.module.includes(coreName) && course.available); // all available courses in the core
       let chosenCores = this.courses.filter(course => course.module.includes(coreName) && course.chosen); // all chosen courses in the core
       let credits = chosenCores.reduce((acc, course) => acc + course.credits, 0); // completed credits of the core
-      // Debugging
-      // console.log('Core:', coreName);
-      // console.log('Whole core:', wholeCore);
-      // console.log('Completed core:', completed);
-      // console.log('Number of courses in total:', this.courses.length);
-      // console.log('Number of chosen courses:', this.chosenCourses.length);
-      // console.log('core done?', _.isEqual(wholeCore, completed));
-      // Previous implementation
-      // return [_.isEqual(wholeCore, completed), credits]; // check if all courses in the core are completed
-      // New implementation
       console.log('Available cores:', availableCores);
       return [availableCores.length === 0, credits]; // check if no core courses are available = all courses in the core are completed
     },
     updateModule(moduleName, requirementName) { // General function which is sufficient for some requirements and not others
-      let chosenCourses = this.chosenCourses.filter(course => course.module === moduleName);
+      let chosenCourses = this.courses.filter(course => course.module === moduleName && course.chosen); // get the chosen courses
       this.requirements[requirementName]["completed"] = chosenCourses.reduce((acc, course) => acc + course.credits, 0);
       this.updateCheck(requirementName);
     },
@@ -289,6 +274,11 @@ export default {
     <div class="container">
       <!-- Todo: extra add semester buttons -->
       <div class="tables">
+        <div>
+          <SemesterButtons
+              :index="0"
+              @add-semester="addSemester"/>
+        </div>
         <div v-for="(table, tableIndex) in tables" :key="tableIndex">
           <Semester
               :rows="table.rows"
@@ -298,12 +288,10 @@ export default {
               @remove-course="handleRemoveCourse"
               @remove-semester="removeSemester"
           />
+          <SemesterButtons
+              :index="tableIndex + 1"
+              @add-semester="addSemester"/>
         </div>
-        <div id="buttons">
-          <button @click="addSemester('winter')">Add winter semester</button>
-          <button @click="addSemester('summer')">Add summer semester</button>
-        </div>
-
       </div>
       <div class="requirements">
         <h2> <b>Requirements</b> </h2>
@@ -410,38 +398,4 @@ h3,
 p {
   margin: 0;
 }
-#buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-button {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text */
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-}
-
-button:hover {
-  background-color: #459049; /* Slightly darker green on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
-}
-
-button:active {
-  background-color: #3e8e41; /* Darker green on click */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow on click */
-}
-
-button:focus {
-  outline: none; /* Remove the default focus outline */
-  border: 2px solid #8bca8b; /* Add a custom focus border */
-}
-
 </style>
