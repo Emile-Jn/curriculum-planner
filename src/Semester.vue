@@ -55,11 +55,17 @@ export default {
 <style scoped>
 /* Optional styling */
 .table {
-  margin-bottom: 20px;
+  margin: 10px;
   border: 1px solid #111;
-  padding: 10px;
+  padding: 20px;
   background: #F6E8BB;
+  width: 95%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+table {
   width: 100%;
+  border-collapse: collapse;
 }
 th, td {
   border: 1px solid #111;
@@ -77,5 +83,16 @@ td {
 }
 .centred {
   text-align: center;
+}
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  /* color: white; */
+  font-size: 16px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
 }
 </style>

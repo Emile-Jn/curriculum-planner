@@ -87,13 +87,28 @@ export default {
             // Store the parsed curriculum in local storage
             localStorage.setItem('curriculum', JSON.stringify(this.courses));
           });
-      console.log('Curriculum loaded from the TSV file');
+      console.log('Curriculum loaded from the TSV file.');
+    }
+    let storedSemesters = localStorage.getItem('semesters');
+    if (storedSemesters) {
+      this.tables = JSON.parse(storedSemesters);
+      console.log('Chosen courses loaded from local storage.');
+    } else {
+      console.log('No chosen courses found in local storage.');
+    }
+    let storedSeasons = localStorage.getItem('seasons');
+    if (storedSeasons) {
+      this.seasons = JSON.parse(storedSeasons);
+      console.log('Semester seasons loaded from local storage.');
+    } else {
+      console.log('No semester seasons found in local storage.');
     }
   },
   methods: {
     addSemester(season) {
       this.tables.push({ rows: [] });
       this.seasons.push(season);
+      localStorage.setItem('seasons', JSON.stringify(this.seasons)); // Save semester seasons to local storage
     },
     activateSearch(tableIndex, season) {
       this.activeTableIndex = tableIndex;
@@ -103,13 +118,10 @@ export default {
     addCourseToSemester(course) {
       if (this.activeTableIndex !== null) {
         this.tables[this.activeTableIndex].rows.push(course); // Add the course to the active semester
-        // Previous implementation
-        this.chosenCourses.push(course); // Add the course to the chosen courses
-        this.availableCourses = this.availableCourses.filter(c => c.code !== course.code); // Remove the course from the available courses
-        // New implementation
+        localStorage.setItem('semesters', JSON.stringify(this.tables)); // Save selected courses to local storage
+        console.log('Saving ' + course.title + ' to local storage');
         this.courses.filter(c => c.code === course.code).forEach(c => c.available = false); // Mark the course as unavailable
         this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = true); // Mark the course as chosen
-        // - -
         this.showSearch = false; // Hide search after selection
         this.updateRequirements(course.module);
       }
@@ -118,13 +130,10 @@ export default {
       console.log('Removing course at table', tableIndex, 'and row', rowIndex);
       let course = this.tables[tableIndex].rows[rowIndex]; // Get the course at the given index
       this.tables[tableIndex].rows.splice(rowIndex, 1); // Remove the course at the given index
-      // Previous implementation
-      this.availableCourses.push(course); // Add the course back to the available courses
-      this.chosenCourses = this.chosenCourses.filter(c => c.code !== course.code); // Remove the course from the chosen courses
-      // New implementation
+      localStorage.setItem('semesters', JSON.stringify(this.tables)); // Remove course from local storage
+      console.log('Removing ' + course.title + ' from local storage');
       this.courses.filter(c => c.code === course.code).forEach(c => c.available = true); // Mark the course as available
       this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = false); // Mark the course as not chosen
-      // - -
       this.updateRequirements(course.module);
     },
     updateRequirements(courseModule) {
@@ -258,6 +267,9 @@ export default {
       <a href="https://www.tuwien.at/fileadmin/Assets/dienstleister/studienabteilung/MSc_Studienplaene_2024/Masterstudium_Data_Science_2024.pdf">curriculum</a>.
     </p>
   </div>
+  <div id="Title">
+    <h1>Data science master's curriculum planner</h1>
+  </div>
   <div class="search">
     <SearchBar
         v-if="showSearch"
@@ -285,7 +297,7 @@ export default {
 
     </div>
     <div class="requirements">
-      <h2>Requirements</h2>
+      <h2> <b>Requirements</b> </h2>
       <div class="req">
         <h3>Foundations courses</h3>
         <h4>{{ this.requirements["foundations"]["check"] }} {{ this.requirements["foundations"]["completed"] }} /
@@ -335,50 +347,54 @@ html, body {
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
-  background-color: #bbf6f3;
+  /* background-color: #bbf6f3; */
 }
 #warning {
   background: #ffd178;
   text-align: center;
 }
-.container {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; /* Center content horizontally */
-  /* align-items: center; /* Center content vertically */
-  height: 96%;
-  width: 96%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: #caf8ff;
-  z-index: 0;
+#Title {
+  text-align: center;
+  padding: 10px;
 }
-
+.container {
+  display: flex;
+  justify-content: flex-start; /* Align the tables to the left */
+  align-items: flex-start;    /* Align the content at the top */
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  /* background-color: #caf8ff; */
+}
 
 .tables {
-  /* flex-grow: 1; */
-  /* position: absolute; */
+  flex: 1; /* The tables take up remaining space */
   display: flex;
-  overflow-y: auto; /* Enable vertical scrolling */
-  max-height: 90%; /* Set max-height for scrollable area */
-  /* left: 25%; */
-  /* margin: 0 auto; */
-  /* margin-left: auto; /* Center the tables horizontally */
-  /* margin-right: auto; /* Center the tables horizontally */
-
   flex-direction: column;
-  align-items: center;
-  width: 66%;
-  padding-left: 10px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 100vh; /* Ensure the tables take up full height */
+  margin-right: 20px; /* Space between tables and requirements section */
 }
-
-.req {
+.requirements {
   position: sticky;
-  margin: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  height: 90vh; /* Make sure it takes almost full viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds */
+  margin: 10px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 15px;
+  border: 1px solid #999;
+}
+.req {
+
+  top: 20px; /* Keep the requirements section sticky from top */
+  width: 300px; /* Fixed width for the requirements section */
+  background-color: #F6E8BB;
   border: 1px solid #111;
   padding: 10px;
-  background: #F6E8BB;
+  margin: 5px;
+  border-radius: 5px;
 }
 #buttons {
   display: flex;
@@ -386,8 +402,37 @@ html, body {
   margin-top: 10px;
 }
 button {
-  margin: 5px;
-  padding: 5px;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+  background-color: #459049; /* Slightly darker green on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
+button:active {
+  background-color: #3e8e41; /* Darker green on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow on click */
+}
+
+button:focus {
+  outline: none; /* Remove the default focus outline */
+  border: 2px solid #8bca8b; /* Add a custom focus border */
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 </style>
