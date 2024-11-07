@@ -1,3 +1,5 @@
+# Template taken from https://vite.dev/guide/static-deploy
+
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
