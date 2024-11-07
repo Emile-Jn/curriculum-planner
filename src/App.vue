@@ -110,6 +110,12 @@ export default {
       this.seasons.push(season);
       localStorage.setItem('seasons', JSON.stringify(this.seasons)); // Save semester seasons to local storage
     },
+    removeSemester(tableIndex) {
+      this.tables.splice(tableIndex, 1);
+      this.seasons.splice(tableIndex, 1);
+      localStorage.setItem('semesters', JSON.stringify(this.tables)); // Save selected courses to local storage
+      localStorage.setItem('seasons', JSON.stringify(this.seasons)); // Save semester seasons to local storage
+    },
     activateSearch(tableIndex, season) {
       this.activeTableIndex = tableIndex;
       this.activeSeason = season;
@@ -261,140 +267,148 @@ export default {
 </script>
 
 <template>
-  <div id="warning">
-    <p>This is NOT an official app made by TU Wien, only a tool to help you plan your curriculum.
-    Official information can be found in the
-      <a href="https://www.tuwien.at/fileadmin/Assets/dienstleister/studienabteilung/MSc_Studienplaene_2024/Masterstudium_Data_Science_2024.pdf">curriculum</a>.
-    </p>
-  </div>
-  <div id="Title">
-    <h1>Data science master's curriculum planner</h1>
-  </div>
-  <div class="search">
-    <SearchBar
-        v-if="showSearch"
-        :courses="courses.filter(course => course.available)"
-        :season="activeSeason"
-        @select-course="addCourseToSemester"
-    />
-  </div>
-  <div class="container">
-
-    <div class="tables">
-      <div v-for="(table, tableIndex) in tables" :key="tableIndex">
-        <Semester
-            :rows="table.rows"
-            :table-index="tableIndex"
-            :season="seasons[tableIndex]"
-            @activate-search="activateSearch"
-            @remove-course="handleRemoveCourse"
-        />
-      </div>
-      <div id="buttons">
-        <button @click="addSemester('winter')">Add winter semester</button>
-        <button @click="addSemester('summer')">Add summer semester</button>
-      </div>
-
+  <div id="app-container">
+    <div id="warning">
+      <p>This is NOT an official app made by TU Wien, only a tool to help you plan your curriculum.
+      Official information can be found in the
+        <a href="https://www.tuwien.at/fileadmin/Assets/dienstleister/studienabteilung/MSc_Studienplaene_2024/Masterstudium_Data_Science_2024.pdf">curriculum</a>.
+      </p>
     </div>
-    <div class="requirements">
-      <h2> <b>Requirements</b> </h2>
-      <div class="req">
-        <h3>Foundations courses</h3>
-        <h4>{{ this.requirements["foundations"]["check"] }} {{ this.requirements["foundations"]["completed"] }} /
-          {{ this.requirements["foundations"]["req"] }} ECTS</h4>
+    <div id="title">
+      <h1>Data science master's curriculum planner</h1>
+    </div>
+    <div class="search">
+      <SearchBar
+          v-if="showSearch"
+          :courses="courses.filter(course => course.available)"
+          :season="activeSeason"
+          @select-course="addCourseToSemester"
+          @close-search="showSearch = false"
+      />
+    </div>
+    <div class="container">
+      <!-- Todo: extra add semester buttons -->
+      <div class="tables">
+        <div v-for="(table, tableIndex) in tables" :key="tableIndex">
+          <Semester
+              :rows="table.rows"
+              :table-index="tableIndex"
+              :season="seasons[tableIndex]"
+              @activate-search="activateSearch"
+              @remove-course="handleRemoveCourse"
+              @remove-semester="removeSemester"
+          />
+        </div>
+        <div id="buttons">
+          <button @click="addSemester('winter')">Add winter semester</button>
+          <button @click="addSemester('summer')">Add summer semester</button>
+        </div>
+
       </div>
-      <div class="req">
-        <h3>Interdisciplinary data science</h3>
-        <h4>{{ this.requirements["interdisciplinary"]["check"] }} {{
-            this.requirements["interdisciplinary"]["completed"]
-          }} / {{ this.requirements["interdisciplinary"]["req"] }} ECTS</h4>
-      </div>
-      <div class="req">
-        <h3>Cores</h3>
-        <h4>{{ this.requirements["cores"]["check"] }} {{ this.requirements["cores"]["completed"] }} /
-          {{ this.requirements["cores"]["req"] }} cores</h4>
-      </div>
-      <div class="req">
-        <h3>Specialisation (cores & extensions)</h3>
-        <h4>{{ this.requirements["specialisation"]["check"] }} {{ this.requirements["specialisation"]["completed"] }} /
-          {{ this.requirements["specialisation"]["req"] }} ECTS</h4>
-      </div>
-      <div class="req">
-        <h3>Transferable skills</h3>
-        <h4>{{ this.requirements["transferable"]["check"] }} {{ this.requirements["transferable"]["completed"] }} /
-          {{ this.requirements["transferable"]["req"] }} ECTS</h4>
-      </div>
-      <div class="req">
-        <h3>Free electives</h3>
-        <h4>{{ this.requirements["freeElectives"]["check"] }} {{ this.requirements["freeElectives"]["completed"] }} /
-          {{ this.requirements["freeElectives"]["req"] }} ECTS</h4>
-      </div>
-      <div class="req">
-        <h3>Thesis</h3>
-        <h4>{{ this.requirements["thesis"]["check"] }} {{ this.requirements["thesis"]["completed"] }} /
-          {{ this.requirements["thesis"]["req"] }} ECTS</h4>
+      <div class="requirements">
+        <h2> <b>Requirements</b> </h2>
+        <div class="req">
+          <h3>Foundations courses</h3>
+          <p>{{ this.requirements["foundations"]["check"] }} {{ this.requirements["foundations"]["completed"] }} /
+            {{ this.requirements["foundations"]["req"] }} ECTS</p>
+        </div>
+        <div class="req">
+          <h3>Interdisciplinary data science</h3>
+          <p>{{ this.requirements["interdisciplinary"]["check"] }} {{
+              this.requirements["interdisciplinary"]["completed"]
+            }} / {{ this.requirements["interdisciplinary"]["req"] }} ECTS</p>
+        </div>
+        <div class="req">
+          <h3>Cores</h3>
+          <p>{{ this.requirements["cores"]["check"] }} {{ this.requirements["cores"]["completed"] }} /
+            {{ this.requirements["cores"]["req"] }} cores</p>
+        </div>
+        <div class="req">
+          <h3>Specialisation (cores & extensions)</h3>
+          <p>{{ this.requirements["specialisation"]["check"] }} {{ this.requirements["specialisation"]["completed"] }} /
+            {{ this.requirements["specialisation"]["req"] }} ECTS</p>
+        </div>
+        <div class="req">
+          <h3>Transferable skills</h3>
+          <p>{{ this.requirements["transferable"]["check"] }} {{ this.requirements["transferable"]["completed"] }} /
+            {{ this.requirements["transferable"]["req"] }} ECTS</p>
+        </div>
+        <div class="req">
+          <h3>Free electives</h3>
+          <p>{{ this.requirements["freeElectives"]["check"] }} {{ this.requirements["freeElectives"]["completed"] }} /
+            {{ this.requirements["freeElectives"]["req"] }} ECTS</p>
+        </div>
+        <div class="req">
+          <h3>Thesis</h3>
+          <p>{{ this.requirements["thesis"]["check"] }} {{ this.requirements["thesis"]["completed"] }} /
+            {{ this.requirements["thesis"]["req"] }} ECTS</p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-html, body {
-  height: 98%;
-  width: 98%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  /* background-color: #bbf6f3; */
-}
+
 #warning {
   background: #ffd178;
   text-align: center;
+  padding: 2px;
 }
-#Title {
+#title {
   text-align: center;
   padding: 10px;
+  background: #F6FAFD;
+  position: relative; /* Allows the shadow to be positioned relative to the element */
+  /* padding-bottom: 5px; /* Space between content and shadow border */
+  margin-bottom: 15px; /* Space below the shadow */
+  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.3); /* Bottom-only shadow */
+
 }
 .container {
   display: flex;
-  justify-content: flex-start; /* Align the tables to the left */
-  align-items: flex-start;    /* Align the content at the top */
+  /* justify-content: flex-start; /* Align the tables to the left */
+  /* align-items: flex-start;    /* Align the content at the top */
   height: 100%;
   width: 100%;
+  box-sizing: border-box; /* Include padding/border in width calculation */
   padding: 20px;
-  /* background-color: #caf8ff; */
+  background-color: white; /* TODO: change */
 }
 
 .tables {
   flex: 1; /* The tables take up remaining space */
   display: flex;
   flex-direction: column;
+  /* width: 60%; */
+  box-sizing: border-box; /* Include padding/border in width calculation */
   overflow-y: auto; /* Enable vertical scrolling */
   max-height: 100vh; /* Ensure the tables take up full height */
   margin-right: 20px; /* Space between tables and requirements section */
 }
 .requirements {
   position: sticky;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  height: 90vh; /* Make sure it takes almost full viewport height */
+  margin-left: auto;
+  padding: 15px;
+  max-height: 80vh; /* Make sure it takes almost full viewport height */
   overflow-y: auto; /* Enable vertical scrolling if content exceeds */
-  margin: 10px;
-  padding: 20px;
   background: #f5f5f5;
   border-radius: 15px;
   border: 1px solid #999;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 .req {
-
-  top: 20px; /* Keep the requirements section sticky from top */
-  width: 300px; /* Fixed width for the requirements section */
+  /* top: 20px; /* Keep the requirements section sticky from top */
+  /* width: %; /* Fixed width for the requirements section */
   background-color: #F6E8BB;
   border: 1px solid #111;
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
+}
+h3,
+p {
+  margin: 0;
 }
 #buttons {
   display: flex;
@@ -430,9 +444,4 @@ button:focus {
   border: 2px solid #8bca8b; /* Add a custom focus border */
 }
 
-#buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
 </style>

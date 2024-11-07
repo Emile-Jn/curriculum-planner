@@ -24,7 +24,9 @@ export default {
 
 <template>
   <div class="table">
-    <h2>Semester {{ tableIndex + 1 }} ({{ season }})</h2>
+    <!-- Close icon in the upper-right corner -->
+    <span class="close-icon" @click="$emit('remove-semester', tableIndex)">×</span>
+    <h2>Semester {{ tableIndex + 1 }}  –  {{ season }}</h2>
     <h3>ECTS: {{ totalCredits }}</h3>
     <table>
       <tr>
@@ -55,13 +57,24 @@ export default {
 <style scoped>
 /* Optional styling */
 .table {
+  position: relative;
   margin: 10px;
   border: 1px solid #111;
   padding: 20px;
   background: #F6E8BB;
   width: 95%;
+  box-sizing: border-box; /* Include padding/border in width calculation */
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #900; /* Color for the close icon */
 }
 table {
   width: 100%;
