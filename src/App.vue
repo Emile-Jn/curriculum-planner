@@ -72,6 +72,7 @@ export default {
     const storedCurriculum = localStorage.getItem('curriculum');
     if (storedCurriculum) {
       this.courses = JSON.parse(storedCurriculum);
+      console.log('Curriculum loaded from local storage');
     } else {
       // Load and parse the TSV file
       fetch('curriculum.tsv')
@@ -86,6 +87,7 @@ export default {
             // Store the parsed curriculum in local storage
             localStorage.setItem('curriculum', JSON.stringify(this.courses));
           });
+      console.log('Curriculum loaded from the TSV file');
     }
   },
   methods: {
