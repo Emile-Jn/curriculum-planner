@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div id="search-box">
     <input
         type="text"
         v-model="query"
@@ -48,6 +48,21 @@ export default {
 </template>
 
 <style scoped>
+#search-box {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  height: 70%;
+  overflow-y: auto; /* Enable vertical scrolling */
+  z-index: 1;
+}
+
 ul {
   background: #F6E8BB;
 }

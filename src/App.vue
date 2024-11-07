@@ -250,15 +250,22 @@ export default {
 </script>
 
 <template>
+  <div id="warning">
+    <p>This is NOT an official app made by TU Wien, only a tool to help you plan your curriculum.
+    Official information can be found in the
+      <a href="https://www.tuwien.at/fileadmin/Assets/dienstleister/studienabteilung/MSc_Studienplaene_2024/Masterstudium_Data_Science_2024.pdf">curriculum</a>.
+    </p>
+  </div>
+  <div class="search">
+    <SearchBar
+        v-if="showSearch"
+        :courses="courses.filter(course => course.available)"
+        :season="activeSeason"
+        @select-course="addCourseToSemester"
+    />
+  </div>
   <div class="container">
-    <div class="sidebar">
-      <SearchBar
-          v-if="showSearch"
-          :courses="courses.filter(course => course.available)"
-          :season="activeSeason"
-          @select-course="addCourseToSemester"
-      />
-    </div>
+
     <div class="tables">
       <div v-for="(table, tableIndex) in tables" :key="tableIndex">
         <Semester
@@ -328,41 +335,44 @@ html, body {
   font-family: Arial, sans-serif;
   background-color: #bbf6f3;
 }
+#warning {
+  background: #ffd178;
+  text-align: center;
+}
 .container {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center; /* Center content horizontally */
   /* align-items: center; /* Center content vertically */
-  min-height: 96%;
+  height: 96%;
   width: 96%;
   padding-top: 50px;
   padding-bottom: 50px;
   background: #caf8ff;
+  z-index: 0;
 }
 
-.sidebar {
-  /* width: 300px; /* Adjust the width as needed */
-  background-color: #e0e0e0;
-  max-width: 25%;
-}
 
 .tables {
   /* flex-grow: 1; */
   /* position: absolute; */
   display: flex;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 90%; /* Set max-height for scrollable area */
   /* left: 25%; */
   /* margin: 0 auto; */
-  margin-left: auto; /* Center the tables horizontally */
-  margin-right: auto; /* Center the tables horizontally */
+  /* margin-left: auto; /* Center the tables horizontally */
+  /* margin-right: auto; /* Center the tables horizontally */
 
   flex-direction: column;
   align-items: center;
-  max-width: 44%;
+  width: 66%;
   padding-left: 10px;
 }
 
 .req {
+  position: sticky;
   margin: 5px;
   border: 1px solid #111;
   padding: 10px;

@@ -59,6 +59,7 @@ export default {
   border: 1px solid #111;
   padding: 10px;
   background: #F6E8BB;
+  width: 100%;
 }
 th, td {
   border: 1px solid #111;
