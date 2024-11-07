@@ -78,7 +78,7 @@ export default {
   width: 50%;
   height: 70%;
   overflow-y: auto; /* Enable vertical scrolling */
-  z-index: 1;
+  z-index: 2;
 }
 .inputs {
   width: 100%;
@@ -115,7 +115,7 @@ th {
   border: 1px solid black;
 }
 .table-container {
-  max-height: 85%; /* TODO: needed ? */
+  max-height: 85%;
   overflow-y: auto;
   border: 1px solid #ccc;
   border-radius: 5px;

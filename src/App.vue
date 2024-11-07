@@ -254,7 +254,7 @@ export default {
 <template>
   <div id="app-container">
     <div id="warning">
-      <p>This is NOT an official app made by TU Wien, only a tool to help you plan your curriculum.
+      <p>This is <b>not</b> an official app provided by TU Wien, only a tool to help you plan your curriculum.
       Official information can be found in the
         <a href="https://www.tuwien.at/fileadmin/Assets/dienstleister/studienabteilung/MSc_Studienplaene_2024/Masterstudium_Data_Science_2024.pdf">curriculum</a>.
       </p>
@@ -271,6 +271,8 @@ export default {
           @close-search="showSearch = false"
       />
     </div>
+    <!-- The overlay, which darkens the background when active -->
+    <div v-if="showSearch" id="overlay"></div>
     <div class="container">
       <!-- Todo: extra add semester buttons -->
       <div class="tables">
@@ -353,6 +355,23 @@ export default {
   box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.3); /* Bottom-only shadow */
 
 }
+/* Overlay to darken the background */
+#overlay {
+  position: fixed; /* Cover the whole screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+  /* display: none; /* Hidden by default */
+  z-index: 1; /* Place it above other content */
+}
+
+/* When search bar is active, show the overlay
+.searchbar.active + #overlay {
+  display: block;
+} */
+
 .container {
   display: flex;
   /* justify-content: flex-start; /* Align the tables to the left */

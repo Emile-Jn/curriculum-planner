@@ -67,12 +67,15 @@ export default {
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
+h2 {
+  margin: 0;
+}
 .close-icon {
   position: absolute;
   top: 10px;
   right: 15px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: bold;
   color: #900; /* Color for the close icon */
 }
