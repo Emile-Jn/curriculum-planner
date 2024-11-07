@@ -12,11 +12,11 @@ export default {
   computed: {
     filteredCourses() {
       return this.courses.filter(course =>
-          course.title.toLowerCase().includes(this.query.toLowerCase())
+          String(course.title).toLowerCase().includes(String(this.query).toLowerCase()) &&
           // Filter by season: 'winter' or 'summer'
-          && course.semester.toLowerCase().includes(this.season.toLowerCase()[0]) // first letter of 'winter' or 'summer'
+          String(course.semester).toLowerCase().includes(String(this.season).toLowerCase()[0]) // first letter of 'winter' or 'summer'
       );
-    },
+    }
   },
   methods: {
     selectCourse(course) {
