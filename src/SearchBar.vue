@@ -49,7 +49,7 @@ export default {
         </tr>
         </thead>
         <tbody>
-        <tr
+        <tr class="search-results"
             v-for="course in filteredCourses"
             :key="course.code"
             @click="selectCourse(course)"
@@ -104,7 +104,7 @@ export default {
   cursor: pointer;
   width: 20%;
 }
-#search-results {
+.search-results {
   padding: 8px;
   cursor: pointer;
 }
