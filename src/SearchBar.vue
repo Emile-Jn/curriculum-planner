@@ -1,5 +1,9 @@
 <script>
+import OtherCourse from './OtherCourse.vue';
 export default {
+  components: {
+    OtherCourse,
+  },
   props: {
     courses: Array,
     season: String
@@ -7,6 +11,7 @@ export default {
   data() {
     return {
       query: '',
+      showOtherCourse: false,
     };
   },
   computed: {
@@ -29,14 +34,23 @@ export default {
 
 <template>
   <div id="search-box">
-    <span class="close-icon" @click="$emit('close-search', )">×</span>
+    <span class="close-icon" @click="$emit('close-search')">×</span>
     <div class="inputs">
       <input id="search-bar"
           type="text"
           v-model="query"
           placeholder="Search for a course by title or code..."
       />
-      <button id="other-course">Other course</button>
+      <button id="add-other-course" @click="showOtherCourse = true">Other course</button>
+    </div>
+    <!-- The overlay, which darkens the background when active -->
+    <div v-if="showOtherCourse" id="overlay"></div>
+    <div id="define-other-course">
+      <OtherCourse
+          v-if="showOtherCourse"
+          @add-course="selectCourse"
+          @close-other-course="showOtherCourse = false"
+      />
     </div>
     <div class="table-container">
       <table class="scrollable-table">
@@ -95,7 +109,17 @@ export default {
   background: #f5f5f5;
   font-size: 16px;
 }
-#other-course {
+#overlay {
+  position: fixed; /* Cover the whole screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+  /* display: none; /* Hidden by default */
+  z-index: 3; /* Placed between SearchBar (z=2) and OtherCourse (z=4) */
+}
+#add-other-course {
   padding: 6px 10px;
   border: 1px solid black;
   border-radius: 5px;

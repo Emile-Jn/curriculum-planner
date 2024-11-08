@@ -2,6 +2,7 @@
 import Semester from './Semester.vue';
 import SearchBar from './SearchBar.vue';
 import SemesterButtons from './SemesterButtons.vue';
+import ImportFile from './ImportFile.vue';
 import Papa from 'papaparse';
 import _, {max, min} from 'lodash';
 
@@ -10,6 +11,7 @@ export default {
     Semester,
     SearchBar,
     SemesterButtons,
+    ImportFile,
   },
   data() {
     return {
@@ -19,6 +21,7 @@ export default {
       activeTableIndex: null,
       activeSeason: null, // winter of summer, which is relevant for searching courses
       showSearch: false, // Whether the search bar on the left of the screen is visible
+      showImportWindow: false, // Whether the import file window is visible
       extraSpecialisationCredits: 0, // Extra credits from core or extension courses which can only count as free electives
       /* coreNames: ['Modul FDS/CO - Fundamentals of Data Science - Core',
                   'Modul MLS/CO - Machine Learning and Statistics - Core',
@@ -111,6 +114,12 @@ export default {
       localStorage.setItem('seasons', JSON.stringify(this.seasons)); // Save semester seasons to local storage
     },
     removeSemester(tableIndex) {
+      // first, empty the semester
+      let semester = this.tables[tableIndex];
+      for (let i = semester.rows.length - 1; i >= 0; i--) { // start from the end of each semester
+        this.handleRemoveCourse(i, tableIndex);
+      }
+      // then, remove the semester
       this.tables.splice(tableIndex, 1);
       this.seasons.splice(tableIndex, 1);
       localStorage.setItem('semesters', JSON.stringify(this.tables)); // Save selected courses to local storage
@@ -141,6 +150,24 @@ export default {
       this.courses.filter(c => c.code === course.code).forEach(c => c.available = true); // Mark the course as available
       this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = false); // Mark the course as not chosen
       this.updateRequirements(course.module);
+    },
+    removeAllCourses(){
+      this.tables = [];
+      this.seasons = [];
+      this.courses.forEach(course => {
+        course.available = true;
+        course.chosen = false;
+      });
+      localStorage.removeItem('semesters');
+      localStorage.setItem('curriculum', JSON.stringify(this.courses));
+      localStorage.removeItem('seasons');
+      this.updateFoundations();
+      this.updateInterdisciplinary();
+      this.updateCores();
+      this.updateSpecialisation();
+      this.updateTransferable();
+      this.updateFreeElectives();
+      this.updateThesis();
     },
     updateRequirements(courseModule) {
       console.log('Updating requirements for module:', courseModule);
@@ -176,8 +203,11 @@ export default {
       let availableCores = this.courses.filter(course => course.module.includes(coreName) && course.available); // all available courses in the core
       let chosenCores = this.courses.filter(course => course.module.includes(coreName) && course.chosen); // all chosen courses in the core
       let credits = chosenCores.reduce((acc, course) => acc + course.credits, 0); // completed credits of the core
-      console.log('Available cores:', availableCores);
-      return [availableCores.length === 0, credits]; // check if no core courses are available = all courses in the core are completed
+      if (credits === 6 && availableCores.length === 0) {
+        console.log('Warning: core is considered completed, but there are still courses in this core which are' +
+            'available. Please make sure your chosen courses are valid.');
+      }
+      return [credits === 6, credits]; // check if no core courses are available = all courses in the core are completed
     },
     updateModule(moduleName, requirementName) { // General function which is sufficient for some requirements and not others
       let chosenCourses = this.courses.filter(course => course.module === moduleName && course.chosen); // get the chosen courses
@@ -245,7 +275,61 @@ export default {
     },
     updateThesis() {
       this.updateModule("Thesis", "thesis");
-    }
+    },
+    exportTablesAsJson() {
+      // Convert the tables data to JSON
+      const exportData = {
+        seasons: this.seasons,
+        tables: this.tables,
+      };
+      const jsonData = JSON.stringify(exportData, null, 2);
+
+      // Create a blob with JSON data and set MIME type to application/json
+      const blob = new Blob([jsonData], { type: "application/json" });
+
+      // Create a link to download the blob
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "chosen_courses.json";
+
+      // Append link to the body, click it to start download, and remove it afterward
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Clean up the URL object
+      URL.revokeObjectURL(url);
+    },
+    importTablesFromJson(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+
+        reader.onload = (e) => {
+          try {
+            // Parse JSON and assign to tables
+            let importData = JSON.parse(e.target.result); // read the JSON file
+            this.showImportWindow = false; // hide the import window
+            this.removeAllCourses(); // remove all previously chosen courses
+            this.tables = importData.tables;
+            this.seasons = importData.seasons;
+            for (let table of this.tables) {
+              for (let course of table.rows) {
+                this.courses.filter(c => c.code === course.code).forEach(c => c.available = false); // Mark the course as unavailable
+                this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = true); // Mark the course as chosen
+                this.updateRequirements(course.module);
+              }
+            }
+          } catch (error) {
+            console.error("Invalid JSON file:", error);
+            alert("Failed to load file. Please make sure it’s a valid JSON.");
+          }
+        };
+
+        reader.readAsText(file);
+      }
+    },
   },
 };
 
@@ -259,8 +343,29 @@ export default {
         <a href="https://www.tuwien.at/fileadmin/Assets/dienstleister/studienabteilung/MSc_Studienplaene_2024/Masterstudium_Data_Science_2024.pdf">curriculum</a>.
       </p>
     </div>
-    <div id="title">
+    <div id="header">
       <h1>Data science master's curriculum planner</h1>
+      <div id="menu">
+        <p class="faded">Chosen courses are saved to local storage, but can disappear after a few days.</p>
+        <button class="faded menu-button" @click="exportTablesAsJson">Export courses</button>
+        <input
+            type="file"
+            @change="importTablesFromJson"
+            accept=".json"
+            style="display: none"
+            ref="fileInput"
+        />
+        <button class="faded menu-button" @click="showImportWindow = true">Import courses</button>
+        <button class="faded menu-button">Help</button>
+        <button class="faded menu-button">Contribute to this app</button>
+      </div>
+    </div>
+    <div id="import-file-window">
+      <ImportFile
+          v-if="showImportWindow"
+          @cancel-import="showImportWindow = false"
+          @import-json="this.$refs.fileInput.click()"
+      />
     </div>
     <div class="search">
       <SearchBar
@@ -272,7 +377,7 @@ export default {
       />
     </div>
     <!-- The overlay, which darkens the background when active -->
-    <div v-if="showSearch" id="overlay"></div>
+    <div v-if="showSearch || showImportWindow" id="overlay"></div>
     <div class="container">
       <!-- Todo: extra add semester buttons -->
       <div class="tables">
@@ -345,7 +450,7 @@ export default {
   text-align: center;
   padding: 2px;
 }
-#title {
+#header {
   text-align: center;
   padding: 10px;
   background: #F6FAFD;
@@ -367,11 +472,6 @@ export default {
   z-index: 1; /* Place it above other content */
 }
 
-/* When search bar is active, show the overlay
-.searchbar.active + #overlay {
-  display: block;
-} */
-
 .container {
   display: flex;
   /* justify-content: flex-start; /* Align the tables to the left */
@@ -383,6 +483,28 @@ export default {
   background-color: white; /* TODO: change */
 }
 
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  color: #888888;
+}
+.faded {
+  background: none;
+  border: none;
+  font-size: 14px;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menu-button {
+  color: #666666;
+}
+.menu-button:hover {
+  color: #222222;
+  cursor: pointer;
+}
 .tables {
   flex: 1; /* The tables take up remaining space */
   display: flex;
