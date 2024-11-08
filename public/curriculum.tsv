@@ -1,221 +1,108 @@
 module	title	code	type	semester	credits	full_module_name
-Foundations	Data-oriented Programming Paradigms	188.995	VU	2023W	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Experiment Design for Data Science	188.992	VU	2023W	3.0	Prüfungsfach Data Science - Foundations
-Foundations	AKSTA Statistical Computing	105.731	VU	2024S	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Advanced Methods for Regression and Classification	105.707	VU	2023W	4.5	Prüfungsfach Data Science - Foundations
-Foundations	Machine Learning	184.702	VU	2024S	4.5	Prüfungsfach Data Science - Foundations
-Foundations	Machine Learning	184.702	VU	2023W	4.5	Prüfungsfach Data Science - Foundations
-Foundations	Advanced Database Systems	184.780	VU	2024S	6.0	Prüfungsfach Data Science - Foundations
-Foundations	Data-intensive Computing	194.048	VU	2024S	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Cognitive Foundations of Visualization	193.142	VO	2024S	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Information Visualization	186.141	VO	2024S	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Information Visualization	188.305	VO	2023W	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Introduction to Semantic Systems	188.399	VU	2023W	3.0	Prüfungsfach Data Science - Foundations
-DSA	Interdisciplinary Lecture Series on Data Science	194.046	VU	2023W	1.0	Prüfungsfach Domain-Specific Aspects of Data Science
-DSA	Interdisciplinary Lecture Series on Data Science	194.088	VU	2024S	1.0	Prüfungsfach Domain-Specific Aspects of Data Science
-DSA	Interdisciplinary Project in Data Science canceled	194.047	PR	2023W	5.0	Prüfungsfach Domain-Specific Aspects of Data Science
-DSA	Interdisciplinary Project in Data Science	194.147	PR	2024S	5.0	Prüfungsfach Domain-Specific Aspects of Data Science
-DSA	Interdisciplinary Project in Data Science	194.147	PR	2023W	5.0	Prüfungsfach Domain-Specific Aspects of Data Science
-DSA	Domain-Specific Lectures in Data Science	194.068	VU	2024S	3.0	Prüfungsfach Domain-Specific Aspects of Data Science
-DSA	Domain-Specific Lectures in Data Science	194.068	VU	2023W	3.0	Prüfungsfach Domain-Specific Aspects of Data Science
-FDS/CO	Data Acquisition and Survey Methods	105.708	VU	2024S	3.0	Modul FDS/CO - Fundamentals of Data Science - Core
-FDS/CO	Data Stewardship	194.044	VO	2024S	3.0	Modul FDS/CO - Fundamentals of Data Science - Core
-FDS/EX	Data Stewardship	194.045	UE	2024S	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-FDS/EX	Digital Humanism	194.072	VU	2023W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-FDS/EX	Sustainability in Computer Science	194.155	VU	2023W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-FDS/EX	System and Application Security	192.112	VU	2024S	6.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-FDS/EX	User Research Methods	193.055	VU	2023W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-FDS/EX	User Research Methods Project	193.056	PR	2023W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-MLS/CO	Recommender Systems	194.035	VU	2024S	3.0	Modul MLS/CO - Machine Learning and Statistics - Core
-MLS/CO	Statistical Simulation and Computerintensive Methods	107.330	VU	2023W	3.0	Modul MLS/CO - Machine Learning and Statistics - Core
-MLS/EX	Advanced Modeling and Simulation	194.056	VU	2024S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	AKNUM Advanced Reinfordement Learning	101.879	VU	2023W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	AI/ML in the Era of Climate Change	194.125	VU	2023W	4.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	AKNUM Reinforcement Learning	101.789	VU	2024S	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Reinforcement Learning	194.163	VU	2024S	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Algorithmic Social Choice	192.118	VU	2024S	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Applied Deep Learning	194.077	VU	2023W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Applied Deep Learning	192.032	VU	2024S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Bayesian Statistics	105.173	VU	2023W	5.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Business Intelligence	188.429	VU	2023W	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Crypto Asset Analytics	192.080	VU	2024S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Deep Learning for Visual Computing	183.663	VU	2024S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	General Regression Models	105.725	VU	2024S	5.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Generative AI	194.154	VU	2023W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Intelligent Audio and Music Analysis	194.039	VU	2023W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Machine Learning for Visual Computing	183.605	VU	2023W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Mathematical Programming	186.835	VU	2024S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Modeling and Simulation	194.076	VU	2023W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Modelling and Simulation in Health Technology Assessment	194.094	VU	2023W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Multivariate Statistics	107.388	VO	2023W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Multivariate Statistics	107.391	UE	2023W	1.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Probabilistic Programming and AI	194.150	VU	2023W	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Problem Solving and Search in Artificial Intelligence	181.190	VU	2024S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Security, Privacy and Explainability in Machine Learning	194.055	VU	2024S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Similarity Modeling 1 - Computational Seeing and Hearing	188.501	VU	2023W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Similarity Modeling 2 - Computational Seeing and Hearing	188.498	VU	2023W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Social Network Analysis	194.050	VU	2023W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.100	VU	2024S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.100	VU	2023W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Self-Organizing Systems	188.413	VU	2023W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-BDHPC/CO	Basics of Parallel Computing	191.114	VU	2024S	3.0	Modul BDHPC/CO - Big Data and High Performance Computing - Core
-BDHPC/CO	Efficient Programs	185.190	VU	2023W	3.0	Modul BDHPC/CO - Big Data and High Performance Computing - Core
-BDHPC/EX	Algorithmics	186.814	VU	2023W	6.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Algorithmic Geometry	192.133	VU	2023W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Analysis 2	104.267	VO	2024S	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Analysis 2	104.268	UE	2024S	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Approximation Algorithms	186.102	VU	2023W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Complexity Analysis	184.215	VU	2024S	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Database Theory	181.140	VU	2023W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Fixed-Parameter Algorithms and Complexity	192.135	VU	2023W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	GPU Architectures and Computing	182.731	VU	2024S	6.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Graph Drawing Algorithms	192.141	VU	2024S	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Hands-On Cloud Native	194.131	VU	2024S	6.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Heuristic Optimization Techniques	192.137	VU	2023W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	High Performance Computing	184.725	VU	2024S	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	High Performance Computing	184.725	VU	2023W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Nonlinear Programming	105.147	VO	2023W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Nonlinear Programming	105.652	UE	2023W	2.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Structural Decompositions and Algorithms	186.856	VU	2024S	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Advanced Database Systems	184.780	VU	2024S	6.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Randomized Algorithms	192.020	VU	2023W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-VAST/CO	Advanced Information Retrieval	188.980	VU	2024S	3.0	Modul VAST/CO - Visual Analytics and Semantic Technologies - Core
-VAST/CO	Design and Evaluation of Visualisations	193.143	UE	2024S	3.0	Modul VAST/CO - Visual Analytics and Semantic Technologies - Core
-VAST/EX	Deductive Databases	192.067	VO	2023W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Description Logics and Ontologies	184.772	VU	2023W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Document Analysis	183.628	VU	2024S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Information Visualization	186.143	UE	2024S	1.5	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Information Visualization	188.308	UE	2023W	1.5	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Knowledge-based Systems	184.730	VU	2024S	6.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Knowledge Graphs	192.116	VU	2024S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Medical Image Processing	183.269	VO	2024S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Medical Image Processing	183.630	UE	2024S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Natural Language Processing and Information Extraction	194.093	VU	2023W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Processing of Declarative Knowledge	184.205	VO	2023W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Research topics in natural language processing	194.135	VU	2024S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Research topics in natural language processing	194.135	VU	2023W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Realtime Visualization	186.191	VU	2023W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Semantic Technologies	184.729	VU	2024S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Semi-Automatic Information and Knowledge Systems	188.387	VU	2024S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Visual Data Science	186.868	VU	2023W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Visualization 2	186.833	VU	2023W	4.5	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-Foundations	AKSTA Statistical Computing	105.731	VU	2025S	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Data-oriented Programming Paradigms	188.995	VU	2024W	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Experiment Design for Data Science	188.992	VU	2024W	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Advanced Methods for Regression and Classification	105.707	VU	2024W	4.5	Prüfungsfach Data Science - Foundations
-Foundations	Machine Learning	184.702	VU	2025S	4.5	Prüfungsfach Data Science - Foundations
-Foundations	Machine Learning	184.702	VU	2024W	4.5	Prüfungsfach Data Science - Foundations
-Foundations	Information Visualization	188.305	VO	2024W	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Introduction to Semantic Systems	188.399	VU	2024W	3.0	Prüfungsfach Data Science - Foundations
-DSA	Interdisciplinary Lecture Series on Data Science	194.046	VU	2024W	1.0	Prüfungsfach Domain-Specific Aspects of Data Science
-DSA	Interdisciplinary Project in Data Science	194.147	PR	2024W	5.0	Prüfungsfach Domain-Specific Aspects of Data Science
-DSA	Domain-Specific Lectures in Data Science	194.068	VU	2024W	3.0	Prüfungsfach Domain-Specific Aspects of Data Science
-FDS/CO	Data Acquisition and Survey Methods	105.708	VU	2025S	3.0	Modul FDS/CO - Fundamentals of Data Science - Core
-FDS/EX	Digital Humanism	194.072	VU	2024W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-FDS/EX	Sustainability in Computer Science	194.155	VU	2024W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-FDS/EX	User Research Methods	193.055	VU	2024W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-FDS/EX	User Research Methods Project	193.056	PR	2024W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-MLS/CO	Statistical Simulation and Computerintensive Methods	107.330	VU	2024W	3.0	Modul MLS/CO - Machine Learning and Statistics - Core
-MLS/EX	AI/ML in the Era of Climate Change	194.125	VU	2024W	4.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Advanced Reinforcement Learning	194.170	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Applied Deep Learning	194.077	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Applied Deep Learning canceled	192.032	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Bayesian Statistics	105.173	VU	2024W	5.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Business Intelligence	188.429	VU	2024W	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	General Regression Models	105.725	VU	2025S	5.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Generative AI	194.154	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Intelligent Audio and Music Analysis	194.039	VU	2024W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Machine Learning for Visual Computing	183.605	VU	2024W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Modeling and Simulation	194.076	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Modelling and Simulation in Health Technology Assessment	194.094	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Multivariate Statistics	107.388	VO	2024W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Multivariate Statistics	107.391	UE	2024W	1.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Probabilistic Programming and AI	194.150	VU	2024W	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Self-Organizing Systems	188.413	VU	2024W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Similarity Modeling 1 - Computational Seeing and Hearing	188.501	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Similarity Modeling 2 - Computational Seeing and Hearing	188.498	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Social Network Analysis	194.050	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.100	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-BDHPC/CO	Efficient Programs	185.190	VU	2024W	3.0	Modul BDHPC/CO - Big Data and High Performance Computing - Core
-BDHPC/EX	Advanced Multiprocessor Programming	184.726	VU	2024W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Algorithmic Geometry	192.133	VU	2024W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Algorithmics	186.814	VU	2024W	6.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Analysis 2	104.268	UE	2025S	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Approximation Algorithms	186.102	VU	2024W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Database Theory	181.140	VU	2024W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Fixed-Parameter Algorithms and Complexity	192.135	VU	2024W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Frontiers of Algorithms and Complexity	192.136	VU	2024W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Heuristic Optimization Techniques	192.137	VU	2024W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Hybrid Quantum - Classical Systems	194.027	VU	2024W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Nonlinear Programming	105.147	VO	2024W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Nonlinear Programming	105.652	UE	2024W	2.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Randomized Algorithms	192.045	VU	2024W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-VAST/EX	Deductive Databases canceled	192.067	VO	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Description Logics and Ontologies	184.772	VU	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Information Visualization	188.308	UE	2024W	1.5	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Natural Language Processing and Information Extraction	194.093	VU	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Processing of Declarative Knowledge	184.205	VO	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Realtime Visualization	186.191	VU	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Semi-Automatic Information and Knowledge Systems	188.387	VU	2025S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Visual Data Science	186.868	VU	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Visualization 2	186.833	VU	2024W	4.5	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-Foundations	AKSTA Statistical Computing	105.731	VU	2025S	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Data-oriented Programming Paradigms	188.995	VU	2024W	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Experiment Design for Data Science	188.992	VU	2024W	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Advanced Methods for Regression and Classification	105.707	VU	2024W	4.5	Prüfungsfach Data Science - Foundations
-Foundations	Machine Learning	184.702	VU	2025S	4.5	Prüfungsfach Data Science - Foundations
-Foundations	Machine Learning	184.702	VU	2024W	4.5	Prüfungsfach Data Science - Foundations
-Foundations	Information Visualization	188.305	VO	2024W	3.0	Prüfungsfach Data Science - Foundations
-Foundations	Introduction to Semantic Systems	188.399	VU	2024W	3.0	Prüfungsfach Data Science - Foundations
-DSA	Interdisciplinary Lecture Series on Data Science	194.046	VU	2024W	1.0	Prüfungsfach Domain-Specific Aspects of Data Science
-DSA	Interdisciplinary Project in Data Science	194.147	PR	2024W	5.0	Prüfungsfach Domain-Specific Aspects of Data Science
-DSA	Domain-Specific Lectures in Data Science	194.068	VU	2024W	3.0	Prüfungsfach Domain-Specific Aspects of Data Science
-FDS/CO	Data Acquisition and Survey Methods	105.708	VU	2025S	3.0	Modul FDS/CO - Fundamentals of Data Science - Core
-FDS/EX	Digital Humanism	194.072	VU	2024W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-FDS/EX	Sustainability in Computer Science	194.155	VU	2024W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-FDS/EX	User Research Methods	193.055	VU	2024W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-FDS/EX	User Research Methods Project	193.056	PR	2024W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
-MLS/CO	Statistical Simulation and Computerintensive Methods	107.330	VU	2024W	3.0	Modul MLS/CO - Machine Learning and Statistics - Core
-MLS/EX	AI/ML in the Era of Climate Change	194.125	VU	2024W	4.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Advanced Reinforcement Learning	194.170	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Applied Deep Learning	194.077	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Applied Deep Learning canceled	192.032	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Bayesian Statistics	105.173	VU	2024W	5.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Business Intelligence	188.429	VU	2024W	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	General Regression Models	105.725	VU	2025S	5.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Generative AI	194.154	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Intelligent Audio and Music Analysis	194.039	VU	2024W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Machine Learning for Visual Computing	183.605	VU	2024W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Modeling and Simulation	194.076	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Modelling and Simulation in Health Technology Assessment	194.094	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Multivariate Statistics	107.388	VO	2024W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Multivariate Statistics	107.391	UE	2024W	1.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Probabilistic Programming and AI	194.150	VU	2024W	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Self-Organizing Systems	188.413	VU	2024W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Similarity Modeling 1 - Computational Seeing and Hearing	188.501	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Similarity Modeling 2 - Computational Seeing and Hearing	188.498	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Social Network Analysis	194.050	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.100	VU	2024W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-BDHPC/CO	Efficient Programs	185.190	VU	2024W	3.0	Modul BDHPC/CO - Big Data and High Performance Computing - Core
-BDHPC/EX	Advanced Multiprocessor Programming	184.726	VU	2024W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Algorithmic Geometry	192.133	VU	2024W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Algorithmics	186.814	VU	2024W	6.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Analysis 2	104.268	UE	2025S	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Approximation Algorithms	186.102	VU	2024W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Database Theory	181.140	VU	2024W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Fixed-Parameter Algorithms and Complexity	192.135	VU	2024W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Frontiers of Algorithms and Complexity	192.136	VU	2024W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Heuristic Optimization Techniques	192.137	VU	2024W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Hybrid Quantum - Classical Systems	194.027	VU	2024W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Nonlinear Programming	105.147	VO	2024W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Nonlinear Programming	105.652	UE	2024W	2.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Randomized Algorithms	192.045	VU	2024W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-VAST/EX	Deductive Databases canceled	192.067	VO	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Description Logics and Ontologies	184.772	VU	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Information Visualization	188.308	UE	2024W	1.5	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Natural Language Processing and Information Extraction	194.093	VU	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Processing of Declarative Knowledge	184.205	VO	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Realtime Visualization	186.191	VU	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Semi-Automatic Information and Knowledge Systems	188.387	VU	2025S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Visual Data Science	186.868	VU	2024W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
-VAST/EX	Visualization 2	186.833	VU	2024W	4.5	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+Foundations	Data-oriented Programming Paradigms	188.995	VU	W	3.0	Prüfungsfach Data Science - Foundations
+Foundations	Experiment Design for Data Science	188.992	VU	W	3.0	Prüfungsfach Data Science - Foundations
+Foundations	AKSTA Statistical Computing	105.731	VU	S	3.0	Prüfungsfach Data Science - Foundations
+Foundations	Advanced Methods for Regression and Classification	105.707	VU	W	4.5	Prüfungsfach Data Science - Foundations
+Foundations	Machine Learning	184.702	VU	S	4.5	Prüfungsfach Data Science - Foundations
+Foundations	Machine Learning	184.702	VU	W	4.5	Prüfungsfach Data Science - Foundations
+Foundations	Advanced Database Systems	184.78	VU	S	6.0	Prüfungsfach Data Science - Foundations
+Foundations	Data-intensive Computing	194.048	VU	S	3.0	Prüfungsfach Data Science - Foundations
+Foundations	Cognitive Foundations of Visualization	193.142	VO	S	3.0	Prüfungsfach Data Science - Foundations
+Foundations	Information Visualization	186.141	VO	S	3.0	Prüfungsfach Data Science - Foundations
+Foundations	Information Visualization	188.305	VO	W	3.0	Prüfungsfach Data Science - Foundations
+Foundations	Introduction to Semantic Systems	188.399	VU	W	3.0	Prüfungsfach Data Science - Foundations
+DSA	Interdisciplinary Lecture Series on Data Science	194.046	VU	W	1.0	Prüfungsfach Domain-Specific Aspects of Data Science
+DSA	Interdisciplinary Lecture Series on Data Science	194.088	VU	S	1.0	Prüfungsfach Domain-Specific Aspects of Data Science
+DSA	Interdisciplinary Project in Data Science canceled	194.047	PR	W	5.0	Prüfungsfach Domain-Specific Aspects of Data Science
+DSA	Interdisciplinary Project in Data Science	194.147	PR	S	5.0	Prüfungsfach Domain-Specific Aspects of Data Science
+DSA	Interdisciplinary Project in Data Science	194.147	PR	W	5.0	Prüfungsfach Domain-Specific Aspects of Data Science
+DSA	Domain-Specific Lectures in Data Science	194.068	VU	S	3.0	Prüfungsfach Domain-Specific Aspects of Data Science
+DSA	Domain-Specific Lectures in Data Science	194.068	VU	W	3.0	Prüfungsfach Domain-Specific Aspects of Data Science
+FDS/CO	Data Acquisition and Survey Methods	105.708	VU	S	3.0	Modul FDS/CO - Fundamentals of Data Science - Core
+FDS/CO	Data Stewardship	194.044	VO	S	3.0	Modul FDS/CO - Fundamentals of Data Science - Core
+FDS/EX	Data Stewardship	194.045	UE	S	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
+FDS/EX	Digital Humanism	194.072	VU	W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
+FDS/EX	Sustainability in Computer Science	194.155	VU	W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
+FDS/EX	System and Application Security	192.112	VU	S	6.0	Modul FDS/EX - Fundamentals of Data Science - Extension
+FDS/EX	User Research Methods	193.055	VU	W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
+FDS/EX	User Research Methods Project	193.056	PR	W	3.0	Modul FDS/EX - Fundamentals of Data Science - Extension
+MLS/CO	Recommender Systems	194.035	VU	S	3.0	Modul MLS/CO - Machine Learning and Statistics - Core
+MLS/CO	Statistical Simulation and Computerintensive Methods	107.33	VU	W	3.0	Modul MLS/CO - Machine Learning and Statistics - Core
+MLS/EX	Advanced Modeling and Simulation	194.056	VU	S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	AKNUM Advanced Reinfordement Learning	101.879	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	AI/ML in the Era of Climate Change	194.125	VU	W	4.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	AKNUM Reinforcement Learning	101.789	VU	S	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Reinforcement Learning	194.163	VU	S	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Algorithmic Social Choice	192.118	VU	S	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Applied Deep Learning	194.077	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Applied Deep Learning	192.032	VU	S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Bayesian Statistics	105.173	VU	W	5.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Business Intelligence	188.429	VU	W	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Crypto Asset Analytics	192.08	VU	S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Deep Learning for Visual Computing	183.663	VU	S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	General Regression Models	105.725	VU	S	5.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Generative AI	194.154	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Intelligent Audio and Music Analysis	194.039	VU	W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Machine Learning for Visual Computing	183.605	VU	W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Mathematical Programming	186.835	VU	S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Modeling and Simulation	194.076	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Modelling and Simulation in Health Technology Assessment	194.094	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Multivariate Statistics	107.388	VO	W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Multivariate Statistics	107.391	UE	W	1.5	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Probabilistic Programming and AI	194.15	VU	W	6.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Problem Solving and Search in Artificial Intelligence	181.19	VU	S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Security, Privacy and Explainability in Machine Learning	194.055	VU	S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Similarity Modeling 1 - Computational Seeing and Hearing	188.501	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Similarity Modeling 2 - Computational Seeing and Hearing	188.498	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Social Network Analysis	194.05	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.1	VU	S	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.1	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Self-Organizing Systems	188.413	VU	W	4.5	Modul MLS/EX - Machine Learning and Statistics - Extension
+BDHPC/CO	Basics of Parallel Computing	191.114	VU	S	3.0	Modul BDHPC/CO - Big Data and High Performance Computing - Core
+BDHPC/CO	Efficient Programs	185.19	VU	W	3.0	Modul BDHPC/CO - Big Data and High Performance Computing - Core
+BDHPC/EX	Algorithmics	186.814	VU	W	6.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Algorithmic Geometry	192.133	VU	W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Analysis 2	104.267	VO	S	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Analysis 2	104.268	UE	S	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Approximation Algorithms	186.102	VU	W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Complexity Analysis	184.215	VU	S	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Database Theory	181.14	VU	W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Fixed-Parameter Algorithms and Complexity	192.135	VU	W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	GPU Architectures and Computing	182.731	VU	S	6.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Graph Drawing Algorithms	192.141	VU	S	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Hands-On Cloud Native	194.131	VU	S	6.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Heuristic Optimization Techniques	192.137	VU	W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	High Performance Computing	184.725	VU	S	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	High Performance Computing	184.725	VU	W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Nonlinear Programming	105.147	VO	W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Nonlinear Programming	105.652	UE	W	2.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Structural Decompositions and Algorithms	186.856	VU	S	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Advanced Database Systems	184.78	VU	S	6.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Randomized Algorithms	192.02	VU	W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+VAST/CO	Advanced Information Retrieval	188.98	VU	S	3.0	Modul VAST/CO - Visual Analytics and Semantic Technologies - Core
+VAST/CO	Design and Evaluation of Visualisations	193.143	UE	S	3.0	Modul VAST/CO - Visual Analytics and Semantic Technologies - Core
+VAST/EX	Deductive Databases	192.067	VO	W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Description Logics and Ontologies	184.772	VU	W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Document Analysis	183.628	VU	S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Information Visualization	186.143	UE	S	1.5	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Information Visualization	188.308	UE	W	1.5	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Knowledge-based Systems	184.73	VU	S	6.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Knowledge Graphs	192.116	VU	S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Medical Image Processing	183.269	VO	S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Medical Image Processing	183.63	UE	S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Natural Language Processing and Information Extraction	194.093	VU	W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Processing of Declarative Knowledge	184.205	VO	W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Research topics in natural language processing	194.135	VU	S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Research topics in natural language processing	194.135	VU	W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Realtime Visualization	186.191	VU	W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Semantic Technologies	184.729	VU	S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Semi-Automatic Information and Knowledge Systems	188.387	VU	S	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Visual Data Science	186.868	VU	W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Visualization 2	186.833	VU	W	4.5	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+MLS/EX	Advanced Reinforcement Learning	194.17	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Applied Deep Learning canceled	192.032	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
+BDHPC/EX	Advanced Multiprocessor Programming	184.726	VU	W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Frontiers of Algorithms and Complexity	192.136	VU	W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Hybrid Quantum - Classical Systems	194.027	VU	W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Randomized Algorithms	192.045	VU	W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+VAST/EX	Deductive Databases canceled	192.067	VO	W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension

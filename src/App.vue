@@ -22,6 +22,7 @@ export default {
       activeSeason: null, // winter of summer, which is relevant for searching courses
       showSearch: false, // Whether the search bar on the left of the screen is visible
       showImportWindow: false, // Whether the import file window is visible
+      showHelp: false, // Whether the help window is visible
       extraSpecialisationCredits: 0, // Extra credits from core or extension courses which can only count as free electives
       /* coreNames: ['Modul FDS/CO - Fundamentals of Data Science - Core',
                   'Modul MLS/CO - Machine Learning and Statistics - Core',
@@ -356,9 +357,30 @@ export default {
             ref="fileInput"
         />
         <button class="faded menu-button" @click="showImportWindow = true">Import courses</button>
-        <button class="faded menu-button">Help</button>
-        <button class="faded menu-button">Contribute to this app</button>
+        <button class="faded menu-button" @click="showHelp = true">Help</button>
+        <a class="faded menu-button" href="https://github.com/Emile-Jn/curriculum-planner" target="_blank">Contribute to this app</a>
       </div>
+    </div>
+    <div v-if="showHelp" id="help">
+      <span class="close-icon" @click="showHelp = false">×</span>
+      <h3>How to plan the curriculum:</h3>
+      <p>
+        Important: there is no course which has to be taken before another course (this also applies to the thesis)
+        but it's recommended to try and follow this order: mandatory courses (foundations and interdisciplinary
+        data science), then cores, then extensions, then the thesis.
+      </p>
+      <p>
+        Since you have to take all courses in the foundations and interdisciplinary data science modules, fill those
+        in first. Then, choose at least two tracks out of the four (fundamentals of data science, machine learning
+        and statistics, big data and high-performance computing, visual analytics and semantic technologies). For each
+        track you choose, select both cores (6 ECTS, otherwise the track won't count) and 0 to 18 ECTS of extensions.
+        Cores and extensions must add up to 36 ECTS overall.
+      </p>
+      <p>
+        Then, fill in at least 4.5 ECTS of transferable skills,
+        4.5 ECTS of free electives (any course, including from bachelor degrees at TU), and finally the thesis, thesis
+        seminar and thesis defense (30 ECTS).
+      </p>
     </div>
     <div id="import-file-window">
       <ImportFile
@@ -377,7 +399,7 @@ export default {
       />
     </div>
     <!-- The overlay, which darkens the background when active -->
-    <div v-if="showSearch || showImportWindow" id="overlay"></div>
+    <div v-if="showSearch || showImportWindow || showHelp" id="overlay"></div>
     <div class="container">
       <!-- Todo: extra add semester buttons -->
       <div class="tables">
@@ -487,6 +509,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-top: 10px;
   color: #888888;
 }
@@ -497,13 +520,41 @@ export default {
   padding: 0;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 0;
+  line-height: 1.5;
 }
 .menu-button {
   color: #666666;
+  text-decoration: none;
 }
 .menu-button:hover {
   color: #222222;
   cursor: pointer;
+}
+#help {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: white;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  width: 40%;
+  overflow-y: auto; /* Enable vertical scrolling */
+  z-index: 2;
+}
+#help p {
+  margin-top: 15px;
+}
+.close-icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #900; /* Color for the close icon */
 }
 .tables {
   flex: 1; /* The tables take up remaining space */

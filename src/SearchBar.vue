@@ -16,17 +16,25 @@ export default {
   },
   computed: {
     filteredCourses() {
-      return this.courses.filter(course =>
-          String(course.title).toLowerCase().includes(String(this.query).toLowerCase()) &&
-          // Filter by season: 'winter' or 'summer'
-          String(course.semester).toLowerCase().includes(String(this.season).toLowerCase()[0]) // first letter of 'winter' or 'summer'
-      );
+      return this.courses.filter(course => {
+        const titleMatches = course.title.toLowerCase().includes(this.query.toLowerCase());
+        const seasonMatches = String(course.semester).toLowerCase().includes(String(this.season).toLowerCase()[0]); // TODO: fix this
+
+        // Debugging: Log each course's filtering status
+        console.log(`Title: ${course.title}, Query: "${this.query}", Matches: ${titleMatches}`);
+        console.log(`Semester: ${course.semester}, Season: "${this.season}", Matches: ${seasonMatches}`);
+
+        return titleMatches && seasonMatches;
+      });
     }
   },
   methods: {
     selectCourse(course) {
       this.$emit('select-course', course);
       this.query = ''; // Clear search after selection
+    },
+    generateKey(course) { // Each course can be uniquely identified by the combination of course code and semester.
+      return `${course.code}-${course.semester}`;
     },
   },
 };
@@ -55,24 +63,24 @@ export default {
     <div class="table-container">
       <table class="scrollable-table">
         <thead>
-        <tr>
-          <th>Module</th>
-          <th>Title</th>
-          <th>Type</th>
-          <th>ECTS</th>
-        </tr>
+          <tr>
+            <th>Module</th>
+            <th>Title</th>
+            <th>Type</th>
+            <th>ECTS</th>
+          </tr>
         </thead>
         <tbody>
-        <tr class="search-results"
-            v-for="course in filteredCourses"
-            :key="course.code"
-            @click="selectCourse(course)"
-        >
-          <td>{{ course.module }}</td>
-          <td>{{ course.title }}</td>
-          <td>{{ course.type }}</td>
-          <td>{{ course.credits }}</td>
-        </tr>
+          <tr class="search-results"
+              v-for="course in filteredCourses"
+              :key="generateKey(course)"
+              @click="selectCourse(course)"
+          >
+            <td>{{ course.module }}</td>
+            <td>{{ course.title }}</td>
+            <td>{{ course.type }}</td>
+            <td>{{ course.credits }}</td>
+          </tr>
         </tbody>
       </table>
     </div>
