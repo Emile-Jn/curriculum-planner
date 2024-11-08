@@ -15,5 +15,5 @@ Web app available [here](https://emile-jn.github.io/curriculum-planner/).
 - Get guidance on how to choose courses with the 'Help' button.
 
 ## Contributions
-Pull requests, feedback or bug reports are welcome.
+Pull requests, feedback or bug reports are welcome.  
 This web app is written in Vue, but most lines of code here are regular HTML, Javascript and CSS, so you can modify a lot of things without knowing anything about Vue. To modify the app, edit one of the Vue components (`.vue` files) or add a new one in `/src`.
