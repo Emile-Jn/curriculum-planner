@@ -23,15 +23,6 @@ export default {
       showSearch: false, // Whether the search bar on the left of the screen is visible
       showImportWindow: false, // Whether the import file window is visible
       showHelp: false, // Whether the help window is visible
-      // extraSpecialisationCredits: 0, // Extra credits from core or extension courses which can only count as free electives
-      /* coreNames: ['Modul FDS/CO - Fundamentals of Data Science - Core',
-                  'Modul MLS/CO - Machine Learning and Statistics - Core',
-                  'Modul BDHPC/CO - Big Data and High Performance Computing - Core',
-                  'Modul VAST/CO - Visual Analytics and Semantic Technologies - Core'], */
-      coreNames: ['FDS/CO',
-                  'MLS/CO',
-                  'BDHPC/CO',
-                  'VAST/CO'],
       trackNames: ['FDS', 'MLS', 'BDHPC', 'VAST'],
       requirements: {
         foundations: 36, // Total ECTS of foundations courses
@@ -223,6 +214,7 @@ export default {
     },
     extensionCredits(trackName) {
       let chosenExtensions = this.courses.filter(course => course.module.includes(trackName + '/EX') && course.chosen); // all chosen courses in the extension
+      console.log('chosenExtensions:', chosenExtensions);
       return chosenExtensions.reduce((acc, course) => acc + course.credits, 0); // completed credits of the extension
     },
     countSpecialisation(extra) { // extra: whether to count the extra credits, or the specialisation credits
@@ -232,10 +224,12 @@ export default {
         // or if the core is not completed and we are counting the extra credits:
         if (this.coresCompleted[i] !== extra) {
           credits += this.coreCredits(this.trackNames[i]); // core credits count (either for specialisation or extra)
+          console.log('credits from cores:', credits);
           if (this.coresCompleted[i]) { // if the core is completed
             credits += min([this.extensionCredits(this.trackNames[i]), 18]); // Only a maximum of 18 extension credits from the same track can count
           } else { // otherwise, any number of extensions counts as free electives
             credits += this.extensionCredits(this.trackNames[i]); // Only a maximum of 18 extension credits from the same track can count
+            console.log('after adding extensions:', credits);
           }
         } else
             // if the core is completed and we are counting the extra credits,
@@ -326,6 +320,7 @@ export default {
             ref="fileInput"
         />
         <button class="faded menu-button" @click="showImportWindow = true">Import courses</button>
+        <!-- <button class="faded menu-button" >Reset all</button> -->
         <button class="faded menu-button" @click="showHelp = true">Help</button>
         <a class="faded menu-button" href="https://github.com/Emile-Jn/curriculum-planner" target="_blank">Contribute to this app</a>
       </div>

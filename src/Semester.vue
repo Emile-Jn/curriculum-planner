@@ -111,4 +111,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+button:hover {
+  background-color: #e9e9e9;
+}
 </style>
