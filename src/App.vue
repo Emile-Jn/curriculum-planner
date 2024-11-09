@@ -181,7 +181,8 @@ export default {
           this.courses.push(course); // add the course to the curriculum
           console.log('Adding ' + course.title + ' to the curriculum');
         }
-        this.courses.filter(c => c.code === course.code).forEach(c => c.available = false); // Mark the course as unavailable
+        this.courses.filter(c => c.title === course.title && c.type === course.type)
+            .forEach(c => c.available = false); // Mark the course as unavailable
         this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = true); // Mark the course as chosen
         this.showSearch = false; // Hide search after selection
 
@@ -191,7 +192,8 @@ export default {
       console.log('Removing course at table', tableIndex, 'and row', rowIndex);
       let course = this.tables[tableIndex].rows[rowIndex]; // Get the course at the given index
       this.tables[tableIndex].rows.splice(rowIndex, 1); // Remove the course at the given index
-      this.courses.filter(c => c.code === course.code).forEach(c => c.available = true); // Mark the course as available
+      this.courses.filter(c => c.title === course.title && c.type === course.type)
+          .forEach(c => c.available = true); // Mark the course as available
       this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = false); // Mark the course as not chosen
     },
     removeAllCourses(){

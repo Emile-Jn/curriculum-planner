@@ -37,3 +37,9 @@ both winter and summer, with different course codes, but they are the same cours
 be generated, so that the course can still be identified in the system.
 - In case of a bug, for example from importing a corrupted JSON file, it might help to manually delete all variables in
 local storage by clicking 'inspect element' > 'storage' > 'local storage' and then right-clicking on the variables.
+
+### Assumptions:
+If these assumptions don't hold true, the app might not behave as expected.
+- Each course can be uniquely identified be the combination of its course code, title and semester.
+- There are no duplicates in `curriculum.tsv`.
+- A course can't be taken twice (of course in real life a course can be retaken).
