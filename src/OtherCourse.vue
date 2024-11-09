@@ -29,6 +29,17 @@ export default {
       };
     }
   },
+  methods: {
+    generateRandomCode() {
+      return Math.floor(500000 + Math.random() * 500000).toString();
+    },
+    addCourse() {
+      if (!this.code) {
+        this.code = this.generateRandomCode();
+      }
+      this.$emit('add-course', this.course);
+    }
+  }
 }
 </script>
 
@@ -66,7 +77,7 @@ export default {
         <td><input type="number" v-model="credits" min="0.5" max="12" required></td>
       </tr>
     </table>
-    <button @click="$emit('add-course', course)" :disabled="!title">Add course</button>
+    <button @click="addCourse" :disabled="!title">Add course</button>
   </div>
 </template>
 

@@ -23,7 +23,7 @@ export default {
       showSearch: false, // Whether the search bar on the left of the screen is visible
       showImportWindow: false, // Whether the import file window is visible
       showHelp: false, // Whether the help window is visible
-      extraSpecialisationCredits: 0, // Extra credits from core or extension courses which can only count as free electives
+      // extraSpecialisationCredits: 0, // Extra credits from core or extension courses which can only count as free electives
       /* coreNames: ['Modul FDS/CO - Fundamentals of Data Science - Core',
                   'Modul MLS/CO - Machine Learning and Statistics - Core',
                   'Modul BDHPC/CO - Big Data and High Performance Computing - Core',
@@ -32,43 +32,15 @@ export default {
                   'MLS/CO',
                   'BDHPC/CO',
                   'VAST/CO'],
-
+      trackNames: ['FDS', 'MLS', 'BDHPC', 'VAST'],
       requirements: {
-        foundations: {
-          completed: 0, // Number of ECTS completed of foundations courses
-          req: 36, // Total ECTS of foundations courses
-          check: "❌" // Whether all foundations courses have been done
-        },
-        interdisciplinary: {
-          completed: 0, // Number of ECTS completed of interdisciplinary data science courses
-          req: 9, // Total ECTS of interdisciplinary data science courses
-          check: "❌" // Whether all interdisciplinary data science courses have been done
-        },
-        cores: {
-          completed: 0, // Number of cores completed
-          req: 2, // Minimum number of cores required
-          check: "❌"  // Whether at least 2 cores have been done
-        },
-        specialisation: {
-          completed: 0, // Number of ECTS completed of specialisation courses
-          req: 36, // Number of ECTS required for specialisation courses
-          check: "❌" // Whether enough specialisation courses have been done
-        },
-        transferable: {
-          completed: 0, // Number of ECTS completed of transferable skills courses
-          req: 4.5, // Minimum number of ECTS required for transferable skills courses
-          check: "❌" // Whether enough transferable skills courses have been done
-        },
-        freeElectives: {
-          completed: 0, // Number of ECTS completed of free electives
-          req: 4.5, // Minimum number of ECTS required for free electives
-          check: "❌" // Whether enough free electives have been done
-        },
-        thesis: {
-          completed: 0, // Number of ECTS completed for the thesis
-          req: 30, // Number of ECTS required for the thesis
-          check: "❌" // Whether the thesis, seminar and defense have been done
-        },
+        foundations: 36, // Total ECTS of foundations courses
+        interdisciplinary: 9, // Total ECTS of interdisciplinary data science courses
+        cores: 2, // Minimum number of cores required
+        specialisation: 36, // Number of ECTS required for specialisation courses
+        transferable: 4.5, // Minimum number of ECTS required for transferable skills courses
+        freeElectives: 4.5, // Minimum number of ECTS required for free electives
+        thesis: 30, // Number of ECTS required for the thesis
       },
     };
   },
@@ -88,8 +60,6 @@ export default {
               course.chosen = false; // Whether the course has been added to a semester
               return course;
             });
-            // Store the parsed curriculum in local storage
-            localStorage.setItem('curriculum', JSON.stringify(this.courses));
           });
       console.log('Curriculum loaded from the TSV file.');
     }
@@ -108,11 +78,89 @@ export default {
       console.log('No semester seasons found in local storage.');
     }
   },
+  computed: {
+    // Counting what has been completed:
+    foundationsCompleted() {
+      return this.moduleCompleted('Foundations');
+    },
+    interdisciplinaryCompleted() {
+      return this.moduleCompleted('DSA');
+    },
+    coresCompleted() { // an array of booleans: one boolean for each core
+      return this.trackNames.map(track => this.coreCredits(track) === 6);
+    },
+    specialisationCompleted() {
+      return this.countSpecialisation(false); // false: not extra
+    },
+    extraSpecialisationCredits() {
+      return this.countSpecialisation(true); // true: extra
+    },
+    transferableCompleted() {
+      return this.moduleCompleted('TSK');
+    },
+    freeElectivesCompleted() {
+      /* Free electives can come from 3 sources:
+      1- specialisation (core & extension) courses which don't count towards the specialisation
+      2- transferable skills courses beyond the required 4.5 ECTS
+      3- courses outside the curriculum
+      */
+      let externalCourses = this.courses.filter(course => course.module === "Free Elective" && course.chosen); // get the external courses
+      console.log('extraSpecialisationCredits:', this.extraSpecialisationCredits);
+      return this.extraSpecialisationCredits
+          + max([this.transferableCompleted - 4.5, 0])
+          + externalCourses.reduce((acc, course) => acc + course.credits, 0);
+    },
+    thesisCompleted() {
+      return this.moduleCompleted('Thesis');
+    },
+
+    // Check if the requirements are met:
+    foundationsCheck() {
+      return this.foundationsCompleted >= this.requirements["foundations"];
+    },
+    interdisciplinaryCheck() {
+      return this.interdisciplinaryCompleted >= this.requirements["interdisciplinary"];
+    },
+    coresCheck() {
+      return this.coresCompleted.filter(Boolean).length >= this.requirements["cores"];
+    },
+    specialisationCheck() {
+      return this.specialisationCompleted >= this.requirements["specialisation"];
+    },
+    transferableCheck() {
+      return this.transferableCompleted >= this.requirements["transferable"];
+    },
+    freeElectivesCheck() {
+      return this.freeElectivesCompleted >= this.requirements["freeElectives"];
+    },
+    thesisCheck() {
+      return this.thesisCompleted >= this.requirements["thesis"];
+    },
+  },
+  watch: { // Automatically save courses to local storage when they change
+    tables: {
+      handler(newTables) {
+        localStorage.setItem('semesters', JSON.stringify(newTables));
+      },
+      deep: true,
+    },
+    seasons: {
+      handler(newSeasons) {
+        localStorage.setItem('seasons', JSON.stringify(newSeasons));
+      },
+      deep: true,
+    },
+    courses: {
+      handler(newCourses) {
+        localStorage.setItem('curriculum', JSON.stringify(newCourses));
+      },
+      deep: true,
+    }
+  },
   methods: {
     addSemester(index, season) {
       this.tables.splice(index, 0, { rows: [] });
       this.seasons.splice(index, 0, season);
-      localStorage.setItem('seasons', JSON.stringify(this.seasons)); // Save semester seasons to local storage
     },
     removeSemester(tableIndex) {
       // first, empty the semester
@@ -123,8 +171,6 @@ export default {
       // then, remove the semester
       this.tables.splice(tableIndex, 1);
       this.seasons.splice(tableIndex, 1);
-      localStorage.setItem('semesters', JSON.stringify(this.tables)); // Save selected courses to local storage
-      localStorage.setItem('seasons', JSON.stringify(this.seasons)); // Save semester seasons to local storage
     },
     activateSearch(tableIndex, season) {
       this.activeTableIndex = tableIndex;
@@ -134,8 +180,6 @@ export default {
     addCourseToSemester(course) {
       if (this.activeTableIndex !== null) {
         this.tables[this.activeTableIndex].rows.push(course); // Add the course to the active semester
-        localStorage.setItem('semesters', JSON.stringify(this.tables)); // Save selected courses to local storage
-        console.log('Saving ' + course.title + ' to local storage');
         const courseExists = this.courses.some(c =>
             c.code === course.code &&
             c.module === course.module &&
@@ -144,24 +188,20 @@ export default {
         );
         if (!courseExists) { // if the course is not in the curriculum
           this.courses.push(course); // add the course to the curriculum
-          localStorage.setItem('curriculum', JSON.stringify(this.courses)); // Save the updated curriculum to local storage
           console.log('Adding ' + course.title + ' to the curriculum');
         }
         this.courses.filter(c => c.code === course.code).forEach(c => c.available = false); // Mark the course as unavailable
         this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = true); // Mark the course as chosen
         this.showSearch = false; // Hide search after selection
-        this.updateRequirements(course.module);
+
       }
     },
     handleRemoveCourse(rowIndex, tableIndex) { // Remove the course from the given table and row index
       console.log('Removing course at table', tableIndex, 'and row', rowIndex);
       let course = this.tables[tableIndex].rows[rowIndex]; // Get the course at the given index
       this.tables[tableIndex].rows.splice(rowIndex, 1); // Remove the course at the given index
-      localStorage.setItem('semesters', JSON.stringify(this.tables)); // Remove course from local storage
-      console.log('Removing ' + course.title + ' from local storage');
       this.courses.filter(c => c.code === course.code).forEach(c => c.available = true); // Mark the course as available
       this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = false); // Mark the course as not chosen
-      this.updateRequirements(course.module);
     },
     removeAllCourses(){
       this.tables = [];
@@ -170,131 +210,41 @@ export default {
         course.available = true;
         course.chosen = false;
       });
-      localStorage.removeItem('semesters');
-      localStorage.setItem('curriculum', JSON.stringify(this.courses));
-      localStorage.removeItem('seasons');
-      this.updateFoundations();
-      this.updateInterdisciplinary();
-      this.updateCores();
-      this.updateSpecialisation();
-      this.updateTransferable();
-      this.updateFreeElectives();
-      this.updateThesis();
     },
-    updateRequirements(courseModule) {
-      console.log('Updating requirements for module:', courseModule);
-      if (courseModule === 'Foundations') {
-        this.updateFoundations(); // Foundations courses can only affect the foundations requirement
-      } else if (courseModule === 'DSA') {
-        this.updateInterdisciplinary(); // DSA courses can only affect the interdisciplinary requirement
-      } else if (courseModule.includes('/CO')) {
-        this.updateCores();
-        this.updateSpecialisation();
-        this.updateFreeElectives(); // Cores can also count as free electives
-      } else if (courseModule.includes('/EX')) {
-        this.updateSpecialisation();
-        this.updateFreeElectives(); // Extensions can also count as free electives
-      } else if (courseModule === 'TSK') {
-        this.updateTransferable();
-        this.updateFreeElectives(); // TSK courses can also count as free electives
-      } else if (courseModule === 'Thesis') {
-        this.updateThesis(); // Thesis "courses" can only affect the thesis requirement
-      } else {
-        this.updateFreeElectives()
-      }
-    },
-    updateCheck(requirement) {
-      if (this.requirements[requirement]["completed"] >= this.requirements[requirement]["req"]) {
-        this.requirements[requirement]["check"] = "✅";
-      }
-      else {
-        this.requirements[requirement]["check"] = "❌";
-      }
-    },
-    coreCompletion(coreName) {
-      let availableCores = this.courses.filter(course => course.module.includes(coreName) && course.available); // all available courses in the core
-      let chosenCores = this.courses.filter(course => course.module.includes(coreName) && course.chosen); // all chosen courses in the core
-      let credits = chosenCores.reduce((acc, course) => acc + course.credits, 0); // completed credits of the core
-      if (credits === 6 && availableCores.length === 0) {
-        console.log('Warning: core is considered completed, but there are still courses in this core which are' +
-            'available. Please make sure your chosen courses are valid.');
-      }
-      // console.log('Core credits:', credits); // debugging
-      return [credits === 6, credits]; // check if no core courses are available = all courses in the core are completed
-    },
-    updateModule(moduleName, requirementName) { // General function which is sufficient for some requirements and not others
+    moduleCompleted(moduleName) {
       let chosenCourses = this.courses.filter(course => course.module === moduleName && course.chosen); // get the chosen courses
-      this.requirements[requirementName]["completed"] = chosenCourses.reduce((acc, course) => acc + course.credits, 0);
-      this.updateCheck(requirementName);
+      return chosenCourses.reduce((acc, course) => acc + course.credits, 0); // sum of credits of the chosen courses
     },
-    updateFoundations() {
-      this.updateModule("Foundations", "foundations");
+    coreCredits(trackName) {
+      console.log('trackName:', trackName);
+      let chosenCores = this.courses.filter(course => course.module.includes(trackName + '/CO') && course.chosen); // all chosen courses in the core
+      console.log('chosenCores:', chosenCores);
+      return chosenCores.reduce((acc, course) => acc + course.credits, 0); // completed credits of the core
     },
-    updateInterdisciplinary() {
-      this.updateModule("DSA", "interdisciplinary");
+    extensionCredits(trackName) {
+      let chosenExtensions = this.courses.filter(course => course.module.includes(trackName + '/EX') && course.chosen); // all chosen courses in the extension
+      return chosenExtensions.reduce((acc, course) => acc + course.credits, 0); // completed credits of the extension
     },
-    updateCores() {
-      let completedCores = 0;
-      for (let core of this.coreNames) { // for each core
-        // console.log('Core name:', core); // debugging
-        if (this.coreCompletion(core)[0]) { // check if the core is completed
-          completedCores++; // add 1 to the completed cores
+    countSpecialisation(extra) { // extra: whether to count the extra credits, or the specialisation credits
+      let credits = 0;
+      for (let i in this.trackNames) { // for each track
+        // if the core is completed and we are not counting the extra credits,
+        // or if the core is not completed and we are counting the extra credits:
+        if (this.coresCompleted[i] !== extra) {
+          credits += this.coreCredits(this.trackNames[i]); // core credits count (either for specialisation or extra)
+          if (this.coresCompleted[i]) { // if the core is completed
+            credits += min([this.extensionCredits(this.trackNames[i]), 18]); // Only a maximum of 18 extension credits from the same track can count
+          } else { // otherwise, any number of extensions counts as free electives
+            credits += this.extensionCredits(this.trackNames[i]); // Only a maximum of 18 extension credits from the same track can count
+          }
+        } else
+            // if the core is completed and we are counting the extra credits,
+            // or if the core is not completed and we are not counting the extra credits:
+        {
+          credits += max([this.extensionCredits(this.trackNames[i]) - 18, 0]); // extra credits count
         }
       }
-      this.requirements["cores"]["completed"] = completedCores; // update the number of completed cores
-      this.updateCheck("cores"); // update the requirement check
-    },
-    updateSpecialisation() {
-      let specialisationCredits = 0;
-      let extraCredits = 0;
-      for (let core of this.coreNames) { // for each core
-        let coreCheck = this.coreCompletion(core); // check if the core is completed
-        // console.log('Core check:', coreCheck); // debugging
-        // New implementation
-        let trackName = core.split('/')[0]; // get the track name
-        let extensionName = trackName + '/EX'; // get the extension name
-        let completedExtensions = this.courses.filter(c => c.module === extensionName && c.chosen === true); // get the completed extensions
-        let extensionCredits = completedExtensions.reduce((acc, course) => acc + course.credits, 0); // add the credits of the extensions
-
-        if (coreCheck[0]) { // if the core is completed
-          // console.log('Adding core credits:', coreCheck[1]); // debugging
-          specialisationCredits += coreCheck[1]; // add the credits of the core to the specialisation credits
-          // add the credits of the extensions to the specialisation credits:
-          specialisationCredits += min([extensionCredits, 18]); // Only a maximum of 18 extension credits from the same track can count
-          // calculate the extra credits from the extensions:
-          let extraTrackCredits = max([extensionCredits - 18, 0]);
-          extraCredits += extraTrackCredits; // add the extra credits to the total count
-        } else { // extensions can only count as free electives if the core is not completed
-          extraCredits += coreCheck[1] // incomplete cores can only count as free electives
-          extraCredits += extensionCredits; // add the credits of the extensions to the total count
-        }
-      }
-      this.extraSpecialisationCredits = extraCredits; // update the extra specialisation credits
-      // console.log('Specialisation credits:', specialisationCredits); // debugging
-      this.requirements["specialisation"]["completed"] = specialisationCredits; // update the number of completed specialisation credits
-      this.updateCheck("specialisation");
-    },
-    updateTransferable() {
-      this.updateModule("TSK", "transferable");
-    },
-    updateFreeElectives() {
-      /* Free electives can come from 3 sources:
-      1- specialisation (core & extension) courses which don't count towards the specialisation
-      2- transferable skills courses beyond the required 4.5 ECTS
-      3- courses outside the curriculum
-      */
-      let freeElectiveCredits = this.extraSpecialisationCredits; // add the extra specialisation credits
-      console.log('Extra specialisation credits:', this.extraSpecialisationCredits); // debugging
-      freeElectiveCredits += max([this.requirements["transferable"]["completed"] - 4.5, 0]); // add the extra TSK credits
-      console.log('Extra TSK credits:', max([this.requirements["transferable"]["completed"] - 4.5, 0])); // debugging
-      let externalCourses = this.courses.filter(course => course.module === "Free Elective" && course.chosen); // get the external courses
-      freeElectiveCredits += externalCourses.reduce((acc, course) => acc + course.credits, 0); // add the credits of the external courses
-      console.log('External courses credits:', externalCourses.reduce((acc, course) => acc + course.credits, 0)); // debugging
-      this.requirements["freeElectives"]["completed"] = freeElectiveCredits; // update the number of completed free elective credits
-      this.updateCheck("freeElectives");
-    },
-    updateThesis() {
-      this.updateModule("Thesis", "thesis");
+      return credits;
     },
     exportTablesAsJson() {
       // Convert the tables data to JSON
@@ -338,7 +288,7 @@ export default {
               for (let course of table.rows) {
                 this.courses.filter(c => c.code === course.code).forEach(c => c.available = false); // Mark the course as unavailable
                 this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = true); // Mark the course as chosen
-                this.updateRequirements(course.module);
+                // this.updateRequirements(course.module);
               }
             }
           } catch (error) {
@@ -445,39 +395,38 @@ export default {
         <h2> <b>Requirements</b> </h2>
         <div class="req">
           <h3>Foundations courses</h3>
-          <p>{{ this.requirements["foundations"]["check"] }} {{ this.requirements["foundations"]["completed"] }} /
-            {{ this.requirements["foundations"]["req"] }} ECTS</p>
+          <p>{{ this.foundationsCheck ? "✅" : "❌" }} {{ this.foundationsCompleted }} /
+            {{ this.requirements["foundations"] }} ECTS</p>
         </div>
         <div class="req">
-          <h3>Interdisciplinary data science</h3>
-          <p>{{ this.requirements["interdisciplinary"]["check"] }} {{
-              this.requirements["interdisciplinary"]["completed"]
-            }} / {{ this.requirements["interdisciplinary"]["req"] }} ECTS</p>
+          <h3>Interdisciplinary data science courses</h3>
+          <p>{{ this.interdisciplinaryCheck ? "✅" : "❌" }} {{ this.interdisciplinaryCompleted }} /
+            {{ this.requirements["interdisciplinary"] }} ECTS</p>
         </div>
         <div class="req">
           <h3>Cores</h3>
-          <p>{{ this.requirements["cores"]["check"] }} {{ this.requirements["cores"]["completed"] }} /
-            {{ this.requirements["cores"]["req"] }} cores</p>
+          <p>{{ this.coresCheck ? "✅" : "❌" }} {{ this.coresCompleted.filter(Boolean).length }} /
+            {{ this.requirements["cores"] }} cores</p>
         </div>
         <div class="req">
-          <h3>Specialisation (cores & extensions)</h3>
-          <p>{{ this.requirements["specialisation"]["check"] }} {{ this.requirements["specialisation"]["completed"] }} /
-            {{ this.requirements["specialisation"]["req"] }} ECTS</p>
+          <h3>Specialisation courses</h3>
+          <p>{{ this.specialisationCheck ? "✅" : "❌" }} {{ this.specialisationCompleted }} /
+            {{ this.requirements["specialisation"] }} ECTS</p>
         </div>
         <div class="req">
           <h3>Transferable skills</h3>
-          <p>{{ this.requirements["transferable"]["check"] }} {{ this.requirements["transferable"]["completed"] }} /
-            {{ this.requirements["transferable"]["req"] }} ECTS</p>
+          <p>{{ this.transferableCheck ? "✅" : "❌" }} {{ this.transferableCompleted }} /
+            {{ this.requirements["transferable"] }} ECTS</p>
         </div>
         <div class="req">
           <h3>Free electives</h3>
-          <p>{{ this.requirements["freeElectives"]["check"] }} {{ this.requirements["freeElectives"]["completed"] }} /
-            {{ this.requirements["freeElectives"]["req"] }} ECTS</p>
+          <p>{{ this.freeElectivesCheck ? "✅" : "❌" }} {{ this.freeElectivesCompleted }} /
+            {{ this.requirements["freeElectives"] }} ECTS</p>
         </div>
         <div class="req">
           <h3>Thesis</h3>
-          <p>{{ this.requirements["thesis"]["check"] }} {{ this.requirements["thesis"]["completed"] }} /
-            {{ this.requirements["thesis"]["req"] }} ECTS</p>
+          <p>{{ this.thesisCheck ? "✅" : "❌" }} {{ this.thesisCompleted }} /
+            {{ this.requirements["thesis"] }} ECTS</p>
         </div>
       </div>
     </div>

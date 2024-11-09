@@ -215,4 +215,7 @@ th {
 #menu button.active {
   background-color: #ccc; /* Darker background for active button */
 }
+#menu button:hover {
+  background-color: #e0e0e0; /* Lighter background on hover */
+}
 </style>
