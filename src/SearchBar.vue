@@ -12,6 +12,7 @@ export default {
     return {
       query: '',
       showOtherCourse: false,
+      selectedModule: 'All', // Default to show all courses
     };
   },
   computed: {
@@ -19,12 +20,21 @@ export default {
       return this.courses.filter(course => {
         const titleMatches = course.title.toLowerCase().includes(this.query.toLowerCase());
         const seasonMatches = String(course.semester).toLowerCase().includes(String(this.season).toLowerCase()[0]); // TODO: fix this
-
-        // Debugging: Log each course's filtering status
-        console.log(`Title: ${course.title}, Query: "${this.query}", Matches: ${titleMatches}`);
-        console.log(`Semester: ${course.semester}, Season: "${this.season}", Matches: ${seasonMatches}`);
-
-        return titleMatches && seasonMatches;
+        let moduleMatches = true; // Default to true for 'All' or if no specific condition is matched
+        if (this.selectedModule === 'Mandatory') {
+          moduleMatches = ['Foundations', 'DSA', 'Thesis'].includes(course.module);
+        } else if (this.selectedModule === 'FDS') {
+          moduleMatches = ['FDS/EX', 'FDS/CO'].includes(course.module);
+        } else if (this.selectedModule === 'MLS') {
+          moduleMatches = ['MLS/EX', 'MLS/CO'].includes(course.module);
+        } else if (this.selectedModule === 'BDHPC') {
+          moduleMatches = ['BDHPC/EX', 'BDHPC/CO'].includes(course.module);
+        } else if (this.selectedModule === 'VAST') {
+          moduleMatches = ['VAST/EX', 'VAST/CO'].includes(course.module);
+        } else if (this.selectedModule === 'Transferable skills') {
+          moduleMatches = course.module === 'TSK';
+        }
+        return titleMatches && seasonMatches && moduleMatches;
       });
     }
   },
@@ -33,8 +43,11 @@ export default {
       this.$emit('select-course', course);
       this.query = ''; // Clear search after selection
     },
-    generateKey(course) { // Each course can be uniquely identified by the combination of course code and semester.
-      return `${course.code}-${course.semester}`;
+    generateKey(course) { // Each course can be uniquely identified by the combination of course code, course title and semester.
+      return `${course.code}-${course.title}-${course.semester}`;
+    },
+    selectModule(module) {
+      this.selectedModule = module;
     },
   },
 };
@@ -59,6 +72,17 @@ export default {
           @add-course="selectCourse"
           @close-other-course="showOtherCourse = false"
       />
+    </div>
+    <div id="menu">
+      <div id="menu">
+        <button :class="{ active: selectedModule === 'All' }" @click="selectModule('All')">All</button>
+        <button :class="{ active: selectedModule === 'Mandatory' }" @click="selectModule('Mandatory')">Mandatory</button>
+        <button :class="{ active: selectedModule === 'FDS' }" @click="selectModule('FDS')">FDS</button>
+        <button :class="{ active: selectedModule === 'MLS' }" @click="selectModule('MLS')">MLS</button>
+        <button :class="{ active: selectedModule === 'BDHPC' }" @click="selectModule('BDHPC')">BDHPC</button>
+        <button :class="{ active: selectedModule === 'VAST' }" @click="selectModule('VAST')">VAST</button>
+        <button :class="{ active: selectedModule === 'Transferable skills' }" @click="selectModule('Transferable skills')">Transferable skills</button>
+      </div>
     </div>
     <div class="table-container">
       <table class="scrollable-table">
@@ -179,5 +203,16 @@ th {
   font-size: 18px;
   font-weight: bold;
   color: #900; /* Color for the close icon */
+}
+#menu button {
+  padding: 5px;
+  margin: 4px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#menu button.active {
+  background-color: #ccc; /* Darker background for active button */
 }
 </style>

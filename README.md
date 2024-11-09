@@ -16,4 +16,12 @@ Web app available [here](https://emile-jn.github.io/curriculum-planner/).
 
 ## Contributions
 Pull requests, feedback or bug reports are welcome.  
-This web app is written in Vue, but most lines of code here are regular HTML, Javascript and CSS, so you can modify a lot of things without knowing anything about Vue. To modify the app, edit one of the Vue components (`.vue` files) or add a new one in `/src`.
+This web app is written in Vue, but most lines of code here are regular HTML, Javascript and CSS, so you can modify 
+a lot of things without knowing anything about Vue. To modify the app, edit one of the Vue components (`.vue` files) 
+or add a new one in `/src`.
+
+## Notes
+- Some courses, like Information Visualisation, or Interdisciplinary Lecture Series in Data Science, are offered in
+both winter and summer, with different course codes, but they are the same course.
+- In case of a bug, for example from importing a corrupted JSON file, it might help to manually delete all variables in
+local storage by clicking 'inspect element' > 'storage' > 'local storage' and then right-clicking on the variables.

@@ -24,6 +24,8 @@ export default {
         semester: 'W and S', // Assume the course is available in both seasons
         credits: this.credits,
         full_module_name: '', // TODO: Implement full module name
+        available: false,
+        chosen: true,
       };
     }
   },
@@ -33,7 +35,7 @@ export default {
 <template>
   <div id="container">
     <span class="close-icon" @click="$emit('close-other-course')">×</span>
-    <p>Add a course which is (currently) not in the curriculum or in the transferable skills catalogue:</p>
+    <p>Add a course which is (currently) not in the curriculum:</p> <!--  or in the transferable skills catalogue -->
     <table>
       <tr>
         <td>Module:</td>

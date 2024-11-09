@@ -136,6 +136,17 @@ export default {
         this.tables[this.activeTableIndex].rows.push(course); // Add the course to the active semester
         localStorage.setItem('semesters', JSON.stringify(this.tables)); // Save selected courses to local storage
         console.log('Saving ' + course.title + ' to local storage');
+        const courseExists = this.courses.some(c =>
+            c.code === course.code &&
+            c.module === course.module &&
+            c.title === course.title &&
+            c.type === course.type
+        );
+        if (!courseExists) { // if the course is not in the curriculum
+          this.courses.push(course); // add the course to the curriculum
+          localStorage.setItem('curriculum', JSON.stringify(this.courses)); // Save the updated curriculum to local storage
+          console.log('Adding ' + course.title + ' to the curriculum');
+        }
         this.courses.filter(c => c.code === course.code).forEach(c => c.available = false); // Mark the course as unavailable
         this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = true); // Mark the course as chosen
         this.showSearch = false; // Hide search after selection
@@ -173,21 +184,21 @@ export default {
     updateRequirements(courseModule) {
       console.log('Updating requirements for module:', courseModule);
       if (courseModule === 'Foundations') {
-        this.updateFoundations();
+        this.updateFoundations(); // Foundations courses can only affect the foundations requirement
       } else if (courseModule === 'DSA') {
-        this.updateInterdisciplinary();
+        this.updateInterdisciplinary(); // DSA courses can only affect the interdisciplinary requirement
       } else if (courseModule.includes('/CO')) {
         this.updateCores();
         this.updateSpecialisation();
-        this.updateFreeElectives();
+        this.updateFreeElectives(); // Cores can also count as free electives
       } else if (courseModule.includes('/EX')) {
         this.updateSpecialisation();
-        this.updateFreeElectives();
+        this.updateFreeElectives(); // Extensions can also count as free electives
       } else if (courseModule === 'TSK') {
         this.updateTransferable();
-        this.updateFreeElectives();
+        this.updateFreeElectives(); // TSK courses can also count as free electives
       } else if (courseModule === 'Thesis') {
-        this.updateThesis();
+        this.updateThesis(); // Thesis "courses" can only affect the thesis requirement
       } else {
         this.updateFreeElectives()
       }
@@ -208,6 +219,7 @@ export default {
         console.log('Warning: core is considered completed, but there are still courses in this core which are' +
             'available. Please make sure your chosen courses are valid.');
       }
+      // console.log('Core credits:', credits); // debugging
       return [credits === 6, credits]; // check if no core courses are available = all courses in the core are completed
     },
     updateModule(moduleName, requirementName) { // General function which is sufficient for some requirements and not others
@@ -224,7 +236,7 @@ export default {
     updateCores() {
       let completedCores = 0;
       for (let core of this.coreNames) { // for each core
-        console.log('Core name:', core); // debugging
+        // console.log('Core name:', core); // debugging
         if (this.coreCompletion(core)[0]) { // check if the core is completed
           completedCores++; // add 1 to the completed cores
         }
@@ -235,8 +247,9 @@ export default {
     updateSpecialisation() {
       let specialisationCredits = 0;
       let extraCredits = 0;
-      for (let core in this.coreNames) { // for each core
+      for (let core of this.coreNames) { // for each core
         let coreCheck = this.coreCompletion(core); // check if the core is completed
+        // console.log('Core check:', coreCheck); // debugging
         // New implementation
         let trackName = core.split('/')[0]; // get the track name
         let extensionName = trackName + '/EX'; // get the extension name
@@ -244,6 +257,7 @@ export default {
         let extensionCredits = completedExtensions.reduce((acc, course) => acc + course.credits, 0); // add the credits of the extensions
 
         if (coreCheck[0]) { // if the core is completed
+          // console.log('Adding core credits:', coreCheck[1]); // debugging
           specialisationCredits += coreCheck[1]; // add the credits of the core to the specialisation credits
           // add the credits of the extensions to the specialisation credits:
           specialisationCredits += min([extensionCredits, 18]); // Only a maximum of 18 extension credits from the same track can count
@@ -256,6 +270,7 @@ export default {
         }
       }
       this.extraSpecialisationCredits = extraCredits; // update the extra specialisation credits
+      // console.log('Specialisation credits:', specialisationCredits); // debugging
       this.requirements["specialisation"]["completed"] = specialisationCredits; // update the number of completed specialisation credits
       this.updateCheck("specialisation");
     },
@@ -269,10 +284,14 @@ export default {
       3- courses outside the curriculum
       */
       let freeElectiveCredits = this.extraSpecialisationCredits; // add the extra specialisation credits
+      console.log('Extra specialisation credits:', this.extraSpecialisationCredits); // debugging
       freeElectiveCredits += max([this.requirements["transferable"]["completed"] - 4.5, 0]); // add the extra TSK credits
+      console.log('Extra TSK credits:', max([this.requirements["transferable"]["completed"] - 4.5, 0])); // debugging
       let externalCourses = this.courses.filter(course => course.module === "Free Elective" && course.chosen); // get the external courses
       freeElectiveCredits += externalCourses.reduce((acc, course) => acc + course.credits, 0); // add the credits of the external courses
+      console.log('External courses credits:', externalCourses.reduce((acc, course) => acc + course.credits, 0)); // debugging
       this.requirements["freeElectives"]["completed"] = freeElectiveCredits; // update the number of completed free elective credits
+      this.updateCheck("freeElectives");
     },
     updateThesis() {
       this.updateModule("Thesis", "thesis");
