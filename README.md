@@ -14,6 +14,7 @@ Web app available [here](https://emile-jn.github.io/curriculum-planner/).
 - Selected courses are automatically saved to local storage (usually disappears after a few days).
 - Export you course selection to a JSON file with the 'Export courses' button.
 - Import a JSON file that was previously exported from this app with the 'Import courses' button.
+- All courses in the transferable skills catalogue are available as part of the curriculum.
 - Add any course which is not (or no longer) in the data science curriculum with the 'other course' button.
 This can also be a course from another university, but make sure it officially belongs to the module you select.
 - Manually added courses are automatically added to the curriculum and behave like other courses,
