@@ -13,7 +13,6 @@ Foundations	Information Visualization	188.305	VO	W	3.0	Prüfungsfach Data Scienc
 Foundations	Introduction to Semantic Systems	188.399	VU	W	3.0	Prüfungsfach Data Science - Foundations
 DSA	Interdisciplinary Lecture Series on Data Science	194.046	VU	W	1.0	Prüfungsfach Domain-Specific Aspects of Data Science
 DSA	Interdisciplinary Lecture Series on Data Science	194.088	VU	S	1.0	Prüfungsfach Domain-Specific Aspects of Data Science
-DSA	Interdisciplinary Project in Data Science canceled	194.047	PR	W	5.0	Prüfungsfach Domain-Specific Aspects of Data Science
 DSA	Interdisciplinary Project in Data Science	194.147	PR	S	5.0	Prüfungsfach Domain-Specific Aspects of Data Science
 DSA	Interdisciplinary Project in Data Science	194.147	PR	W	5.0	Prüfungsfach Domain-Specific Aspects of Data Science
 DSA	Domain-Specific Lectures in Data Science	194.068	VU	S	3.0	Prüfungsfach Domain-Specific Aspects of Data Science
@@ -99,12 +98,10 @@ VAST/EX	Semi-Automatic Information and Knowledge Systems	188.387	VU	S	3.0	Modul 
 VAST/EX	Visual Data Science	186.868	VU	W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Visualization 2	186.833	VU	W	4.5	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 MLS/EX	Advanced Reinforcement Learning	194.17	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Applied Deep Learning canceled	192.032	VU	W	3.0	Modul MLS/EX - Machine Learning and Statistics - Extension
 BDHPC/EX	Advanced Multiprocessor Programming	184.726	VU	W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Frontiers of Algorithms and Complexity	192.136	VU	W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Hybrid Quantum - Classical Systems	194.027	VU	W	4.5	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Randomized Algorithms	192.045	VU	W	3.0	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-VAST/EX	Deductive Databases canceled	192.067	VO	W	3.0	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 Thesis	Master Thesis	1	N/A	W and S	27.0	Diplomarbeit und kommissionelle Gesamtprüfung
 Thesis	Seminar for Master students in Data Science	180.722	SE	W and S	1.5	Diplomarbeit und kommissionelle Gesamtprüfung
 Thesis	Defense of Master Thesis	2	N/A	W and S	1.5	Diplomarbeit und kommissionelle Gesamtprüfung

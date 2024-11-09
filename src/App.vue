@@ -81,10 +81,10 @@ export default {
       return this.trackNames.map(track => this.coreCredits(track) === 6);
     },
     specialisationCompleted() {
-      return this.countSpecialisation(false); // false: not extra
+      return this.countSpecialisation()[0]; // first element: specialisation credits
     },
     extraSpecialisationCredits() {
-      return this.countSpecialisation(true); // true: extra
+      return this.countSpecialisation()[1]; // second element: free electives
     },
     transferableCompleted() {
       return this.moduleCompleted('TSK');
@@ -219,28 +219,21 @@ export default {
       console.log('chosenExtensions:', chosenExtensions);
       return chosenExtensions.reduce((acc, course) => acc + course.credits, 0); // completed credits of the extension
     },
-    countSpecialisation(extra) { // extra: whether to count the extra credits, or the specialisation credits
-      let credits = 0;
+    countSpecialisation() { // count the credits which count towards specialisation, and those that don't
+      let specCredits = 0;
+      let extraCredits = 0;
       for (let i in this.trackNames) { // for each track
-        // if the core is completed and we are not counting the extra credits,
-        // or if the core is not completed and we are counting the extra credits:
-        if (this.coresCompleted[i] !== extra) {
-          credits += this.coreCredits(this.trackNames[i]); // core credits count (either for specialisation or extra)
-          console.log('credits from cores:', credits);
-          if (this.coresCompleted[i]) { // if the core is completed
-            credits += min([this.extensionCredits(this.trackNames[i]), 18]); // Only a maximum of 18 extension credits from the same track can count
-          } else { // otherwise, any number of extensions counts as free electives
-            credits += this.extensionCredits(this.trackNames[i]); // Only a maximum of 18 extension credits from the same track can count
-            console.log('after adding extensions:', credits);
-          }
-        } else
-            // if the core is completed and we are counting the extra credits,
-            // or if the core is not completed and we are not counting the extra credits:
-        {
-          credits += max([this.extensionCredits(this.trackNames[i]) - 18, 0]); // extra credits count
+        if (this.coresCompleted[i]) { // if the core of the track is completed
+          specCredits += this.coreCredits(this.trackNames[i]); // core credits count
+          specCredits += min([this.extensionCredits(this.trackNames[i]), 18]); // Only a maximum of 18 extension credits from the same track can count
+          extraCredits += max([this.extensionCredits(this.trackNames[i]) - 18, 0]); // credits beyond 18 ECTS count
+        } else { // if the core of the track is not completed
+          extraCredits += this.coreCredits(this.trackNames[i]); // core credits count as free electives
+          extraCredits += this.extensionCredits(this.trackNames[i]); // extensions count as free electives
         }
       }
-      return credits;
+      extraCredits += max([specCredits - 36, 0]); // credits beyond 36 ECTS count as free electives
+      return [specCredits, extraCredits];
     },
     exportTablesAsJson() {
       // Convert the tables data to JSON
