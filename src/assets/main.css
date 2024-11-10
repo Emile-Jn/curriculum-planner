@@ -3,3 +3,44 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
 }
+/* Common styling to the ImportFile window and the ResetAll window: */
+.confirmation-window {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #111;
+  background-color: white;
+  z-index: 2;
+}
+.confirmation-window button {
+  margin: 10px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded corners */
+  color: white;
+  border: none; /* Remove default border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+.confirmation-window button:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+  cursor: pointer;
+}
+.binary-buttons {
+  display: flex;
+  justify-content: center;
+}
+.cancel {
+  background: #f44336; /* Red */
+}
+.cancel:hover {
+  background: #d32f2f; /* Slightly darker red on hover */
+}
+.confirm {
+  background: #4CAF50; /* Green */
+}
+.confirm:hover {
+  background: #388e3c; /* Slightly darker green on hover */
+}

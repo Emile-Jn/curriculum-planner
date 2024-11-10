@@ -3,6 +3,7 @@ import Semester from './Semester.vue';
 import SearchBar from './SearchBar.vue';
 import SemesterButtons from './SemesterButtons.vue';
 import ImportFile from './ImportFile.vue';
+import resetAll from './resetAll.vue';
 import Papa from 'papaparse';
 import _, {max, min} from 'lodash';
 
@@ -12,6 +13,7 @@ export default {
     SearchBar,
     SemesterButtons,
     ImportFile,
+    resetAll,
   },
   data() {
     return {
@@ -22,6 +24,7 @@ export default {
       activeSeason: null, // winter of summer, which is relevant for searching courses
       showSearch: false, // Whether the search bar on the left of the screen is visible
       showImportWindow: false, // Whether the import file window is visible
+      showResetWindow: false, // Whether the reset all window is visible
       showHelp: false, // Whether the help window is visible
       trackNames: ['FDS', 'MLS', 'BDHPC', 'VAST'],
       requirements: {
@@ -41,18 +44,7 @@ export default {
       this.courses = JSON.parse(storedCurriculum);
       console.log('Curriculum loaded from local storage');
     } else {
-      // Load and parse the TSV file
-      fetch('curriculum.tsv')
-          .then(response => response.text())
-          .then(data => {
-            this.courses = Papa.parse(data, { header: true, delimiter: '\t' }).data.map(course => {
-              course.credits = Number(course.credits);
-              course.available = true; // Whether the course can be added to a semester
-              course.chosen = false; // Whether the course has been added to a semester
-              return course;
-            });
-          });
-      console.log('Curriculum loaded from the TSV file.');
+      this.loadCurriculumFromTSV();
     }
     let storedSemesters = localStorage.getItem('semesters');
     if (storedSemesters) {
@@ -149,6 +141,22 @@ export default {
     }
   },
   methods: {
+    loadCurriculumFromTSV() {
+      fetch('curriculum.tsv')
+          .then(response => response.text())
+          .then(data => {
+            this.courses = Papa.parse(data, { header: true, delimiter: '\t' }).data.map(course => {
+              course.credits = Number(course.credits);
+              course.available = true;
+              course.chosen = false;
+              return course;
+            });
+            console.log('Curriculum loaded from the TSV file.');
+          })
+          .catch(error => {
+            console.error('Error loading curriculum from TSV:', error);
+          });
+    },
     addSemester(index, season) {
       this.tables.splice(index, 0, { rows: [] });
       this.seasons.splice(index, 0, season);
@@ -196,13 +204,11 @@ export default {
           .forEach(c => c.available = true); // Mark the course as available
       this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = false); // Mark the course as not chosen
     },
-    removeAllCourses(){
-      this.tables = [];
-      this.seasons = [];
-      this.courses.forEach(course => {
-        course.available = true;
-        course.chosen = false;
-      });
+    resetAll() {
+      this.showResetWindow = false; // hide the reset window
+      this.tables = []; // remove all chosen courses
+      this.seasons = []; // remove all semester seasons
+      this.loadCurriculumFromTSV(); // reload the curriculum
     },
     moduleCompleted(moduleName) {
       let chosenCourses = this.courses.filter(course => course.module === moduleName && course.chosen); // get the chosen courses
@@ -270,14 +276,33 @@ export default {
             // Parse JSON and assign to tables
             let importData = JSON.parse(e.target.result); // read the JSON file
             this.showImportWindow = false; // hide the import window
-            this.removeAllCourses(); // remove all previously chosen courses
+            this.resetAll(); // remove all previously chosen courses
             this.tables = importData.tables;
             this.seasons = importData.seasons;
             for (let table of this.tables) {
               for (let course of table.rows) {
-                this.courses.filter(c => c.code === course.code).forEach(c => c.available = false); // Mark the course as unavailable
-                this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = true); // Mark the course as chosen
-                // this.updateRequirements(course.module);
+                // Mark the course as unavailable:
+                let matchingRows = this.courses
+                    .filter(c => c.code === course.code || (c.title === course.title && c.type === course.type));
+                if (matchingRows.length === 0) {
+                  console.log('Warning: imported course not found in the curriculum, adding it now:', course.title, course.type);
+                  course.available = false; // make sure the course is unavailable, even though it should already not be
+                  course.chosen = true; // make sure the course is chosen, even though it should already be
+                  this.courses.push(course); // add the course to the curriculum
+                  continue;
+                } else {
+                  matchingRows.forEach(c => c.available = false);
+                }
+                // Mark the course as chosen:
+                let matchingRow = this.courses.filter(c => c.code === course.code && c.title === course.title
+                    && c.semester === course.semester);
+                if (matchingRow.length > 1) { // if for some reason there are multiple matching rows
+                  console.log('Warning: multiple courses in the curriculum match these attributes:',
+                      course.code, course.title, course.semester);
+                  matchingRow[0].chosen = true; // Mark the first matching course as chosen
+                } else { // Logically there must be one matching row
+                  matchingRow.chosen = true;
+                }
               }
             }
           } catch (error) {
@@ -315,7 +340,7 @@ export default {
             ref="fileInput"
         />
         <button class="faded menu-button" @click="showImportWindow = true">Import courses</button>
-        <!-- <button class="faded menu-button" >Reset all</button> -->
+        <button class="faded menu-button" @click="showResetWindow = true">Reset all</button>
         <button class="faded menu-button" @click="showHelp = true">Help</button>
         <a class="faded menu-button" href="https://github.com/Emile-Jn/curriculum-planner" target="_blank">Contribute to this app</a>
       </div>
@@ -341,12 +366,27 @@ export default {
         seminar and thesis defense (30 ECTS).
       </p>
     </div>
-    <div id="import-file-window">
-      <ImportFile
-          v-if="showImportWindow"
-          @cancel-import="showImportWindow = false"
-          @import-json="this.$refs.fileInput.click()"
-      />
+    <div v-if="showImportWindow" class="confirmation-window">
+      <p>You can import a <b>json</b> file with your chosen courses that was previously downloaded from this app.</p>
+      <p> <b>Warning:</b> doing this will <b>remove all courses currently displayed</b> and replace them. </p>
+      <div class="binary-buttons">
+        <button class="cancel" @click="showImportWindow = false">Cancel</button>
+        <button class="confirm" @click="this.$refs.fileInput.click()">Import courses</button>
+      </div>
+    </div>
+    <div v-if="showResetWindow" class="confirmation-window">
+      <p> <b>Warning:</b> doing this will reset the curriculum to default and remove all courses.</p>
+      <p>If you want to keep you current selection of courses, follow these steps:</p>
+      <ol>
+        <li>Click 'cancel'</li>
+        <li>Export your current selection of courses by clicking 'Export courses'</li>
+        <li>Click 'Reset all' and confirm</li>
+        <li>Import your previously exported selection of courses by clicking 'Import courses' and choosing the right file</li>
+      </ol>
+      <div class="binary-buttons">
+        <button class="cancel" @click="showResetWindow = false">Cancel</button>
+        <button class="confirm" @click="resetAll">Reset all</button>
+      </div>
     </div>
     <div class="search">
       <SearchBar
@@ -358,7 +398,7 @@ export default {
       />
     </div>
     <!-- The overlay, which darkens the background when active -->
-    <div v-if="showSearch || showImportWindow || showHelp" id="overlay"></div>
+    <div v-if="showSearch || showImportWindow || showHelp || showResetWindow" id="overlay"></div>
     <div class="container">
       <!-- Todo: extra add semester buttons -->
       <div class="tables">
