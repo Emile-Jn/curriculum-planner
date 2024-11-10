@@ -401,7 +401,9 @@ export default {
       />
     </div>
     <!-- The overlay, which darkens the background when active -->
-    <div v-if="showSearch || showImportWindow || showHelp || showResetWindow" id="overlay"></div>
+    <div v-if="showSearch || showImportWindow || showHelp || showResetWindow"
+         id="overlay"
+         @click="showSearch = showImportWindow = showHelp = showResetWindow = false"></div>
     <div class="container">
       <!-- Todo: extra add semester buttons -->
       <div class="tables">
