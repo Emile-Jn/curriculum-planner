@@ -2,8 +2,6 @@
 import Semester from './Semester.vue';
 import SearchBar from './SearchBar.vue';
 import SemesterButtons from './SemesterButtons.vue';
-import ImportFile from './ImportFile.vue';
-import resetAll from './resetAll.vue';
 import Papa from 'papaparse';
 import _, {max, min} from 'lodash';
 
@@ -12,8 +10,6 @@ export default {
     Semester,
     SearchBar,
     SemesterButtons,
-    ImportFile,
-    resetAll,
   },
   data() {
     return {
@@ -88,7 +84,7 @@ export default {
       3- courses outside the curriculum
       */
       let externalCourses = this.courses.filter(course => course.module === "Free Elective" && course.chosen); // get the external courses
-      console.log('extraSpecialisationCredits:', this.extraSpecialisationCredits);
+      // console.log('extraSpecialisationCredits:', this.extraSpecialisationCredits); // debugging
       return this.extraSpecialisationCredits
           + max([this.transferableCompleted - 4.5, 0])
           + externalCourses.reduce((acc, course) => acc + course.credits, 0);
@@ -142,7 +138,7 @@ export default {
   },
   methods: {
     loadCurriculumFromTSV() {
-      fetch('curriculum.tsv')
+      return fetch('curriculum.tsv')
           .then(response => response.text())
           .then(data => {
             this.courses = Papa.parse(data, { header: true, delimiter: '\t' }).data.map(course => {
@@ -208,21 +204,21 @@ export default {
       this.showResetWindow = false; // hide the reset window
       this.tables = []; // remove all chosen courses
       this.seasons = []; // remove all semester seasons
-      this.loadCurriculumFromTSV(); // reload the curriculum
+      return this.loadCurriculumFromTSV(); // reload the curriculum
     },
     moduleCompleted(moduleName) {
       let chosenCourses = this.courses.filter(course => course.module === moduleName && course.chosen); // get the chosen courses
       return chosenCourses.reduce((acc, course) => acc + course.credits, 0); // sum of credits of the chosen courses
     },
     coreCredits(trackName) {
-      console.log('trackName:', trackName);
+      // console.log('trackName:', trackName); // debugging
       let chosenCores = this.courses.filter(course => course.module.includes(trackName + '/CO') && course.chosen); // all chosen courses in the core
-      console.log('chosenCores:', chosenCores);
+      // console.log('chosenCores:', chosenCores); // debugging
       return chosenCores.reduce((acc, course) => acc + course.credits, 0); // completed credits of the core
     },
     extensionCredits(trackName) {
       let chosenExtensions = this.courses.filter(course => course.module.includes(trackName + '/EX') && course.chosen); // all chosen courses in the extension
-      console.log('chosenExtensions:', chosenExtensions);
+      // console.log('chosenExtensions:', chosenExtensions); // debugging
       return chosenExtensions.reduce((acc, course) => acc + course.credits, 0); // completed credits of the extension
     },
     countSpecialisation() { // count the credits which count towards specialisation, and those that don't
@@ -266,21 +262,22 @@ export default {
       // Clean up the URL object
       URL.revokeObjectURL(url);
     },
-    importTablesFromJson(event) {
+    async importTablesFromJson(event) {
       const file = event.target.files[0];
       if (file) {
         const reader = new FileReader();
 
-        reader.onload = (e) => {
+        reader.onload = async (e) => {
           try {
             // Parse JSON and assign to tables
             let importData = JSON.parse(e.target.result); // read the JSON file
             this.showImportWindow = false; // hide the import window
-            this.resetAll(); // remove all previously chosen courses
+            await this.resetAll(); // remove all previously chosen courses
             this.tables = importData.tables;
             this.seasons = importData.seasons;
             for (let table of this.tables) {
               for (let course of table.rows) {
+                console.log('Importing course:', course.title, course.type);
                 // Mark the course as unavailable:
                 let matchingRows = this.courses
                     .filter(c => c.code === course.code || (c.title === course.title && c.type === course.type));
@@ -294,15 +291,13 @@ export default {
                   matchingRows.forEach(c => c.available = false);
                 }
                 // Mark the course as chosen:
-                let matchingRow = this.courses.filter(c => c.code === course.code && c.title === course.title
+                let uniqueCourse = this.courses.filter(c => c.code === course.code && c.title === course.title
                     && c.semester === course.semester);
-                if (matchingRow.length > 1) { // if for some reason there are multiple matching rows
+                if (uniqueCourse.length > 1) { // if for some reason there are multiple matching rows
                   console.log('Warning: multiple courses in the curriculum match these attributes:',
                       course.code, course.title, course.semester);
-                  matchingRow[0].chosen = true; // Mark the first matching course as chosen
-                } else { // Logically there must be one matching row
-                  matchingRow.chosen = true;
                 }
+                uniqueCourse[0].chosen = true; // Mark the first matching course as chosen
               }
             }
           } catch (error) {
@@ -364,6 +359,14 @@ export default {
         Then, fill in at least 4.5 ECTS of transferable skills,
         4.5 ECTS of free electives (any course, including from bachelor degrees at TU), and finally the thesis, thesis
         seminar and thesis defense (30 ECTS).
+      </p>
+      <p>Want to know more about the app? Check out the
+        <a href="https://github.com/Emile-Jn/curriculum-planner/blob/main/README.md">description</a>
+        in the GitHub repository.
+      </p>
+      <p>
+        If you find a bug, please open a new issue
+        <a href="https://github.com/Emile-Jn/curriculum-planner/issues">here</a>.
       </p>
     </div>
     <div v-if="showImportWindow" class="confirmation-window">
