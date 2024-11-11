@@ -3,7 +3,7 @@ import Semester from './Semester.vue';
 import SearchBar from './SearchBar.vue';
 import SemesterButtons from './SemesterButtons.vue';
 import Papa from 'papaparse';
-import _, {max, min} from 'lodash';
+import {max, min} from 'lodash';
 
 export default {
   components: {
@@ -434,7 +434,7 @@ export default {
             {{ this.requirements["foundations"] }} ECTS</p>
         </div>
         <div class="req">
-          <h3>Interdisciplinary data science courses</h3>
+          <h3>Interdisciplinary data science</h3>
           <p>{{ this.interdisciplinaryCheck ? "✅" : "❌" }} {{ this.interdisciplinaryCompleted }} /
             {{ this.requirements["interdisciplinary"] }} ECTS</p>
         </div>

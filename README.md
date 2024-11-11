@@ -35,8 +35,6 @@ of the Vue components (`.vue` files) or add a new one in `/src`.
 both winter and summer, with different course codes, but they are the same course.
 - When adding a new course, specifying a course code is optional, but if nothing is entered, a random 6-digit code will 
 be generated, so that the course can still be identified in the system.
-- In case of a bug, for example from importing a corrupted JSON file, it might help to manually delete all variables in
-local storage by clicking 'inspect element' > 'storage' > 'local storage' and then right-clicking on the variables.
 
 ### Assumptions:
 If these assumptions don't hold true, the app might not behave as expected.
