@@ -141,7 +141,14 @@ export default {
       return fetch('curriculum.tsv')
           .then(response => response.text())
           .then(data => {
-            this.courses = Papa.parse(data, { header: true, delimiter: '\t' }).data.map(course => {
+            const splitData = data.split('\n');
+            // console.log('splitData[-1].length:', splitData.at(-1).length); // debugging
+            if (splitData.at(-1).trim().length < 2) { // if the last line is empty
+              splitData.pop(); // remove the last line (because it always causes errors)
+            }
+            const cleanedData = splitData.join('\n'); // put the lines back together
+            this.courses = Papa.parse(cleanedData, { header: true, delimiter: '\t', skipEmptyLines: true })
+                .data.map(course => {
               course.credits = Number(course.credits);
               course.available = true;
               course.chosen = false;
