@@ -35,7 +35,8 @@ export default {
     },
     addCourse() {
       if (!this.code) {
-        this.code = this.generateRandomCode();
+        // this.code = this.generateRandomCode(); // old implementation
+        this.code = "unknown";
       }
       this.$emit('add-course', this.course);
     }

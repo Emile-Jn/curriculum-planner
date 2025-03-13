@@ -15,7 +15,7 @@ export default {
     return {
       tables: [],
       seasons: [], // Season (winter of summer) of each semester
-      courses: [],
+      curriculum: [],
       activeTableIndex: null,
       activeSeason: null, // winter of summer, which is relevant for searching courses
       showSearch: false, // Whether the search bar on the left of the screen is visible
@@ -34,17 +34,11 @@ export default {
       },
     };
   },
-  created() {
-    const storedCurriculum = localStorage.getItem('curriculum');
-    if (storedCurriculum) {
-      this.courses = JSON.parse(storedCurriculum);
-      console.log('Curriculum loaded from local storage');
-    } else {
-      this.loadCurriculumFromTSV();
-    }
+  created: async function() {
+    await this.loadCurriculumFromTSV(); // Wait for the curriculum to be fully loaded
     let storedSemesters = localStorage.getItem('semesters');
     if (storedSemesters) {
-      this.tables = JSON.parse(storedSemesters);
+      this.tables = this.updateCourses(JSON.parse(storedSemesters));
       console.log('Chosen courses loaded from local storage.');
     } else {
       console.log('No chosen courses found in local storage.');
@@ -58,6 +52,25 @@ export default {
     }
   },
   computed: {
+    chosenCourses() {
+      return this.flattenTables(this.tables)
+    },
+    availableCourses() {
+      console.time("availableCourses"); // Start timer
+      let result;
+      console.log('chosenCourses:', this.chosenCourses); // debugging
+      if (this.chosenCourses.length === 0) {
+        result = this.curriculum;
+      } else {
+        result = this.curriculum.filter(course =>
+            !this.chosenCourses.some(
+                chosen => chosen.title === course.title && chosen.type === course.type
+            )
+        );
+      }
+      console.timeEnd("availableCourses"); // End timer after computation
+      return result;
+    },
     // Counting what has been completed:
     foundationsCompleted() {
       return this.moduleCompleted('Foundations');
@@ -83,7 +96,7 @@ export default {
       2- transferable skills courses beyond the required 4.5 ECTS
       3- courses outside the curriculum
       */
-      let externalCourses = this.courses.filter(course => course.module === "Free Elective" && course.chosen); // get the external courses
+      let externalCourses = this.chosenCourses.filter(course => course.module === "Free Elective"); // get the external courses
       // console.log('extraSpecialisationCredits:', this.extraSpecialisationCredits); // debugging
       return this.extraSpecialisationCredits
           + max([this.transferableCompleted - 4.5, 0])
@@ -129,7 +142,7 @@ export default {
       },
       deep: true,
     },
-    courses: {
+    curriculum: {
       handler(newCourses) {
         localStorage.setItem('curriculum', JSON.stringify(newCourses));
       },
@@ -137,7 +150,10 @@ export default {
     }
   },
   methods: {
-    loadCurriculumFromTSV() {
+    /**
+     * Load the curriculum from the curriculum.tsv file
+     */
+    async loadCurriculumFromTSV() {
       return fetch('curriculum.tsv')
           .then(response => response.text())
           .then(data => {
@@ -147,11 +163,9 @@ export default {
               splitData.pop(); // remove the last line (because it always causes errors)
             }
             const cleanedData = splitData.join('\n'); // put the lines back together
-            this.courses = Papa.parse(cleanedData, { header: true, delimiter: '\t', skipEmptyLines: true })
+            this.curriculum = Papa.parse(cleanedData, { header: true, delimiter: '\t', skipEmptyLines: true })
                 .data.map(course => {
               course.credits = Number(course.credits);
-              course.available = true;
-              course.chosen = false;
               return course;
             });
             console.log('Curriculum loaded from the TSV file.');
@@ -160,10 +174,19 @@ export default {
             console.error('Error loading curriculum from TSV:', error);
           });
     },
+    /**
+     * Add a semester to put new courses into
+     * @param index The number of the semester to add
+     * @param season 'W' or 'S' for winter or summer
+     */
     addSemester(index, season) {
       this.tables.splice(index, 0, { rows: [] });
       this.seasons.splice(index, 0, season);
     },
+    /**
+     * Remove a semester and all its courses
+     * @param tableIndex The number of the semester to remove
+     */
     removeSemester(tableIndex) {
       // first, empty the semester
       let semester = this.tables[tableIndex];
@@ -174,68 +197,97 @@ export default {
       this.tables.splice(tableIndex, 1);
       this.seasons.splice(tableIndex, 1);
     },
+    /**
+     * Enable search for adding a course to a semester
+     * @param tableIndex the number of the semester for which to add the course
+     * @param season the season of the semester, 'W' or 'S'
+     */
     activateSearch(tableIndex, season) {
       this.activeTableIndex = tableIndex;
       this.activeSeason = season;
       this.showSearch = true; // Show the search bar
     },
+    /**
+     * Add a course to the active semester
+     * @param course The course to add to the active semester
+     */
     addCourseToSemester(course) {
       if (this.activeTableIndex !== null) {
         this.tables[this.activeTableIndex].rows.push(course); // Add the course to the active semester
-        const courseExists = this.courses.some(c =>
-            c.code === course.code &&
-            c.module === course.module &&
+        const courseExists = this.curriculum.some(c =>
+            // c.code === course.code &&
+            // c.module === course.module &&
             c.title === course.title &&
             c.type === course.type
         );
         if (!courseExists) { // if the course is not in the curriculum
-          this.courses.push(course); // add the course to the curriculum
+          this.curriculum.push(course); // add the course to the curriculum
           console.log('Adding ' + course.title + ' to the curriculum');
         }
-        this.courses.filter(c => c.title === course.title && c.type === course.type)
-            .forEach(c => c.available = false); // Mark the course as unavailable
-        this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = true); // Mark the course as chosen
+        // TODO: if exact course is not in the curriculum, add a warning
         this.showSearch = false; // Hide search after selection
 
       }
     },
+    /**
+     * Remove a specific course from a semester
+     * @param rowIndex the index of the course to remove in the semester 
+     * @param tableIndex the index of the semester in which the course is
+     */
     handleRemoveCourse(rowIndex, tableIndex) { // Remove the course from the given table and row index
       console.log('Removing course at table', tableIndex, 'and row', rowIndex);
       let course = this.tables[tableIndex].rows[rowIndex]; // Get the course at the given index
       this.tables[tableIndex].rows.splice(rowIndex, 1); // Remove the course at the given index
-      this.courses.filter(c => c.title === course.title && c.type === course.type)
-          .forEach(c => c.available = true); // Mark the course as available
-      this.courses.filter(c => (c.code === course.code && c.semester === course.semester)).forEach(c => c.chosen = false); // Mark the course as not chosen
+      
     },
+    /**
+     * Remove all courses and reset the curriculum to default
+     */
     resetAll() {
       this.showResetWindow = false; // hide the reset window
       this.tables = []; // remove all chosen courses
       this.seasons = []; // remove all semester seasons
       return this.loadCurriculumFromTSV(); // reload the curriculum
     },
+    /**
+     * Count the number of credits completed for a module
+     * @param {string} moduleName - The name of the module
+     * @returns {number} - The sum of credits of the chosen courses in the module
+     */
     moduleCompleted(moduleName) {
-      let chosenCourses = this.courses.filter(course => course.module === moduleName && course.chosen); // get the chosen courses
-      return chosenCourses.reduce((acc, course) => acc + course.credits, 0); // sum of credits of the chosen courses
+      let moduleCourses = this.chosenCourses.filter(course => course.module === moduleName); // get the chosen courses
+      return moduleCourses.reduce((acc, course) => acc + course.credits, 0); // sum of credits of the chosen courses
     },
+    /**
+     * Count the number of credits completed in the core of a track
+     * @param trackName - The name of the track, for example 'MLS'
+     */
     coreCredits(trackName) {
       // console.log('trackName:', trackName); // debugging
-      let chosenCores = this.courses.filter(course => course.module.includes(trackName + '/CO') && course.chosen); // all chosen courses in the core
+      let chosenCores = this.chosenCourses.filter(course => course.module.includes(trackName + '/CO')); // all chosen courses in the core
       // console.log('chosenCores:', chosenCores); // debugging
       return chosenCores.reduce((acc, course) => acc + course.credits, 0); // completed credits of the core
     },
+    /**
+     * Count the number of credits completed in the extension of a track
+     * @param trackName - The name of the track, for example 'MLS'
+     */
     extensionCredits(trackName) {
-      let chosenExtensions = this.courses.filter(course => course.module.includes(trackName + '/EX') && course.chosen); // all chosen courses in the extension
+      let chosenExtensions = this.chosenCourses.filter(course => course.module.includes(trackName + '/EX')); // all chosen courses in the extension
       // console.log('chosenExtensions:', chosenExtensions); // debugging
       return chosenExtensions.reduce((acc, course) => acc + course.credits, 0); // completed credits of the extension
     },
-    countSpecialisation() { // count the credits which count towards specialisation, and those that don't
+    /**
+     * Count the credits which count towards specialisation, and the core & extension credits that don't count
+     */
+    countSpecialisation() { 
       let specCredits = 0;
       let extraCredits = 0;
       for (let i in this.trackNames) { // for each track
         if (this.coresCompleted[i]) { // if the core of the track is completed
           specCredits += this.coreCredits(this.trackNames[i]); // core credits count
           specCredits += min([this.extensionCredits(this.trackNames[i]), 18]); // Only a maximum of 18 extension credits from the same track can count
-          extraCredits += max([this.extensionCredits(this.trackNames[i]) - 18, 0]); // credits beyond 18 ECTS count
+          extraCredits += max([this.extensionCredits(this.trackNames[i]) - 18, 0]); // credits beyond 18 ECTS count only as free electives
         } else { // if the core of the track is not completed
           extraCredits += this.coreCredits(this.trackNames[i]); // core credits count as free electives
           extraCredits += this.extensionCredits(this.trackNames[i]); // extensions count as free electives
@@ -244,6 +296,9 @@ export default {
       extraCredits += max([specCredits - 36, 0]); // credits beyond 36 ECTS count as free electives
       return [specCredits, extraCredits];
     },
+    /**
+     * Download a JSON file with the chosen courses
+     */
     exportTablesAsJson() {
       // Convert the tables data to JSON
       const exportData = {
@@ -269,6 +324,10 @@ export default {
       // Clean up the URL object
       URL.revokeObjectURL(url);
     },
+    /**
+     * Replace the tables variable with courses from a user file
+     * @param event - The event object from the file input
+     */
     async importTablesFromJson(event) {
       const file = event.target.files[0];
       if (file) {
@@ -280,33 +339,8 @@ export default {
             let importData = JSON.parse(e.target.result); // read the JSON file
             this.showImportWindow = false; // hide the import window
             await this.resetAll(); // remove all previously chosen courses
-            this.tables = importData.tables;
+            this.tables = this.updateCourses(importData.tables);
             this.seasons = importData.seasons;
-            for (let table of this.tables) {
-              for (let course of table.rows) {
-                console.log('Importing course:', course.title, course.type);
-                // Mark the course as unavailable:
-                let matchingRows = this.courses
-                    .filter(c => c.code === course.code || (c.title === course.title && c.type === course.type));
-                if (matchingRows.length === 0) {
-                  console.log('Warning: imported course not found in the curriculum, adding it now:', course.title, course.type);
-                  course.available = false; // make sure the course is unavailable, even though it should already not be
-                  course.chosen = true; // make sure the course is chosen, even though it should already be
-                  this.courses.push(course); // add the course to the curriculum
-                  continue;
-                } else {
-                  matchingRows.forEach(c => c.available = false);
-                }
-                // Mark the course as chosen:
-                let uniqueCourse = this.courses.filter(c => c.code === course.code && c.title === course.title
-                    && c.semester === course.semester);
-                if (uniqueCourse.length > 1) { // if for some reason there are multiple matching rows
-                  console.log('Warning: multiple courses in the curriculum match these attributes:',
-                      course.code, course.title, course.semester);
-                }
-                uniqueCourse[0].chosen = true; // Mark the first matching course as chosen
-              }
-            }
           } catch (error) {
             console.error("Invalid JSON file:", error);
             alert("Failed to load file. Please make sure it’s a valid JSON.");
@@ -315,6 +349,50 @@ export default {
 
         reader.readAsText(file);
       }
+    },
+    /**
+     * For each course, look for it in the curriculum. If present, put that course info in the result. If not, put the course as it is.
+     * @param courses - An array of arrays of courses corresponding to semesters
+     */
+    updateCourses(courses) {
+      var result = [];
+      for (let table of courses) {
+        var rows = [];
+        for (let course of table.rows) {
+          let courseType = '' // in the new implementation, the type is an empty string when there is no type.
+          if (course.type !== 'N/A') { // in the previous implementation, the type was 'N/A' for the thesis.
+            courseType = course.type;
+          }
+          let matchingCourses = this.curriculum.filter(c => c.title === course.title && c.type === courseType && c.semester === course.semester);
+          if (matchingCourses.length === 0) {
+            console.log('Warning: course not found in the curriculum:', course.title, course.type, course.semester);
+            // TODO: add a warning attribute to each course, so that a warning is displayed next to the title, indicating if the course is not in the curriculum
+            rows.push(course); // add the course as it is
+          } else if (matchingCourses.length > 1) {
+            rows.push(matchingCourses[0]);
+            console.log('Warning: multiple courses found in the curriculum:', course.title, course.type, course.semester);
+          } else { // if there is exactly one matching course
+            rows.push(matchingCourses[0]);
+          }
+        }
+        result.push({ rows: rows });
+      }
+      return result;
+    },
+    /**
+     * Return a single array of courses, instead of an array of arrays of courses
+     * @param tables - An array of tables, each containing an array of rows
+     */
+    flattenTables(tables) {
+      if (!tables || !Array.isArray(tables)) {
+        throw new Error("Invalid input: 'tables' should be an array.");
+      }
+      return tables.reduce((acc, table) => {
+        if (Array.isArray(table.rows)) {
+          acc.push(...table.rows);
+        }
+        return acc;
+      }, []);
     },
   },
 };
@@ -401,7 +479,7 @@ export default {
     <div class="search">
       <SearchBar
           v-if="showSearch"
-          :courses="courses.filter(course => course.available)"
+          :courses="availableCourses"
           :season="activeSeason"
           @select-course="addCourseToSemester"
           @close-search="showSearch = false"
@@ -412,7 +490,6 @@ export default {
          id="overlay"
          @click="showSearch = showImportWindow = showHelp = showResetWindow = false"></div>
     <div class="container">
-      <!-- Todo: extra add semester buttons -->
       <div class="tables">
         <div>
           <SemesterButtons

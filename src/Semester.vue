@@ -33,25 +33,12 @@ export default {
       if (! courseCode.includes('.')) { // codes without a dot are artificially created
         return '';
       }
-      const code = courseCode.replace('.', ''); // Remove the dot in the course code
-      if (code.length !== 6) { // Course codes must be six digits
+      const courseNr = courseCode.replace('.', ''); // Remove the dot in the course code
+      if (! Number.isInteger(Number(courseNr))) { // Course code must be a string of digits
         return '';
       }
-      /*
-      // Year must be an integer and at least 2023
-      if (year !== null && (!Number.isInteger(year) || year < 2023)) {
-        throw new Error('Year must be an integer and at least 2023.');
-      }
-      // Get the current course year if year is not provided
-      let semesterYear;
-      if (year === null) {
-        semesterYear = this.getCurrentCourseYear(semester);
-      } else {
-        semesterYear = String(year) + semester;
-      }
-       */
       const semesterYear = this.getCurrentCourseYear(semester);
-      return `https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=${code}&semester=${semesterYear}`;
+      return `https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=${courseNr}&semester=${semesterYear}`;
     },
     /**
      * Get the latest year + semester in which the specified semester has started.

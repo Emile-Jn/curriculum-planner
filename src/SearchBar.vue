@@ -43,8 +43,8 @@ export default {
       this.$emit('select-course', course);
       this.query = ''; // Clear search after selection
     },
-    generateKey(course) { // Each course can be uniquely identified by the combination of course code, course title and semester.
-      return `${course.code}-${course.title}-${course.semester}`;
+    generateKey(course) { // Each course can be uniquely identified by the combination of course type, course title and semester.
+      return `${course.type}-${course.title}-${course.semester}`;
     },
     selectModule(module) {
       this.selectedModule = module;

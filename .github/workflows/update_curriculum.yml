@@ -1,0 +1,24 @@
+name: Sync File
+on:
+  schedule: # Runs at 04:00 UTC every day so that it leaves enough time for the curriculum scraping repo to update (at midnight)
+    - cron: "0 4 * * *"
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+        with:
+          repository: emile-jn/tiss-curriculum-scraper
+          path: tiss-curriculum-scraper
+      - name: Copy file
+        run: cp tiss-curriculum-scraper/curriculum.tsv public/
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public/curriculum.tsv
+          git commit -m "Auto-update curriculum.tsv" || exit 0 # Don't fail if nothing to commit
+          git push
