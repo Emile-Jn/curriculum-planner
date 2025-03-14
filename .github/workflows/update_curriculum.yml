@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Checkout target repo
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true # Keeps authentication for pushing
       - name: Checkout source repo
         uses: actions/checkout@v4
         with:
