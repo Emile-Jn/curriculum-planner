@@ -21,6 +21,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add public/curriculum.tsv
+          git add -A
           git commit -m "Auto-update curriculum.tsv" || exit 0 # Don't fail if nothing to commit
           git push
