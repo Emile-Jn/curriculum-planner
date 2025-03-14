@@ -17,6 +17,8 @@ jobs:
         with:
           repository: emile-jn/tiss-curriculum-scraper
           path: tiss-curriculum-scraper
+      - name: Remove source repo .git directory (prevent embedding issue)
+        run: rm -rf tiss-curriculum-scraper/.git
       - name: Copy file
         run: cp tiss-curriculum-scraper/curriculum.tsv public/
       - name: Commit changes
