@@ -12,7 +12,7 @@ Web app available [here](https://emile-jn.github.io/curriculum-planner/).
 - Add and remove any course or semester at any time.
 - The graduation requirements on the right of the screen are automatically up-to-date.
 - Selected courses are automatically saved to local storage (usually disappears after a few days).
-- Export you course selection to a JSON file with the 'Export courses' button.
+- Export your course selection to a JSON file with the 'Export courses' button.
 - Import a JSON file that was previously exported from this app with the 'Import courses' button.
 - All courses in the transferable skills catalogue are available as part of the curriculum.
 - Add any course which is not (or no longer) in the data science curriculum with the 'other course' button.
@@ -21,6 +21,7 @@ This can also be a course from another university, but make sure it officially b
 meaning that they can count towards any requirement, including cores. This is particularly useful
 for people who took a core course which is no longer offered but is still valid for graduation.
 - Get guidance on how to choose courses with the 'Help' button.
+- The curriculum is updated every day by fetching the result of the [scraping repo](https://github.com/Emile-Jn/tiss-curriculum-scraper)
 
 ## Contributions
 Pull requests, feedback or bug reports are welcome.  
