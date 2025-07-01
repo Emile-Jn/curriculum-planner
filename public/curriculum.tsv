@@ -1,8 +1,6 @@
 module	title	code	type	semester	credits	link	full_module_name
-Foundations	AKSTA Statistical Computing	105.731	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105731&semester=2025S	Prüfungsfach Data Science - Foundations
 Foundations	Data-oriented Programming Paradigms	188.995	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188995&semester=2024W	Prüfungsfach Data Science - Foundations
 Foundations	Experiment Design for Data Science	188.992	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188992&semester=2024W	Prüfungsfach Data Science - Foundations
-Foundations	Advanced Methods for Regression and Classification	105.707	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105707&semester=2024W	Prüfungsfach Data Science - Foundations
 Foundations	Machine Learning	184.702	VU	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184702&semester=2025S	Prüfungsfach Data Science - Foundations
 Foundations	Machine Learning	184.702	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184702&semester=2024W	Prüfungsfach Data Science - Foundations
 Foundations	Advanced Database Systems	184.780	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184780&semester=2025S	Prüfungsfach Data Science - Foundations
@@ -17,7 +15,6 @@ DSA	Interdisciplinary Project in Data Science	194.147	PR	S	5.0	https://tiss.tuwi
 DSA	Interdisciplinary Project in Data Science	194.147	PR	W	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194147&semester=2024W	Prüfungsfach Domain-Specific Aspects of Data Science
 DSA	Domain-Specific Lectures in Data Science	194.068	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194068&semester=2025S	Prüfungsfach Domain-Specific Aspects of Data Science
 DSA	Domain-Specific Lectures in Data Science	194.068	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194068&semester=2024W	Prüfungsfach Domain-Specific Aspects of Data Science
-FDS/CO	Data Acquisition and Survey Methods	105.708	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105708&semester=2025S	Modul FDS/CO - Fundamentals of Data Science - Core
 FDS/CO	Data Stewardship	194.044	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194044&semester=2025S	Modul FDS/CO - Fundamentals of Data Science - Core
 FDS/EX	Advanced Cryptography	192.115	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192115&semester=2025S	Modul FDS/EX - Fundamentals of Data Science - Extension
 FDS/EX	Data Stewardship	194.045	UE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194045&semester=2025S	Modul FDS/EX - Fundamentals of Data Science - Extension
@@ -29,7 +26,6 @@ FDS/EX	Symmetric Cryptography	192.124	VU	S	6.0	https://tiss.tuwien.ac.at/course/
 FDS/EX	User Research Methods	193.055	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193055&semester=2024W	Modul FDS/EX - Fundamentals of Data Science - Extension
 FDS/EX	User Research Methods Project	193.056	PR	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193056&semester=2024W	Modul FDS/EX - Fundamentals of Data Science - Extension
 MLS/CO	Recommender Systems	194.035	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194035&semester=2025S	Modul MLS/CO - Machine Learning and Statistics - Core
-MLS/CO	Statistical Simulation and Computerintensive Methods	107.330	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107330&semester=2024W	Modul MLS/CO - Machine Learning and Statistics - Core
 MLS/EX	Advanced Modeling and Simulation	194.056	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194056&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	AI/ML in the Era of Climate Change	194.125	VU	W	4.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194125&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Advanced Reinforcement Learning	194.170	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194170&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
@@ -47,8 +43,6 @@ MLS/EX	Machine Learning for Visual Computing	183.605	VU	W	4.5	https://tiss.tuwie
 MLS/EX	Mathematical Programming	186.835	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186835&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Modeling and Simulation	194.076	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194076&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Modelling and Simulation in Health Technology Assessment	194.094	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194094&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Multivariate Statistics	107.388	VO	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107388&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Multivariate Statistics	107.391	UE	W	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107391&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Probabilistic Programming and AI	194.150	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194150&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Problem Solving and Search in Artificial Intelligence	181.190	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181190&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Security, Privacy and Explainability in Machine Learning	194.055	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194055&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension
@@ -96,6 +90,12 @@ VAST/EX	Semantic Technologies	184.729	VU	S	3.0	https://tiss.tuwien.ac.at/course/
 VAST/EX	Semi-Automatic Information and Knowledge Systems	188.387	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188387&semester=2025S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Visual Data Science	186.868	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186868&semester=2024W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Visualization 2	186.833	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186833&semester=2024W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+Foundations	AKSTA Statistical Computing	105.731	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105731&semester=2026S	Prüfungsfach Data Science - Foundations
+Foundations	Advanced Methods for Regression and Classification	105.707	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105707&semester=2025W	Prüfungsfach Data Science - Foundations
+FDS/CO	Data Acquisition and Survey Methods	105.708	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105708&semester=2026S	Modul FDS/CO - Fundamentals of Data Science - Core
+MLS/CO	Statistical Simulation and Computerintensive Methods	107.330	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107330&semester=2025W	Modul MLS/CO - Machine Learning and Statistics - Core
+MLS/EX	Multivariate Statistics	107.388	VO	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107388&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Multivariate Statistics	107.391	UE	W	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107391&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 VAST/EX	Natural Language Processing and Information Extraction	194.093	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194093&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 Thesis	Master Thesis	none		W and S	27.0		
 Thesis	Seminar for Master students in Data Science	180.772	SE	W and S	1.5		
