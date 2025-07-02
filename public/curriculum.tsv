@@ -48,8 +48,6 @@ MLS/EX	Problem Solving and Search in Artificial Intelligence	181.190	VU	S	3.0	ht
 MLS/EX	Security, Privacy and Explainability in Machine Learning	194.055	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194055&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Self-Organizing Systems	188.413	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188413&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Social Network Analysis	194.050	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194050&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Similarity Modeling 1 - Computational Seeing and Hearing	188.501	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188501&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Similarity Modeling 2 - Computational Seeing and Hearing	188.498	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188498&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.100	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194100&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.100	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194100&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Machine Learning Operations	194.182	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194182&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension
@@ -96,6 +94,8 @@ FDS/CO	Data Acquisition and Survey Methods	105.708	VU	S	3.0	https://tiss.tuwien.
 MLS/CO	Statistical Simulation and Computerintensive Methods	107.330	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107330&semester=2025W	Modul MLS/CO - Machine Learning and Statistics - Core
 MLS/EX	Multivariate Statistics	107.388	VO	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107388&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Multivariate Statistics	107.391	UE	W	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107391&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Similarity Modeling 1 - Computational Seeing and Hearing	188.501	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188501&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Similarity Modeling 2 - Computational Seeing and Hearing	188.498	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188498&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 VAST/EX	Natural Language Processing and Information Extraction	194.093	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194093&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 Thesis	Master Thesis	none		W and S	27.0		
 Thesis	Seminar for Master students in Data Science	180.772	SE	W and S	1.5		
