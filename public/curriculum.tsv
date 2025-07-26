@@ -7,7 +7,6 @@ Foundations	Data-intensive Computing	194.048	VU	S	3.0	https://tiss.tuwien.ac.at/
 Foundations	Cognitive Foundations of Visualization	193.142	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193142&semester=2025S	Prüfungsfach Data Science - Foundations
 Foundations	Information Visualization	186.141	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186141&semester=2025S	Prüfungsfach Data Science - Foundations
 Foundations	Information Visualization	188.305	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188305&semester=2024W	Prüfungsfach Data Science - Foundations
-Foundations	Introduction to Semantic Systems	188.399	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188399&semester=2024W	Prüfungsfach Data Science - Foundations
 DSA	Interdisciplinary Lecture Series on Data Science	194.088	VU	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194088&semester=2025S	Prüfungsfach Domain-Specific Aspects of Data Science
 DSA	Interdisciplinary Project in Data Science	194.147	PR	S	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194147&semester=2025S	Prüfungsfach Domain-Specific Aspects of Data Science
 DSA	Domain-Specific Lectures in Data Science	194.068	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194068&semester=2025S	Prüfungsfach Domain-Specific Aspects of Data Science
@@ -43,12 +42,10 @@ MLS/EX	Problem Solving and Search in Artificial Intelligence	181.190	VU	S	3.0	ht
 MLS/EX	Security, Privacy and Explainability in Machine Learning	194.055	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194055&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Social Network Analysis	194.050	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194050&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.100	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194100&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension
-MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.100	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194100&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Machine Learning Operations	194.182	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194182&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension
 BDHPC/CO	Basics of Parallel Computing	191.114	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=191114&semester=2025S	Modul BDHPC/CO - Big Data and High Performance Computing - Core
 BDHPC/EX	Advanced Multiprocessor Programming	184.726	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184726&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Algorithmic Geometry	192.133	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192133&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Algorithmics	186.814	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186814&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Analysis 2	104.268	UE	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=104268&semester=2025S	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Approximation Algorithms	186.102	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186102&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Database Theory	181.140	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181140&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
@@ -85,6 +82,7 @@ Foundations	AKSTA Statistical Computing	105.731	VU	S	3.0	https://tiss.tuwien.ac.
 Foundations	Experiment Design and Execution	194.192	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194192&semester=2025W	Prüfungsfach Data Science - Foundations
 Foundations	Advanced Methods for Regression and Classification	105.707	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105707&semester=2025W	Prüfungsfach Data Science - Foundations
 Foundations	Machine Learning	184.702	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184702&semester=2025W	Prüfungsfach Data Science - Foundations
+Foundations	Introduction to Semantic Systems	188.399	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188399&semester=2025W	Prüfungsfach Data Science - Foundations
 DSA	Interdisciplinary Lecture Series on Data Science	194.046	VU	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194046&semester=2025W	Prüfungsfach Domain-Specific Aspects of Data Science
 DSA	Interdisciplinary Project in Data Science	194.147	PR	W	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194147&semester=2025W	Prüfungsfach Domain-Specific Aspects of Data Science
 DSA	Domain-Specific Lectures in Data Science	194.068	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194068&semester=2025W	Prüfungsfach Domain-Specific Aspects of Data Science
@@ -96,7 +94,10 @@ MLS/EX	Multivariate Statistics	107.391	UE	W	1.5	https://tiss.tuwien.ac.at/course
 MLS/EX	Self-Organizing Systems	188.413	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188413&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Similarity Modeling 1 - Computational Seeing and Hearing	188.501	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188501&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Similarity Modeling 2 - Computational Seeing and Hearing	188.498	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188498&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.100	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194100&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 BDHPC/CO	Efficient Programs	185.190	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=185190&semester=2025W	Modul BDHPC/CO - Big Data and High Performance Computing - Core
+BDHPC/EX	Algorithmics	186.814	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186814&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+VAST/EX	Deep Learning for Natural Language Processing	192.039	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192039&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Natural Language Processing and Information Extraction	194.093	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194093&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 Thesis	Master Thesis	none		W and S	27.0		
 Thesis	Seminar for Master students in Data Science	180.772	SE	W and S	1.5		
