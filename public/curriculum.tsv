@@ -124,9 +124,7 @@ TSK	Building for people :: historic.smart	251.843	VO	W	2.0	https://tiss.tuwien.a
 TSK	Building for people :: Sacral building in urban context	251.852	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=251852&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Technology for People 2040	194.082	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194082&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Technology for People 2040	194.082	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194082&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
-TSK	Syntax-based Japanese I	057.028	VO	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057028&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Syntax-based Japanese II	057.029	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057029&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
-TSK	Syntax-based Japanese I	057.030	UE	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057030&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Syntax-based Japanese II	057.031	UE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057031&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Swedish for Engineers 1	060.028	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=060028&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
 TSK	IT Projects for Youth	192.058	UE	S	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192058&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
@@ -166,7 +164,6 @@ TSK	Industrial property rights for technicians	360.012	VO	S	1.5	https://tiss.tuw
 TSK	Contract and liability law	265.076	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265076&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Management for civil engineers	123.630	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=123630&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
 TSK	From Innovation to Product: Business Modelling for Scientists and Engineers	058.004	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=058004&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
-TSK	E-Tutoring, Moderation of E-Learning	015.087	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015087&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Barrierfree Buildings	259.345	VU	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=259345&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Barrierfree Buildings	259.346	UE	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=259346&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Planning of IT Projects and Public Procurement Law	384.107	VO	W	2.25	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=384107&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
@@ -219,6 +216,8 @@ TSK	French for engineers I	064.014	VU	W	3.0	https://tiss.tuwien.ac.at/course/cou
 TSK	French for engineers II	064.035	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064035&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Spanish for engineers I	064.015	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064015&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Spanish for engineers II	064.036	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064036&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
+TSK	Syntax-based Japanese I	057.028	VO	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057028&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
+TSK	Syntax-based Japanese I	057.030	UE	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057030&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Technisches Deutsch für Internationale Studierende	064.017	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064017&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Technisches Deutsch für Internationale Studierende	064.017	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064017&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Technical Chinese III	064.018	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064018&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
@@ -291,6 +290,7 @@ TSK	How to Invent a Robot - Product Development from the User Perspective	376.07
 TSK	How to Invent a Robot - Product Development from the User Perspective	376.075	VU	W	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=376075&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Transferable Skill - Account Management	330.302	UE	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330302&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Transferable Skill - Account Management	330.302	UE	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330302&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
+TSK	E-Tutoring, Moderation of E-Learning	015.087	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015087&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Ecological and Social Aspects in Chemistry	166.127	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=166127&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Communicating Science	064.027	VU	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064027&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Communicating Science	064.027	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064027&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
