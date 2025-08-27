@@ -41,7 +41,6 @@ MLS/EX	Machine Learning Operations	194.182	VU	S	3.0	https://tiss.tuwien.ac.at/co
 BDHPC/CO	Basics of Parallel Computing	191.114	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=191114&semester=2025S	Modul BDHPC/CO - Big Data and High Performance Computing - Core
 BDHPC/EX	Advanced Multiprocessor Programming	184.726	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184726&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Algorithmic Geometry	192.133	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192133&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Analysis 2	104.268	UE	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=104268&semester=2025S	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Approximation Algorithms	186.102	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186102&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Database Theory	181.140	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181140&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Fixed-Parameter Algorithms and Complexity	192.135	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192135&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
@@ -103,6 +102,7 @@ BDHPC/CO	Efficient Programs	185.190	VU	W	3.0	https://tiss.tuwien.ac.at/course/co
 BDHPC/EX	Advanced Multiprocessor Programming	191.022	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=191022&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Algorithmic Geometry	192.154	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192154&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Algorithmics	186.814	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186814&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Analysis 2	104.268	UE	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=104268&semester=2026S	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Beyond Exact Algorithms	192.163	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192163&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Database Theory	192.175	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192175&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Fixed-Parameter Algorithms and Complexity	192.153	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192153&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
@@ -159,7 +159,6 @@ TSK	Technology exploitation	015.082	VO	W	1.5	https://tiss.tuwien.ac.at/course/co
 TSK	Ringvorlesung Ökologie	253.118	VO	S	2.25	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=253118&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Legal issues of environmental protection	265.045	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265045&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Expert law	265.727	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265727&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
-TSK	Industrial property rights for technicians	360.012	VO	S	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=360012&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Contract and liability law	265.076	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265076&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Management for civil engineers	123.630	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=123630&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
 TSK	From Innovation to Product: Business Modelling for Scientists and Engineers	058.004	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=058004&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
@@ -282,6 +281,7 @@ TSK	Data Literacy: Principles of Data and Information Visualisation	040.009	VU	W
 TSK	Entrepreneurship for innovative corporations and high-tech start-ups	064.031	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064031&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Ecology and Sustainable Development	164.225	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=164225&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Private Law	265.003	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265003&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
+TSK	Industrial property rights for technicians	360.012	VO	S	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=360012&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	European Union - Institutions, Policies and Future Challenges	164.287	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=164287&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Organisational Lab	330.136	UE	S	4.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330136&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Contract and liability law	265.076	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265076&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
