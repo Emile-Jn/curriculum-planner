@@ -52,8 +52,6 @@ BDHPC/EX	High Performance Computing	184.725	VU	S	4.5	https://tiss.tuwien.ac.at/c
 BDHPC/EX	Hybrid Quantum - Classical Systems	194.027	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194027&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Optimization in Transport and Logistics	186.190	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186190&semester=2025S	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Structural Decompositions and Algorithms	186.856	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186856&semester=2025S	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Nonlinear Programming	105.147	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105147&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	Nonlinear Programming	105.652	UE	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105652&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Randomized Algorithms	192.045	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192045&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 VAST/CO	Advanced Information Retrieval	188.980	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188980&semester=2025S	Modul VAST/CO - Visual Analytics and Semantic Technologies - Core
 VAST/CO	Design and Evaluation of Visualisations	193.143	UE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193143&semester=2025S	Modul VAST/CO - Visual Analytics and Semantic Technologies - Core
@@ -110,6 +108,8 @@ BDHPC/EX	Fixed-Parameter Algorithms and Complexity	192.153	VU	W	6.0	https://tiss
 BDHPC/EX	Heuristic Optimization Techniques	192.162	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192162&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Hybrid Quantum - Classical Systems	191.023	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=191023&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Introduction to Computational Sustainability	191.021	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=191021&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Nonlinear Programming	105.147	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105147&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Nonlinear Programming	105.652	UE	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105652&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Structural Decompositions and Meta Theorems	192.159	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192159&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 VAST/CO	Visual Data Science	186.868	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186868&semester=2025W	Modul VAST/CO - Visual Analytics and Semantic Technologies - Core
 VAST/EX	Decidable Logics for Knowledge and Data	192.181	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192181&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
