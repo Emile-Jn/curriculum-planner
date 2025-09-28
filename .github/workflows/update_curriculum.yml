@@ -15,10 +15,23 @@ jobs:
       - name: Download curriculum.tsv from source repo
         run: |
           curl -o public/curriculum.tsv https://raw.githubusercontent.com/emile-jn/tiss-curriculum-scraper/main/curriculum.tsv
-      - name: Commit changes
+      - name: Check for changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git commit -m "Auto-update curriculum.tsv" || exit 0 # Don't fail if nothing to commit
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+      - name: Commit changes
+        run: |
+          git commit -m "Auto-update curriculum.tsv"
           git push
+
+      - name: Trigger deploy workflow
+        uses: peter-evans/workflow-dispatch@v1
+        with:
+          workflow: "deploy.yml"
+          ref: main
