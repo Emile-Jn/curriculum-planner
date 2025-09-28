@@ -35,6 +35,12 @@ export default {
           moduleMatches = course.module === 'TSK';
         }
         return titleMatches && seasonMatches && moduleMatches;
+      })
+      .sort((a, b) => {
+        // Sort by module first, then by title
+        const moduleCompare = a.module.localeCompare(b.module);
+        if (moduleCompare !== 0) return moduleCompare;
+        return a.title.localeCompare(b.title);
       });
     }
   },
