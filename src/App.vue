@@ -29,9 +29,11 @@ export default {
         cores: 2, // Minimum number of cores required
         specialisation: 36, // Number of ECTS required for specialisation courses
         transferable: 4.5, // Minimum number of ECTS required for transferable skills courses
-        freeElectives: 4.5, // Minimum number of ECTS required for free electives
+    freeElectives: 4.5, // Base minimum number of ECTS required for free electives
         thesis: 30, // Number of ECTS required for the thesis
       },
+    showTSKDropdown: false,
+    showFreeElectivesDropdown: false,
     };
   },
   created: async function() {
@@ -52,9 +54,74 @@ export default {
     }
   },
   computed: {
+      freeElectivesRequired() {
+        // Overhang = specialisationCompleted - 36
+        const overhang = Math.max(this.specialisationCompleted - this.requirements.specialisation, 0);
+        return Math.max(this.requirements.freeElectives - overhang, 0);
+      },
     chosenCourses() {
       return this.flattenTables(this.tables)
     },
+      tskCourses() {
+        // Courses that count toward Transferable Skills (TSK)
+        return this.chosenCourses.filter(course => course.module === 'TSK');
+      },
+      freeElectiveCourses() {
+          // Only show courses that actually contribute to the ECTS value in freeElectivesCompleted
+          let result = [];
+          let ueberhangECTS = 0;
+          let ueberhangCourses = [];
+          // 1. Specialisation (core & extension) courses not counted toward specialisation
+          for (let i in this.trackNames) {
+            if (!this.coresCompleted[i]) {
+              // If core not completed, all core & extension count as free electives
+              result.push(...this.chosenCourses.filter(course => course.module.includes(this.trackNames[i] + '/CO')));
+              result.push(...this.chosenCourses.filter(course => course.module.includes(this.trackNames[i] + '/EX')));
+            } else {
+              // If core completed, only extension credits above 18 count as free electives
+              let extCourses = this.chosenCourses.filter(course => course.module.includes(this.trackNames[i] + '/EX'));
+              let extCredits = 0;
+              for (let course of extCourses) {
+                if (extCredits < 18) {
+                  extCredits += course.credits;
+                } else {
+                  ueberhangCourses.push(course);
+                  ueberhangECTS += course.credits;
+                }
+              }
+            }
+          }
+          // Add Überhang entry if any extension overhang is present
+          if (ueberhangECTS > 0) {
+            result.unshift({ title: `Überhang (Extension Overhang): ${ueberhangECTS} ECTS from extensions above 18 ECTS per track`, credits: ueberhangECTS, type: 'info' });
+            // Also list the individual overhang courses below the info entry
+            ueberhangCourses.forEach(course => {
+              result.unshift({ ...course, title: `${course.title} (Extension Overhang)`, type: 'ueberhang' });
+            });
+          }
+          // 2. Transferable skills beyond required 4.5 ECTS
+          let tskCourses = this.tskCourses;
+          let tskCredits = tskCourses.reduce((acc, course) => acc + course.credits, 0);
+          let tskExcess = tskCredits - 4.5;
+          if (tskExcess > 0) {
+            // Only show the courses that make up the excess, splitting if needed
+            let runningTotal = 0;
+            for (let course of tskCourses) {
+              let remaining = tskExcess - runningTotal;
+              if (remaining <= 0) break;
+              let addCredits = Math.min(course.credits, remaining);
+              if (addCredits > 0) {
+                // If only part of the course counts, show as 'TSK (partial)'
+                let title = addCredits < course.credits ? `${course.title} (TSK, partial)` : course.title;
+                result.push({ ...course, credits: addCredits, title });
+                runningTotal += addCredits;
+              }
+            }
+          }
+          // 3. Courses with module Free Elective
+          result.push(...this.chosenCourses.filter(course => course.module === 'Free Elective'));
+          return result;
+      },
     availableCourses() {
       console.time("availableCourses"); // Start timer
       let result;
@@ -123,7 +190,7 @@ export default {
       return this.transferableCompleted >= this.requirements["transferable"];
     },
     freeElectivesCheck() {
-      return this.freeElectivesCompleted >= this.requirements["freeElectives"];
+      return this.freeElectivesCompleted >= this.freeElectivesRequired;
     },
     thesisCheck() {
       return this.thesisCompleted >= this.requirements["thesis"];
@@ -532,16 +599,53 @@ export default {
           <p>{{ this.specialisationCheck ? "✅" : "❌" }} {{ this.specialisationCompleted }} /
             {{ this.requirements["specialisation"] }} ECTS</p>
         </div>
-        <div class="req">
-          <h3>Transferable skills</h3>
-          <p>{{ this.transferableCheck ? "✅" : "❌" }} {{ this.transferableCompleted }} /
-            {{ this.requirements["transferable"] }} ECTS</p>
-        </div>
-        <div class="req">
-          <h3>Free electives</h3>
-          <p>{{ this.freeElectivesCheck ? "✅" : "❌" }} {{ this.freeElectivesCompleted }} /
-            {{ this.requirements["freeElectives"] }} ECTS</p>
-        </div>
+          <div class="req">
+            <h3 style="display: flex; align-items: center; justify-content: space-between;">
+              <span>Transferable skills</span>
+              <span @click="showTSKDropdown = !showTSKDropdown" style="cursor:pointer; margin-left:8px;">
+                <span v-if="!showTSKDropdown">▼</span>
+                <span v-else>▲</span>
+              </span>
+            </h3>
+            <p>{{ this.transferableCheck ? "✅" : "❌" }} {{ this.transferableCompleted }} /
+              {{ this.requirements["transferable"] }} ECTS</p>
+            <ul v-if="showTSKDropdown" style="margin-top:6px;">
+              <li v-for="course in tskCourses" :key="course.title + course.type">
+                {{ course.title }} ({{ course.credits }} ECTS)
+              </li>
+              <li v-if="tskCourses.length === 0" style="color:#888;">No TSK courses chosen</li>
+            </ul>
+          </div>
+          <div class="req">
+                <h3 style="display: flex; align-items: center; justify-content: space-between;">
+                  <span>Free electives</span>
+                  <span @click="showFreeElectivesDropdown = !showFreeElectivesDropdown" style="cursor:pointer; margin-left:8px;">
+                    <span v-if="!showFreeElectivesDropdown">▼</span>
+                    <span v-else>▲</span>
+                  </span>
+                </h3>
+                <p>{{ this.freeElectivesCheck ? "✅" : "❌" }} {{ Math.min(this.freeElectivesCompleted, freeElectivesRequired) }} /
+                  {{ freeElectivesRequired }} ECTS</p>
+            <ul v-if="showFreeElectivesDropdown" style="margin-top:6px;">
+                      <li style="color:#666; font-size:13px; margin-bottom:8px;">
+                        <span>
+                          <b>Note:</b> Overhang of specialisation courses<br>
+                          (credits above 36 ECTS) can reduce the number of free electives needed.
+                        </span>
+                      </li>
+                      <li v-for="(course, idx) in freeElectiveCourses" :key="course.title + course.type">
+                        <template v-if="course.type === 'info'">
+                          <b>{{ course.title }}</b>
+                          <br>
+                          <span style="color:#666; font-size:13px;">The above ECTS from extensions are counted as free electives due to exceeding the allowed 18 ECTS per track.</span>
+                        </template>
+                        <template v-else>
+                          {{ course.title }} ({{ course.credits }} ECTS)
+                        </template>
+                      </li>
+                      <li v-if="freeElectiveCourses.length === 0" style="color:#888;">No free electives chosen</li>
+            </ul>
+          </div>
         <div class="req">
           <h3>Thesis</h3>
           <p>{{ this.thesisCheck ? "✅" : "❌" }} {{ this.thesisCompleted }} /
