@@ -98,6 +98,7 @@ MLS/EX	Self-Organizing Systems	188.413	VU	W	4.5	https://tiss.tuwien.ac.at/course
 MLS/EX	Similarity Modeling 1 - Computational Seeing and Hearing	188.501	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188501&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Similarity Modeling 2 - Computational Seeing and Hearing	188.498	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188498&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Theoretical Foundations and Research Topics in Machine Learning	194.100	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194100&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Graph Representation Learning	192.197	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192197&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension
 BDHPC/CO	Efficient Programs	185.190	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=185190&semester=2025W	Modul BDHPC/CO - Big Data and High Performance Computing - Core
 BDHPC/EX	Advanced Multiprocessor Programming	191.022	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=191022&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Algorithmic Geometry	192.154	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192154&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
@@ -127,8 +128,6 @@ TSK	Building for people :: historic.smart	251.843	VO	W	2.0	https://tiss.tuwien.a
 TSK	Building for people :: Sacral building in urban context	251.852	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=251852&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Technology for People 2040	194.082	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194082&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Technology for People 2040	194.082	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194082&semester=2024W	Modul Freie Wahlfächer und Transferable Skills
-TSK	Syntax-based Japanese II	057.029	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057029&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
-TSK	Syntax-based Japanese II	057.031	UE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057031&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Leadership Competency Coaching 1	188.383	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188383&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Mediativ competence in Civil Engineering Practice 1	242.026	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242026&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Group Dynamics	260.138	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=260138&semester=2025S	Modul Freie Wahlfächer und Transferable Skills
@@ -188,6 +187,7 @@ TSK	Sustainability & Diversity in Research and Development	034.021	SE	S	2.0	http
 TSK	VO Who cares? Social responsibility in science and technology development	034.025	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034025&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Who cares? Social responsibility in science and technology development	034.026	UE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034026&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Masculinities and technologies - approaches, theories and concepts for advanced exploration	034.027	UE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034027&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
+TSK	RadTUour - cycleFIT- Quality Assessment of Cycling Routes to TU Wien	280.B71	UE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=280B71&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Developing a career - coping with obstacles	187.250	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=187250&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Technik und Gender, Grundlagenvorlesung für IngenieurwissenschafterInnen	034.003	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034003&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Was hat Gender mit dem Technikstudium zu tun?	034.004	SE	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034004&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
@@ -202,7 +202,9 @@ TSK	French for engineers II	064.035	VU	S	3.0	https://tiss.tuwien.ac.at/course/co
 TSK	Spanish for engineers I	064.015	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064015&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Spanish for engineers II	064.036	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064036&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Syntax-based Japanese I	057.028	VO	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057028&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
+TSK	Syntax-based Japanese II	063.001	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=063001&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Syntax-based Japanese I	057.030	UE	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057030&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
+TSK	Syntax-based Japanese II	063.002	UE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=063002&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Technisches Deutsch für Internationale Studierende	064.017	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064017&semester=2026S	Modul Freie Wahlfächer und Transferable Skills
 TSK	Technisches Deutsch für Internationale Studierende	064.017	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064017&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
 TSK	Technical Chinese III	064.018	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064018&semester=2025W	Modul Freie Wahlfächer und Transferable Skills
