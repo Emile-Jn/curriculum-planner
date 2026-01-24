@@ -2,7 +2,6 @@ module	title	code	type	semester	credits	link	full_module_name
 Foundations	Data-oriented Programming Paradigms	188.995	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188995&semester=2024W	Prüfungsfach Data Science - Foundations
 Foundations	Experiment Design for Data Science	188.992	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188992&semester=2024W	Prüfungsfach Data Science - Foundations
 Foundations	Machine Learning	184.702	VU	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184702&semester=2025S	Prüfungsfach Data Science - Foundations
-Foundations	Advanced Database Systems	184.780	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184780&semester=2025S	Prüfungsfach Data Science - Foundations
 Foundations	Data-intensive Computing	194.048	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194048&semester=2025S	Prüfungsfach Data Science - Foundations
 Foundations	Cognitive Foundations of Visualization	193.142	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193142&semester=2025S	Prüfungsfach Data Science - Foundations
 Foundations	Information Visualization	186.141	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186141&semester=2025S	Prüfungsfach Data Science - Foundations
@@ -72,6 +71,7 @@ Foundations	AKSTA Statistical Computing	105.731	VU	S	3.0	https://tiss.tuwien.ac.
 Foundations	Experiment Design and Execution	194.192	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194192&semester=2025W	Prüfungsfach Data Science - Foundations
 Foundations	Advanced Methods for Regression and Classification	105.707	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105707&semester=2025W	Prüfungsfach Data Science - Foundations
 Foundations	Machine Learning	184.702	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184702&semester=2025W	Prüfungsfach Data Science - Foundations
+Foundations	Advanced Database Systems	184.780	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184780&semester=2026S	Prüfungsfach Data Science - Foundations
 Foundations	Information Visualization	193.187	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193187&semester=2025W	Prüfungsfach Data Science - Foundations
 Foundations	Introduction to Semantic Systems	188.399	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188399&semester=2025W	Prüfungsfach Data Science - Foundations
 DSA	Interdisciplinary Lecture Series on Data Science	194.046	VU	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194046&semester=2025W	Prüfungsfach Domain-Specific Aspects of Data Science
@@ -115,6 +115,7 @@ BDHPC/EX	Nonlinear Programming	105.652	UE	W	2.0	https://tiss.tuwien.ac.at/course
 BDHPC/EX	Structural Decompositions and Meta Theorems	192.159	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192159&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 VAST/CO	Visual Data Science	186.868	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186868&semester=2025W	Modul VAST/CO - Visual Analytics and Semantic Technologies - Core
 VAST/EX	Decidable Logics for Knowledge and Data	192.181	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192181&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Deep Learning for Natural Language Processing	192.039	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192039&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Deep Learning for Natural Language Processing	192.039	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192039&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Graph Data Engineering and Management	192.176	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192176&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Knowledge Graphs	192.194	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192194&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
