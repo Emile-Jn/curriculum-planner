@@ -39,7 +39,6 @@ BDHPC/EX	Algorithmic Geometry	192.133	VU	W	4.5	https://tiss.tuwien.ac.at/course/
 BDHPC/EX	Approximation Algorithms	186.102	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=186102&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Database Theory	181.140	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181140&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Fixed-Parameter Algorithms and Complexity	192.135	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192135&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
-BDHPC/EX	GPU Architectures and Computing	182.731	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=182731&semester=2025S	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Frontiers of Algorithms and Complexity	192.136	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192136&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Graph Drawing Algorithms	192.141	VU	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192141&semester=2025S	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Heuristic Optimization Techniques	192.137	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192137&semester=2024W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
@@ -69,6 +68,7 @@ Foundations	Experiment Design and Execution	194.192	VU	W	6.0	https://tiss.tuwien
 Foundations	Advanced Methods for Regression and Classification	105.707	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105707&semester=2025W	Prüfungsfach Data Science - Foundations
 Foundations	Machine Learning	184.702	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184702&semester=2025W	Prüfungsfach Data Science - Foundations
 Foundations	Advanced Database Systems	184.780	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184780&semester=2026S	Prüfungsfach Data Science - Foundations
+Foundations	Information Visualization	193.171	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193171&semester=2026S	Prüfungsfach Data Science - Foundations
 Foundations	Information Visualization	193.187	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193187&semester=2025W	Prüfungsfach Data Science - Foundations
 Foundations	Introduction to Semantic Systems	188.399	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188399&semester=2025W	Prüfungsfach Data Science - Foundations
 DSA	Interdisciplinary Lecture Series on Data Science	194.046	VU	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194046&semester=2025W	Prüfungsfach Domain-Specific Aspects of Data Science
@@ -106,9 +106,11 @@ BDHPC/EX	Analysis 2	104.268	UE	S	4.5	https://tiss.tuwien.ac.at/course/courseDeta
 BDHPC/EX	Beyond Exact Algorithms	192.163	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192163&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Database Theory	192.175	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192175&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Fixed-Parameter Algorithms and Complexity	192.153	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192153&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	GPU Architectures and Computing	182.731	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=182731&semester=2026S	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Heuristic Optimization Techniques	192.162	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192162&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Hybrid Quantum - Classical Systems	191.023	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=191023&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Introduction to Computational Sustainability	191.021	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=191021&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
+BDHPC/EX	Mathematical Programming and Optimization in Transport Logistics	192.200	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192200&semester=2026S	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Nonlinear Programming	105.147	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105147&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Nonlinear Programming	105.652	UE	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105652&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
 BDHPC/EX	Structural Decompositions and Meta Theorems	192.159	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192159&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension
