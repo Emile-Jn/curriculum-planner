@@ -18,6 +18,7 @@ FDS/EX	Advanced Cryptography	192.115	VU	S	6.0	https://tiss.tuwien.ac.at/course/c
 FDS/EX	Numerical Computation	101.973	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=101973&semester=2025W	Modul FDS/EX - Fundamentals of Data Science - Extension
 FDS/EX	Digital Humanism	194.072	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194072&semester=2025W	Modul FDS/EX - Fundamentals of Data Science - Extension
 FDS/EX	Sustainability in Computer Science	194.155	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194155&semester=2025W	Modul FDS/EX - Fundamentals of Data Science - Extension
+FDS/EX	System and Application Security	192.112	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192112&semester=2026S	Modul FDS/EX - Fundamentals of Data Science - Extension
 MLS/CO	Statistical Simulation and Computerintensive Methods	107.330	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107330&semester=2025W	Modul MLS/CO - Machine Learning and Statistics - Core
 MLS/EX	AI Programming	194.193	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194193&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Advanced Reinforcement Learning	194.200	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194200&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
@@ -32,6 +33,7 @@ MLS/EX	Modeling and Simulation	194.076	VU	W	3.0	https://tiss.tuwien.ac.at/course
 MLS/EX	Modelling and Simulation in Health Technology Assessment	194.094	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194094&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Multivariate Statistics	107.388	VO	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107388&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Multivariate Statistics	107.391	UE	W	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107391&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
+MLS/EX	Problem Solving and Search in Artificial Intelligence	192.207	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192207&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Self-Organizing Systems	188.413	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188413&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Similarity Modeling 1 - Computational Seeing and Hearing	188.501	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188501&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
 MLS/EX	Similarity Modeling 2 - Computational Seeing and Hearing	188.498	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188498&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension
@@ -58,6 +60,7 @@ VAST/EX	Decidable Logics for Knowledge and Data	192.181	VU	W	6.0	https://tiss.tu
 VAST/EX	Deep Learning for Natural Language Processing	192.039	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192039&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Deep Learning for Natural Language Processing	192.039	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192039&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Knowledge Graphs	192.194	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192194&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
+VAST/EX	Medical Image Processing and Machine Learning	193.215	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193215&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Natural Language Processing and Information Extraction	194.093	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194093&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Semi-Automatic Information and Knowledge Systems	188.387	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188387&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
 VAST/EX	Visualization	193.166	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193166&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension
