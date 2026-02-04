@@ -79,7 +79,7 @@ export default {
       return this.moduleCompleted('DSA');
     },
     coresCompleted() { // an array of booleans: one boolean for each core
-      return this.trackNames.map(track => this.coreCredits(track) === 6);
+      return this.trackNames.map(track => this.coreCredits(track) >= 6);
     },
     specialisationCompleted() {
       return this.countSpecialisation()[0]; // first element: specialisation credits
