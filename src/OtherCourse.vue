@@ -4,7 +4,7 @@ export default {
   data() {
     return {
       moduleNames: ['Free Elective', 'TSK', 'Foundations', 'DSA',
-        'FDO/CO', 'FDS/EX', 'MLS/CO', 'MLS/EX', 'BDHPC/CO', 'BDHPC/EX', 'VAST/CO', 'VAST/EX'],
+        'FDS/CO', 'FDS/EX', 'MLS/CO', 'MLS/EX', 'BDHPC/CO', 'BDHPC/EX', 'VAST/CO', 'VAST/EX'],
       typeNames: ['VU', 'VO', 'UE', 'PR', 'SE'],
       selectedModule: 'Free Elective',   // Holds selected module
       selectedType: 'VU',     // Holds selected type
