@@ -37,7 +37,10 @@ export default {
         return titleMatches && seasonMatches && moduleMatches;
       })
       .sort((a, b) => {
-        // Sort by module first, then by title
+        // Sort by active first (True comes before False), then by module, then by title
+        if (a.active !== b.active) {
+          return a.active ? -1 : 1;
+        }
         const moduleCompare = a.module.localeCompare(b.module);
         if (moduleCompare !== 0) return moduleCompare;
         return a.title.localeCompare(b.title);
@@ -107,7 +110,10 @@ export default {
               @click="selectCourse(course)"
           >
             <td>{{ course.module }}</td>
-            <td>{{ course.title }}</td>
+            <td>
+              <span v-if="!course.active" class="warning-icon" title="not currently available in Tiss">⚠️</span>
+              {{ course.title }}
+            </td>
             <td>{{ course.type }}</td>
             <td>{{ course.credits }}</td>
           </tr>
@@ -223,5 +229,10 @@ th {
 }
 #menu button:hover {
   background-color: #e0e0e0; /* Lighter background on hover */
+}
+.warning-icon {
+  color: #ffcc00; /* Yellow color */
+  margin-right: 5px;
+  cursor: help;
 }
 </style>

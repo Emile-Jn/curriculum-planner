@@ -166,6 +166,9 @@ export default {
             this.curriculum = Papa.parse(cleanedData, { header: true, delimiter: '\t', skipEmptyLines: true })
                 .data.map(course => {
               course.credits = Number(course.credits);
+              if (course.active !== undefined) {
+                course.active = course.active.trim().toLowerCase() === 'true';
+              }
               return course;
             });
             console.log('Curriculum loaded from the TSV file.');
