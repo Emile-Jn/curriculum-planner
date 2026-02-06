@@ -15,6 +15,8 @@ Web app available [here](https://emile-jn.github.io/curriculum-planner/).
 - Export your course selection to a JSON file with the 'Export courses' button.
 - Import a JSON file that was previously exported from this app with the 'Import courses' button.
 - All courses in the transferable skills catalogue are available as part of the curriculum.
+- Courses that are not currently available in Tiss (because they were canceled, or because the lecture team still needs 
+to create the Tiss page for the current semester) appear with a warning as the last search results.
 - Add any course which is not (or no longer) in the data science curriculum with the 'other course' button.
 This can also be a course from another university, but make sure it officially belongs to the module you select.
 - Manually added courses are automatically added to the curriculum and behave like other courses,
@@ -39,6 +41,7 @@ be generated, so that the course can still be identified in the system.
 
 ### Assumptions:
 If these assumptions don't hold true, the app might not behave as expected.
-- Each course can be uniquely identified be the combination of its course code, title and semester.
+- Each course can be uniquely identified be the combination of its title, type, semester, credits and module.
+- If there are two courses with the same title and type, both versions appear in search results, but only one can be chosen.
 - There are no duplicates in `curriculum.tsv`.
 - A course can't be taken twice (of course in real life a course can be retaken).
