@@ -8,6 +8,9 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  test: {
+    environment: 'jsdom',
+  },
   base: '/curriculum-planner/',
   build: {
     outDir: 'dist', // Ensure build output is directed to 'dist'

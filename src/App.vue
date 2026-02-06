@@ -238,8 +238,7 @@ export default {
      * @param tableIndex the index of the semester in which the course is
      */
     handleRemoveCourse(rowIndex, tableIndex) { // Remove the course from the given table and row index
-      console.log('Removing course at table', tableIndex, 'and row', rowIndex);
-      let course = this.tables[tableIndex].rows[rowIndex]; // Get the course at the given index
+      console.log('Removing course at table', tableIndex, 'and row', rowIndex)
       this.tables[tableIndex].rows.splice(rowIndex, 1); // Remove the course at the given index
       
     },
@@ -569,7 +568,7 @@ export default {
   position: relative; /* Allows the shadow to be positioned relative to the element */
   /* padding-bottom: 5px; /* Space between content and shadow border */
   margin-bottom: 15px; /* Space below the shadow */
-  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.3); /* Bottom-only shadow */
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3); /* Bottom-only shadow */
 
 }
 /* Overlay to darken the background */

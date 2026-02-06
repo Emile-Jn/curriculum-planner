@@ -19,7 +19,7 @@ export default {
     filteredCourses() {
       return this.courses.filter(course => {
         const titleMatches = course.title.toLowerCase().includes(this.query.toLowerCase());
-        const seasonMatches = String(course.semester).toLowerCase().includes(String(this.season).toLowerCase()[0]); // TODO: fix this
+        const seasonMatches = String(course.semester).toLowerCase().includes(String(this.season).toLowerCase()[0]);
         let moduleMatches = true; // Default to true for 'All' or if no specific condition is matched
         if (this.selectedModule === 'Mandatory') {
           moduleMatches = ['Foundations', 'DSA', 'Thesis'].includes(course.module);
@@ -37,13 +37,10 @@ export default {
         return titleMatches && seasonMatches && moduleMatches;
       })
       .sort((a, b) => {
-        // Sort by active first (True comes before False), then by module, then by title
+        // Sort by active first (True comes before False)
         if (a.active !== b.active) {
           return a.active ? -1 : 1;
         }
-        const moduleCompare = a.module.localeCompare(b.module);
-        if (moduleCompare !== 0) return moduleCompare;
-        return a.title.localeCompare(b.title);
       });
     }
   },
