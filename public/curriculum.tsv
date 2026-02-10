@@ -10,10 +10,8 @@ FDS/EX	Computer Numerics	101.484	VU	W	3.0	https://tiss.tuwien.ac.at/course/cours
 FDS/EX	Numerical Computation	101.973	VU	W	5.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=101973&semester=2024W	Modul FDS/EX - Fundamentals of Data Science - Extension	False
 FDS/EX	User Research Methods	193.055	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193055&semester=2024W	Modul FDS/EX - Fundamentals of Data Science - Extension	False
 FDS/EX	User Research Methods Project	193.056	PR	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193056&semester=2024W	Modul FDS/EX - Fundamentals of Data Science - Extension	False
-MLS/EX	Advanced Modeling and Simulation	194.056	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194056&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension	False
 MLS/EX	AI/ML in the Era of Climate Change	194.125	VU	W	4.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194125&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension	False
 MLS/EX	Advanced Reinforcement Learning	194.170	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194170&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension	False
-MLS/EX	Algorithmic Social Choice	192.118	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192118&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension	False
 MLS/EX	Reinforcement Learning	194.163	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194163&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension	False
 MLS/EX	Applied Deep Learning	194.077	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194077&semester=2024W	Modul MLS/EX - Machine Learning and Statistics - Extension	False
 MLS/EX	Deep Learning for Visual Computing	183.663	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=183663&semester=2025S	Modul MLS/EX - Machine Learning and Statistics - Extension	False
@@ -63,11 +61,9 @@ TSK	Technology for People 2040	194.082	VU	W	3.0	https://tiss.tuwien.ac.at/course
 TSK	Mediativ competence in Civil Engineering Practice 1	242.026	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242026&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Group Dynamics	260.138	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=260138&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Softskills for technicians	181.208	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181208&semester=2024W	Modul Freie Wahlfächer und Transferable Skills	False
-TSK	Softskills for technicians communication of science and Co-creation	299.001	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=299001&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Social skills for tutors	060.002	SE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=060002&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	TU.impact – the buddy program of the TU Wien	064.003	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064003&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	TU.impact – the buddy program of the TU Wien	064.003	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064003&semester=2024W	Modul Freie Wahlfächer und Transferable Skills	False
-TSK	Mental resilience for students	251.178	UE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=251178&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Mental resilience for students	251.178	UE	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=251178&semester=2024W	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Communication and rhetoric	181.200	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181200&semester=2024W	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Applied Environmental Psychology	280.A06	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=280A06&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
@@ -76,7 +72,6 @@ TSK	Rhetoric body language and training in assertiveness and argumentation	352.4
 TSK	Verständliche Wissenschaft - Lehren in der Kinderuni	011.001	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=011001&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Presentations I (for Civil Engineers)	242.016	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242016&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Presentations II (for Civil Engineers)	242.017	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242017&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
-TSK	Communication techniques	184.004	SE	S	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184004&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Legal issues of environmental protection	265.045	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265045&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Expert law	265.727	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265727&semester=2024W	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Management for civil engineers	123.630	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=123630&semester=2024W	Modul Freie Wahlfächer und Transferable Skills	False
@@ -119,8 +114,11 @@ FDS/EX	Symmetric Cryptography	192.124	VU	S	6.0	https://tiss.tuwien.ac.at/course/
 FDS/EX	System and Application Security	192.112	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192112&semester=2026S	Modul FDS/EX - Fundamentals of Data Science - Extension	True
 MLS/CO	Recommender Systems	194.035	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194035&semester=2026S	Modul MLS/CO - Machine Learning and Statistics - Core	True
 MLS/CO	Statistical Simulation and Computerintensive Methods	107.330	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107330&semester=2025W	Modul MLS/CO - Machine Learning and Statistics - Core	True
+MLS/EX	Advanced Modeling and Simulation	194.056	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194056&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	AI Programming	194.193	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194193&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Advanced Reinforcement Learning	194.200	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194200&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
+MLS/EX	Algorithmic Social Choice	192.118	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192118&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
+MLS/EX	Applied Generative AI and LLM-based Systems	194.211	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194211&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Bayesian Statistics	105.173	VU	W	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105173&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Business Intelligence	188.429	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188429&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Crypto Asset Analytics	192.080	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192080&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
@@ -134,6 +132,7 @@ MLS/EX	Modelling and Simulation in Health Technology Assessment	194.094	VU	W	3.0
 MLS/EX	Multivariate Statistics	107.388	VO	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107388&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Multivariate Statistics	107.391	UE	W	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107391&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Problem Solving and Search in Artificial Intelligence	192.207	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192207&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
+MLS/EX	Processing of Declarative Knowledge	192.205	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192205&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Self-Organizing Systems	188.413	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188413&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Similarity Modeling 1 - Computational Seeing and Hearing	188.501	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188501&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Similarity Modeling 2 - Computational Seeing and Hearing	188.498	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188498&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
@@ -148,6 +147,7 @@ BDHPC/EX	Beyond Exact Algorithms	192.163	VU	W	6.0	https://tiss.tuwien.ac.at/cour
 BDHPC/EX	Database Theory	192.175	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192175&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension	True
 BDHPC/EX	Fixed-Parameter Algorithms and Complexity	192.153	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192153&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension	True
 BDHPC/EX	GPU Architectures and Computing	182.731	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=182731&semester=2026S	Modul BDHPC/EX - Big Data and High Performance Computing - Extension	True
+BDHPC/EX	Graph Drawing Algorithms	192.155	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192155&semester=2026S	Modul BDHPC/EX - Big Data and High Performance Computing - Extension	True
 BDHPC/EX	Heuristic Optimization Techniques	192.162	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192162&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension	True
 BDHPC/EX	Hybrid Quantum - Classical Systems	191.023	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=191023&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension	True
 BDHPC/EX	Introduction to Computational Sustainability	191.021	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=191021&semester=2025W	Modul BDHPC/EX - Big Data and High Performance Computing - Extension	True
@@ -163,6 +163,7 @@ VAST/EX	Deep Learning for Natural Language Processing	192.039	VU	W	6.0	https://t
 VAST/EX	Knowledge Graphs	192.194	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192194&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 VAST/EX	Medical Image Processing and Machine Learning	193.215	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193215&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 VAST/EX	Natural Language Processing and Information Extraction	194.093	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194093&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
+VAST/EX	Processing of Declarative Knowledge	192.205	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192205&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 VAST/EX	Semi-Automatic Information and Knowledge Systems	188.387	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188387&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 VAST/EX	Visualization	193.166	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193166&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 Thesis	Master Thesis	none		W and S	27.0			True
@@ -241,6 +242,7 @@ TSK	Social Skills	330.139	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetail
 TSK	Career Planning and Self-Management	330.140	SE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330140&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Management and Leadership	330.144	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330144&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Softskills for technicians	181.208	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181208&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	True
+TSK	Softskills for technicians communication of science and Co-creation	299.001	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=299001&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Softskills for technicians communication of science and Co-creation	299.001	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=299001&semester=2025W	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Leadership Competency Coaching 2	188.472	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188472&semester=2025W	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Multidisciplinary Planning	210.001	UE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=210001&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	True
@@ -262,6 +264,7 @@ TSK	Accompanying seminar for mentors of the TUW mentoring program – short term
 TSK	Accompanying seminar for mentors of the TUW mentoring program – short term	064.023	SE	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064023&semester=2025W	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Awareness and meditation I	064.004	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064004&semester=2025W	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Awareness and meditation II	064.013	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064013&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	True
+TSK	Mental resilience for students	251.178	UE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=251178&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Supporting Cultural Collisions	064.055	VU	W	2.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064055&semester=2025W	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Introduction to management and leadership for technicians	064.032	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064032&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Deep Dives: Management and leadership for technicians	064.051	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064051&semester=2025W	Modul Freie Wahlfächer und Transferable Skills	True
@@ -272,6 +275,7 @@ TSK	Presentations I (for Civil Engineers)	242.016	SE	W	3.0	https://tiss.tuwien.a
 TSK	Presentations II (for Civil Engineers)	242.017	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242017&semester=2025W	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	How to Illustrate Engineering by Means of Audiovisual Media	064.026	VU	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064026&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	How to Illustrate Engineering by Means of Audiovisual Media	064.026	VU	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064026&semester=2025W	Modul Freie Wahlfächer und Transferable Skills	True
+TSK	Communication techniques	184.004	SE	S	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184004&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Communication techniques	184.004	SE	W	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184004&semester=2025W	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Data Literacy: Principles of Data and Information Visualisation	040.009	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=040009&semester=2025W	Modul Freie Wahlfächer und Transferable Skills	True
 TSK	Technology exploitation	015.082	VO	S	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015082&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	True
