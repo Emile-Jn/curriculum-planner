@@ -163,7 +163,6 @@ VAST/EX	Visualization	193.166	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDe
 Thesis	Master Thesis	none		W and S	27.0			True
 Thesis	Seminar for Master students in Data Science	180.772	SE	W and S	1.5			True
 Thesis	Defense of Master Thesis	none		W and S	1.5			True
-TSK	Impact of technological development - Introduction to the theory and practice of technology assessment (TA)	064.050	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064050&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Technology for People	061.003	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=061003&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Technology for People	061.003	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=061003&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Building for people	207.011	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=207011&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
@@ -171,13 +170,8 @@ TSK	Building for people :: historic.smart	251.843	VO	S	2.0	https://tiss.tuwien.a
 TSK	Technology for People 2040	194.082	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194082&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Chemistry and Society	163.171	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=163171&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Gender- und Diversitätskompetenz	034.009	SE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034009&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Diversity Skills (German)	064.029	UE	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064029&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Diversity Skills (German)	064.029	UE	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064029&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Diversity Skills (English)	064.030	UE	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064030&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Diversity Skills (English)	064.030	UE	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064030&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Feminist technology studies	034.016	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034016&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Technology and Ethics	034.012	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034012&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	voice.of.diversity - fair job opportunities without prejudice	064.002	UE	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064002&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Sustainability & Diversity in Research and Development	034.021	SE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034021&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	VO Who cares? Social responsibility in science and technology development	034.025	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034025&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Who cares? Social responsibility in science and technology development	034.026	UE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034026&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
@@ -194,40 +188,13 @@ TSK	femTUconnect – feminist networks	034.028	SE	W	3.0	https://tiss.tuwien.ac.a
 TSK	Diversity Aspects of Building Sciences and Environment	259.084	VU	W	2.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=259084&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Women in mathematics	101.A73	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=101A73&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Women in mathematics	101.A73	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=101A73&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	French for engineers I	064.014	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064014&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	French for engineers II	064.035	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064035&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Spanish for engineers I	064.015	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064015&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Spanish for engineers II	064.036	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064036&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Syntax-based Japanese I	057.028	VO	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057028&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Syntax-based Japanese II	063.001	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=063001&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Syntax-based Japanese I	057.030	UE	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=057030&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Syntax-based Japanese II	063.002	UE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=063002&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technisches Deutsch für Internationale Studierende	064.017	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064017&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technisches Deutsch für Internationale Studierende	064.017	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064017&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Technical Chinese III	064.018	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064018&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technical English Presentation A	064.019	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064019&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technical English Presentation A	064.019	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064019&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technical English Communication A	064.020	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064020&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technical English Communication A	064.020	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064020&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technical English Presentation B	064.021	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064021&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technical English Presentation B	064.021	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064021&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technical English Communication B	064.022	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064022&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technical English Communication B	064.022	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064022&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technical Italien I	064.024	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064024&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Technical Italien II	064.039	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064039&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Swedish for Engineers 1	064.025	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064025&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Swedish for Engineers 1	064.025	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064025&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Swedish for Engineers 2	064.040	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064040&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Swedish for Engineers 2	064.040	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064040&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Development of technical terms in ÖGS	064.007	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064007&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Development of technical terms in ÖGS	064.007	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064007&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Introduction to Austrian Sign Language and Deaf Culture	064.010	VU	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064010&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Introduction to Austrian Sign Language and Deaf Culture	064.010	VU	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064010&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Accompanying lecture: Supporting deaf and hard of hearing students	064.008	UE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064008&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Accompanying lecture: Supporting deaf and hard of hearing students	064.008	UE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064008&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	IT Projects for Youth	192.058	UE	S	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192058&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	IT Projects for Youth	192.058	UE	W	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192058&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Creativity Engineering	064.052	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064052&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Leadership Competency Coaching 1	188.383	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188383&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Leadership Competency Coaching 1	188.383	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188383&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Mediativ competence in Civil Engineering Practice 1	242.026	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242026&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
@@ -249,43 +216,26 @@ TSK	IT Projects for Youth	192.055	PR	W	3.0	https://tiss.tuwien.ac.at/course/cour
 TSK	Inspirational Leadership in the 21st century	330.260	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330260&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Inspirational Leadership in the 21st century	330.260	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330260&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Social skills for tutors	060.002	SE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=060002&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Collaboration and Co-Creation	064.045	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064045&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Self-Coaching	064.046	VU	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064046&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Self-Coaching	064.054	VU	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064054&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Resource management and resilience	064.049	VU	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064049&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Transferable Skill - Multidisciplinary Communication in Engineering Projects	330.301	UE	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330301&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Transferable Skill - Multidisciplinary Communication in Engineering Projects	330.301	UE	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330301&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	TU.impact – the female empowerment program of TU Vienna	064.003	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064003&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	TU.impact – the female empowerment program of TU Vienna	064.003	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064003&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Accompanying seminar for mentors of the TUW mentoring program	064.012	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064012&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Accompanying seminar for mentors of the TUW mentoring program – short term	064.023	SE	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064023&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Accompanying seminar for mentors of the TUW mentoring program – short term	064.023	SE	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064023&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Awareness and meditation I	064.004	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064004&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Awareness and meditation II	064.013	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064013&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Mental resilience for students	251.178	UE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=251178&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Supporting Cultural Collisions	064.055	VU	W	2.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064055&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Hands-on laboratory	163.182	VU	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=163182&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Hands-on-Laboratory	163.182	VU	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=163182&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Introduction to management and leadership for technicians	064.032	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064032&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Deep Dives: Management and leadership for technicians	064.051	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064051&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Communication and rhetoric	181.200	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181200&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Getting agreement in negotiations	352.031	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=352031&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Getting agreement in negotiations	352.031	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=352031&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Rhetoric body language and training in assertiveness and argumentation	352.490	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=352490&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Rhetoric body language and training in assertiveness and argumentation	352.490	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=352490&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Verständliche Wissenschaft - Lehren in der Kinderuni	011.001	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=011001&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Presentations I (for Civil Engineers)	242.016	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242016&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Presentations I (for Civil Engineers)	242.016	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242016&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Presentations II (for Civil Engineers)	242.017	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242017&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Presentations II (for Civil Engineers)	242.017	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=242017&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	How to Illustrate Engineering by Means of Audiovisual Media	064.026	VU	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064026&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	How to Illustrate Engineering by Means of Audiovisual Media	064.026	VU	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064026&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Communication techniques	184.004	SE	S	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184004&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Communication techniques	184.004	SE	W	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184004&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Data Literacy: Principles of Data and Information Visualisation	040.009	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=040009&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Technology exploitation	015.082	VO	S	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015082&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Technology exploitation	015.082	VO	W	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015082&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Entrepreneurship for innovative corporations and high-tech start-ups	064.031	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064031&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Ringvorlesung Ökologie	253.118	VO	S	2.25	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=253118&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Private Law	265.003	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265003&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Legal Issues in Environmental Protection	265.045	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265045&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
@@ -307,17 +257,11 @@ TSK	Ecological and Social Aspects in Chemistry	166.127	VO	S	3.0	https://tiss.tuw
 TSK	Barrierfree Buildings	259.345	VU	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=259345&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Barrierfree Buildings	259.346	UE	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=259346&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Sustainability Challenge	253.179	VO	W	4.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=253179&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Communicating Science	064.027	VU	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064027&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Communicating Science	064.027	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064027&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Design for All	259.344	VO	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=259344&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Information Literacy: Publishing and Dissemination	040.004	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=040004&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Foundations of scientific work	064.041	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064041&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Science and the quest for knowledge	259.446	SE	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=259446&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Science and the quest for knowledge	259.446	SE	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=259446&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Further Education and Lifelong Learning	015.118	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=015118&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	talente.programm at TU Wien (Bachelor’s Level)	064.001	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064001&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	talente.programm at TU Wien (Master’s and Doctoral Level)	064.005	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064005&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Searching prior art based on patent applications	064.048	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064048&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Mentoring - Mathematics (FaMe)	060.017	SE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=060017&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Mentoring - Mathematics (FaMe)	060.017	SE	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=060017&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Information Literacy: Literature Research, Citations, and Writing for Bachelor and Master Theses	040.003	SE	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=040003&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
@@ -327,10 +271,66 @@ TSK	Data Literacy: 3D Visualisation in Virtual Reality	040.007	SE	S	3.0	https://
 TSK	Data Literacy: 3D Visualisation in Virtual Reality	040.007	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=040007&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Recent Research in the field of Ecology	259.646	VO	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=259646&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Recent Research in the field of Ecology	259.646	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=259646&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Creative and Sustainable Product, Service and Process Engineering	064.043	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064043&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Introduction into Research Data Management	058.005	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=058005&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Didactic Skills for tutors	060.031	VU	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=060031&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	TU SustainAbility	285.014	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=285014&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Impact of technological development - Introduction to the theory and practice of technology assessment (TA)	064.050	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064050&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Diversity Skills (German)	064.029	UE	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064029&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Diversity Skills (German)	064.029	UE	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064029&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Diversity Skills (English)	064.030	UE	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064030&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Diversity Skills (English)	064.030	UE	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064030&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	voice.of.diversity - fair job opportunities without prejudice	064.002	UE	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064002&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	French for engineers I	064.014	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064014&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	French for engineers II	064.035	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064035&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Spanish for engineers I	064.015	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064015&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Spanish for engineers II	064.036	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064036&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technisches Deutsch für Internationale Studierende	064.017	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064017&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technisches Deutsch für Internationale Studierende	064.017	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064017&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technical English Presentation A	064.019	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064019&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technical English Presentation A	064.019	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064019&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technical English Communication A	064.020	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064020&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technical English Communication A	064.020	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064020&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technical English Presentation B	064.021	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064021&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technical English Presentation B	064.021	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064021&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technical English Communication B	064.022	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064022&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technical English Communication B	064.022	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064022&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technical Italien I	064.024	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064024&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technical Italien II	064.039	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064039&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Swedish for Engineers 1	064.025	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064025&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Swedish for Engineers 1	064.025	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064025&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Swedish for Engineers 2	064.040	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064040&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Swedish for Engineers 2	064.040	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064040&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Development of technical terms in ÖGS	064.007	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064007&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Development of technical terms in ÖGS	064.007	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064007&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Introduction to Austrian Sign Language and Deaf Culture	064.010	VU	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064010&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Introduction to Austrian Sign Language and Deaf Culture	064.010	VU	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064010&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Accompanying lecture: Supporting deaf and hard of hearing students	064.008	UE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064008&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Accompanying lecture: Supporting deaf and hard of hearing students	064.008	UE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064008&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Creativity Engineering	064.052	VO	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064052&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Collaboration and Co-Creation	064.045	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064045&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Self-Coaching	064.046	VU	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064046&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Self-Coaching	064.054	VU	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064054&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Resource management and resilience	064.049	VU	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064049&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	TU.impact – the female empowerment program of TU Vienna	064.003	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064003&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	TU.impact – the female empowerment program of TU Vienna	064.003	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064003&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Accompanying seminar for mentors of the TUW mentoring program	064.012	SE	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064012&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Accompanying seminar for mentors of the TUW mentoring program – short term	064.023	SE	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064023&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Accompanying seminar for mentors of the TUW mentoring program – short term	064.023	SE	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064023&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Awareness and meditation I	064.004	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064004&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Supporting Cultural Collisions	064.055	VU	W	2.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064055&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Introduction to management and leadership for technicians	064.032	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064032&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Deep Dives: Management and leadership for technicians	064.051	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064051&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Verständliche Wissenschaft - Lehren in der Kinderuni	011.001	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=011001&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	How to Illustrate Engineering by Means of Audiovisual Media	064.026	VU	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064026&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	How to Illustrate Engineering by Means of Audiovisual Media	064.026	VU	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064026&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Entrepreneurship for innovative corporations and high-tech start-ups	064.031	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064031&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Ecology and Sustainable Development	164.225	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=164225&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	European Union - Institutions, Policies and Future Challenges	164.287	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=164287&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Communicating Science	064.027	VU	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064027&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Communicating Science	064.027	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064027&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Foundations of scientific work	064.041	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064041&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Foundations of scientific work	064.041	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064041&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	talente.programm at TU Wien (Bachelor’s Level)	064.001	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064001&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	talente.programm at TU Wien (Master’s and Doctoral Level)	064.005	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064005&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Searching prior art based on patent applications	064.048	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064048&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Creative and Sustainable Product, Service and Process Engineering	064.043	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064043&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
