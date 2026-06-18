@@ -77,7 +77,6 @@ TSK	Didactic Skills for tutors	060.031	VU	W	1.0	https://tiss.tuwien.ac.at/course
 TSK	80 years of Students' Union at TU Wien	081.001	VU	S	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=081001&semester=2025S	Modul Freie Wahlfächer und Transferable Skills	False
 TSK	Accompanying seminar for mentors of the TUW mentoring program	064.012	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064012&semester=2026S	Modul Freie Wahlfächer und Transferable Skills	False
 Foundations	Experiment Design and Execution	194.192	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194192&semester=2025W	Prüfungsfach Data Science - Foundations	True
-Foundations	Advanced Methods for Regression and Classification	105.707	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105707&semester=2025W	Prüfungsfach Data Science - Foundations	True
 Foundations	Machine Learning	184.702	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184702&semester=2025W	Prüfungsfach Data Science - Foundations	True
 Foundations	Advanced Database Systems	184.780	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=184780&semester=2026S	Prüfungsfach Data Science - Foundations	True
 Foundations	Data-intensive Computing	194.048	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194048&semester=2026S	Prüfungsfach Data Science - Foundations	True
@@ -98,7 +97,6 @@ FDS/EX	Sustainability in Computer Science	194.155	VU	W	3.0	https://tiss.tuwien.a
 FDS/EX	Symmetric Cryptography	192.124	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192124&semester=2026S	Modul FDS/EX - Fundamentals of Data Science - Extension	True
 FDS/EX	System and Application Security	192.112	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192112&semester=2026S	Modul FDS/EX - Fundamentals of Data Science - Extension	True
 MLS/CO	Recommender Systems	194.035	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194035&semester=2026S	Modul MLS/CO - Machine Learning and Statistics - Core	True
-MLS/CO	Statistical Simulation and Computerintensive Methods	107.330	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107330&semester=2025W	Modul MLS/CO - Machine Learning and Statistics - Core	True
 MLS/EX	Advanced Modeling and Simulation	194.056	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194056&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	AI Programming	194.193	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194193&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Advanced Reinforcement Learning	194.200	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194200&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
@@ -154,9 +152,11 @@ VAST/EX	Processing of Declarative Knowledge	192.205	VU	S	6.0	https://tiss.tuwien
 VAST/EX	Semi-Automatic Information and Knowledge Systems	188.387	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188387&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 VAST/EX	Visualization	193.166	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193166&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 Foundations	AKSTA Statistical Computing	105.731	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105731&semester=2027S	Prüfungsfach Data Science - Foundations	True
+Foundations	Advanced Methods for Regression and Classification	105.707	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105707&semester=2026W	Prüfungsfach Data Science - Foundations	True
 DSA	Domain-Specific Lectures in Data Science	194.068	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194068&semester=2027S	Prüfungsfach Domain-Specific Aspects of Data Science	True
 DSA	Domain-Specific Lectures in Data Science	194.068	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194068&semester=2026W	Prüfungsfach Domain-Specific Aspects of Data Science	True
 FDS/CO	Data Acquisition and Survey Methods	105.708	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105708&semester=2027S	Modul FDS/CO - Fundamentals of Data Science - Core	True
+MLS/CO	Statistical Simulation and Computerintensive Methods	107.330	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107330&semester=2026W	Modul MLS/CO - Machine Learning and Statistics - Core	True
 MLS/EX	Multivariate Statistics	107.388	VO	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107388&semester=2026W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Multivariate Statistics	107.391	UE	W	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107391&semester=2026W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 Thesis	Master Thesis	none		W and S	27.0			True
