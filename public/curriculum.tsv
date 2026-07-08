@@ -129,7 +129,6 @@ VAST/EX	Medical Image Processing and Machine Learning	193.215	VU	S	6.0	https://t
 VAST/EX	Natural Language Processing and Information Extraction	194.093	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194093&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 VAST/EX	Processing of Declarative Knowledge	192.205	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192205&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 VAST/EX	Semi-Automatic Information and Knowledge Systems	188.387	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188387&semester=2026S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
-VAST/EX	Visualization	193.166	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193166&semester=2025W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 Foundations	AKSTA Statistical Computing	105.731	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105731&semester=2027S	Prüfungsfach Data Science - Foundations	True
 Foundations	Experiment Design and Execution	194.192	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194192&semester=2026W	Prüfungsfach Data Science - Foundations	True
 Foundations	Advanced Methods for Regression and Classification	105.707	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105707&semester=2026W	Prüfungsfach Data Science - Foundations	True
@@ -157,6 +156,7 @@ VAST/EX	Decidable Logics for Knowledge and Data	192.181	VU	W	6.0	https://tiss.tu
 VAST/EX	Deep Learning for Natural Language Processing	192.039	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192039&semester=2027S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 VAST/EX	Deep Learning for Natural Language Processing	192.039	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192039&semester=2026W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 VAST/EX	Knowledge Graphs	192.194	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192194&semester=2027S	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
+VAST/EX	Visualization	193.166	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193166&semester=2026W	Modul VAST/EX - Visual Analytics and Semantic Technologies - Extension	True
 Thesis	Master Thesis	none		W and S	27.0			True
 Thesis	Seminar for Master students in Data Science	180.772	SE	W and S	1.5			True
 Thesis	Defense of Master Thesis	none		W and S	1.5			True
