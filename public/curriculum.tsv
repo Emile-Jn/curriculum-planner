@@ -92,7 +92,6 @@ MLS/EX	Advanced Reinforcement Learning	194.200	VU	W	6.0	https://tiss.tuwien.ac.a
 MLS/EX	Reinforcement Learning	194.163	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194163&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Algorithmic Social Choice	192.118	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192118&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Applied Generative AI and LLM-based Systems	194.211	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194211&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
-MLS/EX	Bayesian Statistics	105.173	VU	W	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105173&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Crypto Asset Analytics	192.080	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192080&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Deep Learning for Visual Computing	193.200	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193200&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	General Regression Models	105.725	VU	S	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105725&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
@@ -135,6 +134,7 @@ FDS/CO	Data Acquisition and Survey Methods	105.708	VU	S	3.0	https://tiss.tuwien.
 FDS/EX	Digital Humanism	194.072	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194072&semester=2026W	Modul FDS/EX - Fundamentals of Data Science - Extension	True
 FDS/EX	Sustainability in Computer Science	194.155	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194155&semester=2026W	Modul FDS/EX - Fundamentals of Data Science - Extension	True
 MLS/CO	Statistical Simulation and Computerintensive Methods	107.330	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107330&semester=2026W	Modul MLS/CO - Machine Learning and Statistics - Core	True
+MLS/EX	Bayesian Statistics	105.173	VU	W	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105173&semester=2026W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Business Intelligence	188.429	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188429&semester=2026W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Generative AI	194.207	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194207&semester=2026W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Machine Learning for Visual Computing	193.189	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193189&semester=2026W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
