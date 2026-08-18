@@ -254,7 +254,6 @@ MLS/EX	Algorithmic Social Choice	192.118	VU	S	6.0	https://tiss.tuwien.ac.at/cour
 MLS/EX	Applied Generative AI and LLM-based Systems	194.211	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194211&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Crypto Asset Analytics	192.080	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192080&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Deep Learning for Visual Computing	193.200	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193200&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
-MLS/EX	Allgemeine Regressionsmodelle	105.725	VU	S	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105725&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Generative AI abgesagt	194.154	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194154&semester=2025W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Logic-based Artificial Intelligence	192.204	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192204&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Problem Solving and Search in Artificial Intelligence	192.207	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=192207&semester=2026S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
@@ -299,6 +298,7 @@ FDS/EX	Sustainability in Computer Science	194.155	VU	W	3.0	https://tiss.tuwien.a
 MLS/CO	Statistische Simulation und computerintensive Methoden	107.330	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=107330&semester=2026W	Modul MLS/CO - Machine Learning and Statistics - Core	True
 MLS/EX	Bayes-Statistik	105.173	VU	W	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105173&semester=2026W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Business Intelligence	188.429	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=188429&semester=2026W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
+MLS/EX	Allgemeine Regressionsmodelle	105.725	VU	S	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=105725&semester=2027S	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Generative AI	194.207	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194207&semester=2026W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Machine Learning for Visual Computing	193.189	VU	W	6.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=193189&semester=2026W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
 MLS/EX	Modeling and Simulation	194.076	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=194076&semester=2026W	Modul MLS/EX - Machine Learning and Statistics - Extension	True
@@ -359,8 +359,6 @@ TSK	Begleitlehrveranstaltung der Mentor_innen der TU Wien abgesagt	064.012	SE	S	
 TSK	Achtsamkeit und Meditation II	064.013	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064013&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Mentale Resilienz im Studienalltag	251.178	UE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=251178&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Wissenschaft und Gesellschaft im Dialog: Gemeinsam eine nachhaltige Zukunft gestalten abgesagt	040.011	VU	W	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=040011&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Mitmachlabor	163.182	VU	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=163182&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Mitmachlabor	163.182	VU	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=163182&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Präsentations- und Verhandlungstechnik	352.031	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=352031&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Präsentations- und Verhandlungstechnik	352.031	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=352031&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Rhetorik, Körpersprache und Argumentationstraining	352.490	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=352490&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
@@ -379,7 +377,6 @@ TSK	Vertrags- und Haftungsrecht	265.076	VU	S	3.0	https://tiss.tuwien.ac.at/cours
 TSK	Innovationslabor - Smart Innovation	330.250	VU	S	4.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330250&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	E&I Garage - Business Model Development	330.255	VU	S	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330255&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Wie erfindet man einen Roboter - Produktentwicklung aus der Nutzerperspektive	376.075	VU	S	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=376075&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
-TSK	Wie erfindet man einen Roboter - Produktentwicklung aus der Nutzerperspektive	376.075	VU	W	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=376075&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Transferable Skill - Account Management	330.302	UE	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330302&semester=2026S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Transferable Skill - Account Management	330.302	UE	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=330302&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Engines of Innovation in Research Unlocking the innovative potential of research for PhD students	058.003	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=058003&semester=2025W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
@@ -408,8 +405,10 @@ TSK	TU SustainAbility	285.014	VU	S	6.0	https://tiss.tuwien.ac.at/course/courseDe
 TSK	Folgen des technischen Fortschritts - Einführung in die Theorie und Praxis der Technikfolgenabschätzung (TA)	064.050	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064050&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Technik für Menschen	061.003	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=061003&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Technik für Menschen	061.003	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=061003&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Technik für Menschen | Architektur: Konstruktion, Gesellschaft, Memoria	251.271	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=251271&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Bauen für Menschen	207.011	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=207011&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	"Bauen für Menschen | Internationaler Studientag ""Theoderichmausoleum"" – Konstruktion. Gesellschaft. Memoria"	251.852	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=251852&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Bauen für Menschen | Wissensgeschichte :: Gesellschaft Kultur Architektur	251.276	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=251276&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Chemie und Gesellschaft	163.171	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=163171&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Gender- und Diversitätskompetenz	034.009	SE	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=034009&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Diversity Skills (Deutsch)	064.029	UE	S	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064029&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
@@ -483,6 +482,8 @@ TSK	Begleitlehrveranstaltung der Mentor_innen der TU Wien - Kurzprogramm	064.023
 TSK	Begleitlehrveranstaltung der Mentor_innen der TU Wien - Kurzprogramm	064.023	SE	W	1.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064023&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Achtsamkeit und Meditation I	064.004	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064004&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Supporting Cultural Collisions	064.055	VU	W	2.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064055&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Mitmachlabor	163.182	VU	S	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=163182&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Mitmachlabor	163.182	VU	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=163182&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Einführung in Management und Leadership für Techniker_innen	064.032	VU	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064032&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Deep Dives: Management und Leadership für Techniker_innen	064.051	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064051&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Kommunikation und Rhetorik	181.200	SE	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=181200&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
@@ -499,6 +500,7 @@ TSK	Privates Wirtschaftsrecht	265.003	VO	W	3.0	https://tiss.tuwien.ac.at/course/
 TSK	Gewerblicher Rechtsschutz für Techniker	360.012	VO	S	1.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=360012&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	European Union - Institutions, Policies and Future Challenges	164.287	VO	W	2.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=164287&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Vertrags- und Haftungsrecht	265.076	VU	W	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=265076&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
+TSK	Wie erfindet man einen Roboter - Produktentwicklung aus der Nutzerperspektive	376.075	VU	W	5.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=376075&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Ökologische u. gesellschaftliche Aspekte d. Chemie	166.127	VO	S	3.0	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=166127&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Wissenschaft verständlich kommunizieren	064.027	VU	S	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064027&semester=2027S	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
 TSK	Wissenschaft verständlich kommunizieren	064.027	VU	W	4.5	https://tiss.tuwien.ac.at/course/courseDetails.xhtml?courseNr=064027&semester=2026W	Prüfungsfach Freie Wahlfächer und Transferable Skills	True
